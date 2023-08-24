@@ -64,11 +64,6 @@ class Footer extends Component {
                               info@wordnox.com
                             </a>
                           </li>
-                          <li>
-                            <a href="mailto:info@wordnox.com">
-                              info@wordnox.com
-                            </a>
-                          </li>
                         </ul>
 
                         <div className="social-share-inner">
