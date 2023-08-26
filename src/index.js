@@ -39,9 +39,15 @@ class Root extends Component {
               path={`${process.env.PUBLIC_URL}/service`}
               component={Service}
             />
+
             <Route
               exact
-              path={`${process.env.PUBLIC_URL}/service-details`}
+              path={`${process.env.PUBLIC_URL}/services`}
+              component={Service}
+            />
+            <Route
+              exact
+              path={`${process.env.PUBLIC_URL}/services/:slug`}
               component={ServiceDetails}
             />
             <Route

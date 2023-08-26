@@ -13,7 +13,7 @@ class About extends Component {
               <div className="col-lg-5 col-md-12">
                 <div className="thumbnail">
                   <img
-                    className="w-100"
+                    className="w-100 mt--40"
                     src="/assets/images/about/about-1.jpg"
                     alt="About Images"
                   />
