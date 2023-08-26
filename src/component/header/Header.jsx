@@ -74,13 +74,13 @@ class Header extends Component {
           <div className="header-right">
             <nav className="mainmenunav d-lg-block">
               <ul className="mainmenu">
-                <li className="has-droupdown">
+                <li>
                   <Link to="/">Home</Link>
                 </li>
                 <li>
                   <Link to="/portfolio">Our Works</Link>
                 </li>
-                <li className="has-droupdown">
+                <li>
                   <Link to="/service">Services</Link>
                 </li>
                 <li>
