@@ -24,9 +24,9 @@ class CounterOne extends Component {
           "Our team has proudly collaborated with over 50 satisfied clients across various industries.",
       },
       {
-        countNum: 8,
+        countNum: 5,
         countTitle:
-          "Wordnox.com has made a positive impact on businesses not only in Africa but also globally.",
+          "With over 5 years of dedicated service since 2019, we've honed our expertise and celebrated numerous milestones alongside our clients.",
       },
     ];
 

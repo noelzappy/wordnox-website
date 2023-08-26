@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PageHelmet from "../component/common/Helmet";
 import Breadcrumb from "../elements/common/Breadcrumb";
-import { FiCast, FiLayers, FiMonitor, FiChevronUp } from "react-icons/fi";
+import { FiCast, FiLayers, FiChevronUp } from "react-icons/fi";
 import { GoDeviceMobile } from "react-icons/go";
 import { CgWebsite } from "react-icons/cg";
 import { MdManageHistory } from "react-icons/md";

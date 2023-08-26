@@ -12,9 +12,9 @@ import Footer from "../component/footer/Footer";
 
 class About extends Component {
   render() {
-    let title = "About",
+    let title = "About Us",
       description =
-        "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. If you are going to use a passage of Lorem Ipsum Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. If you are going.";
+        "Welcome to Wordnox.com, your dedicated digital partner. As a specialized digital agency, we're committed to delivering top-tier services that drive your business forward. Since our establishment in 2019, we've been on a mission to transform the digital landscape by offering a range of solutions tailored to your needs.";
     return (
       <React.Fragment>
         <PageHelmet pageTitle="About" />
@@ -51,19 +51,27 @@ class About extends Component {
                     <div className="row mt--30">
                       <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                         <div className="about-us-list">
-                          <h3 className="title">Who we are</h3>
+                          <h3 className="title">Crafting Digital Solutions</h3>
                           <p>
-                            There are many vtions of passages of Lorem Ipsum
-                            available, but the majority have suffered.
+                            Our software development expertise encompasses web
+                            and mobile app creation, REST API development, and
+                            the creation of intuitive UI/UX designs. We shape
+                            your ideas into interactive realities that captivate
+                            and engage.
                           </p>
                         </div>
                       </div>
                       <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                         <div className="about-us-list">
-                          <h3 className="title">Who we are</h3>
+                          <h3 className="title">
+                            Elevating Visibility and Engagement
+                          </h3>
                           <p>
-                            There are many vtions of passages of Lorem Ipsum
-                            available, but the majority have suffered.
+                            Our digital marketing strategies encompass Social
+                            Media Marketing, Content Marketing, Display Ads,
+                            SEM, and SEO. We amplify your brand's online
+                            visibility, engaging your target audience in
+                            meaningful ways.
                           </p>
                         </div>
                       </div>
@@ -96,13 +104,13 @@ class About extends Component {
           <div className="inner">
             <div className="content-wrapper">
               <div className="content">
-                <h4 className="theme-gradient">Find Your Work Now</h4>
+                <h4 className="theme-gradient">Get Started Now</h4>
                 <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that.
+                  Step into the world of Wordnox.com and embark on a
+                  transformative journey towards digital brilliance. Let's shape
+                  the digital future together.
                 </p>
-                <a className="rn-btn btn-white" href="/about">
+                <a className="rn-btn btn-white" href="/contact">
                   Get Started
                 </a>
               </div>
@@ -118,130 +126,6 @@ class About extends Component {
           </div>
         </div>
         {/* End Finding Us Area  */}
-
-        {/* Start Team Area  */}
-        <div className="rn-team-area bg_color--1 ptb--120">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="section-title service-style--3 text-center mb--25">
-                  <h2 className="title">Skilled Team</h2>
-                  <p>
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="row">
-              {/* Start Single Team  */}
-              <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-                <div className="team">
-                  <div className="thumbnail">
-                    <img
-                      className="w-100"
-                      src="/assets/images/team/team-01.jpg"
-                      alt="Blog Images"
-                    />
-                  </div>
-                  <div className="content">
-                    <h4 className="title">Jone Due</h4>
-                    <p className="designation">Sr. Web Developer</p>
-                  </div>
-                  <ul className="social-icon">
-                    <li>
-                      <a href="https://www.facebook.com/">
-                        <FaFacebookF />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="http://linkedin.com/">
-                        <FaLinkedinIn />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://twitter.com/">
-                        <FaTwitter />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              {/* End Single Team  */}
-
-              {/* Start Single Team  */}
-              <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-                <div className="team">
-                  <div className="thumbnail">
-                    <img
-                      className="w-100"
-                      src="/assets/images/team/team-02.jpg"
-                      alt="Blog Images"
-                    />
-                  </div>
-                  <div className="content">
-                    <h4 className="title">BM. Alamin</h4>
-                    <p className="designation">Sr. Web Developer</p>
-                  </div>
-                  <ul className="social-icon">
-                    <li>
-                      <a href="https://www.facebook.com/">
-                        <FaFacebookF />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="http://linkedin.com/">
-                        <FaLinkedinIn />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://twitter.com/">
-                        <FaTwitter />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              {/* End Single Team  */}
-
-              {/* Start Single Team  */}
-              <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-                <div className="team">
-                  <div className="thumbnail">
-                    <img
-                      className="w-100"
-                      src="/assets/images/team/team-03.jpg"
-                      alt="Blog Images"
-                    />
-                  </div>
-                  <div className="content">
-                    <h4 className="title">Jone Due</h4>
-                    <p className="designation">Sr. Web Developer</p>
-                  </div>
-                  <ul className="social-icon">
-                    <li>
-                      <a href="https://www.facebook.com/">
-                        <FaFacebookF />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="http://linkedin.com/">
-                        <FaLinkedinIn />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://twitter.com/">
-                        <FaTwitter />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              {/* End Single Team  */}
-            </div>
-          </div>
-        </div>
-        {/* End Team Area  */}
 
         {/* Start Testimonial Area */}
         <div className="rn-testimonial-area bg_color--5 ptb--120">
