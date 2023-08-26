@@ -7,7 +7,7 @@ class SliderOne extends Component {
       <div className="slider-activation">
         {/* Start Single Slide */}
         <div
-          className="slide slide-style-1 slider-fixed--height d-flex align-items-center bg_image bg_image--33"
+          className="slide slide-style-1 slider-fixed--height d-flex align-items-center bg_image bg_image--2"
           data-black-overlay="6"
         >
           <div className="container position-relative">

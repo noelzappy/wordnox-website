@@ -140,9 +140,9 @@ font-family: 'Poppins', sans-serif;
 }
 
 
-@for $i from 1 through 36 {
+@for $i from 1 through 6 {
     .bg_image--#{$i} {
-        background-image: url(/assets/images/bg/bg-image-#{$i}.jpg) !important;
+        background-image: url(/assets/images/bg/bg-image-#{$i}.webp) !important;
     }
 }
 

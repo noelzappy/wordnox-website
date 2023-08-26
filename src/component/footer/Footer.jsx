@@ -27,8 +27,11 @@ class Footer extends Component {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-6">
-                <div className="footer-right" data-black-overlay="6">
+              <div className="col-lg-6 ">
+                <div
+                  className="footer-right bg_image bg_image--6"
+                  data-black-overlay="6"
+                >
                   <div className="row">
                     {/* Start Single Widget  */}
                     <div className="col-lg-6 col-sm-6 col-12">
@@ -36,13 +39,13 @@ class Footer extends Component {
                         <h4>Quick Link</h4>
                         <ul className="ft-link">
                           <li>
-                            <a href="/portfolio">Our Work</a>
+                            <a href="/portfolio">&gt; Our Work</a>
                           </li>
                           <li>
-                            <a href="/about">About</a>
+                            <a href="/about">&gt; About</a>
                           </li>
                           <li>
-                            <a href="/contact">Let's Talk</a>
+                            <a href="/contact">&gt; Let's Talk</a>
                           </li>
                         </ul>
                       </div>
@@ -55,7 +58,7 @@ class Footer extends Component {
                         <ul className="ft-link">
                           <li>
                             <a href="mailto:info@wordnox.com">
-                              info@wordnox.com
+                              &gt; info@wordnox.com
                             </a>
                           </li>
                         </ul>
