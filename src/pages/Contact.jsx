@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import PageHelmet from "../component/common/Helmet";
 import { FiHeadphones, FiMail, FiMapPin } from "react-icons/fi";
-import GoogleMapReact from "google-map-react";
 import ContactTwo from "../elements/contact/ContactTwo";
 import BrandTwo from "../elements/BrandTwo";
 import ScrollToTop from "react-scroll-up";
@@ -40,10 +39,10 @@ class Contact extends Component {
             <div className="row">
               <div className="col-lg-12">
                 <div className="rn-page-title text-center pt--100">
-                  <h2 className="title theme-gradient">Cntact With Us</h2>
+                  <h2 className="title theme-gradient">Contact Us</h2>
                   <p>
-                    Contrary to popular belief, Lorem Ipsum is not simply random
-                    text.{" "}
+                    Embark on a transformative journey towards digital
+                    brilliance. Let's shape the digital future together.
                   </p>
                 </div>
               </div>
@@ -65,10 +64,10 @@ class Contact extends Component {
                   <div className="inner">
                     <h4 className="title">Contact With Phone Number</h4>
                     <p>
-                      <a href="tel:+057 254 365 456">+057 254 365 456</a>
+                      <a href="tel:+233 542 778 775">+233 542 778 775</a>
                     </p>
                     <p>
-                      <a href="tel:+856 325 652 984">+856 325 652 984</a>
+                      <a href="tel:+233 209 049 804">+233 209 049 804</a>
                     </p>
                   </div>
                 </div>
@@ -84,10 +83,7 @@ class Contact extends Component {
                   <div className="inner">
                     <h4 className="title">Email Address</h4>
                     <p>
-                      <a href="mailto:admin@gmail.com">admin@gmail.com</a>
-                    </p>
-                    <p>
-                      <a href="mailto:example@gmail.com">example@gmail.com</a>
+                      <a href="mailto:info@wordnox.com">info@wordnox.com</a>
                     </p>
                   </div>
                 </div>
@@ -103,8 +99,7 @@ class Contact extends Component {
                   <div className="inner">
                     <h4 className="title">Location</h4>
                     <p>
-                      5678 Bangla Main Road, cities 580 <br /> GBnagla, example
-                      54786
+                      13 Hannah School Road, Madina <br /> Greater Accra, Ghana
                     </p>
                   </div>
                 </div>
@@ -120,23 +115,6 @@ class Contact extends Component {
           <ContactTwo />
         </div>
         {/* End Contact Page Area  */}
-
-        {/* Start Contact Map  */}
-        <div className="rn-contact-map-area position-relative">
-          <div style={{ height: "650px", width: "100%" }}>
-            <GoogleMapReact
-              defaultCenter={this.props.center}
-              defaultZoom={this.props.zoom}
-            >
-              <AnyReactComponent
-                lat={59.955413}
-                lng={30.337844}
-                text="My Marker"
-              />
-            </GoogleMapReact>
-          </div>
-        </div>
-        {/* End Contact Map  */}
 
         {/* Start Brand Area */}
         <div className="rn-brand-area brand-separation bg_color--5 ptb--120">
