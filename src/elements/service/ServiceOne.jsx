@@ -29,7 +29,7 @@ class ServiceOne extends Component {
         <div className="row">
           {ServiceList.map((val, i) => (
             <div className="col-lg-4 col-md-6 col-sm-6 col-12 mt--40" key={i}>
-              <a href={`/service`}>
+              <a href={"/services"}>
                 <div className="service service__style--3">
                   <div className="icon">{val.icon}</div>
                   <div className="content">
