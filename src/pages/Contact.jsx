@@ -7,8 +7,7 @@ import ScrollToTop from "react-scroll-up";
 import { FiChevronUp } from "react-icons/fi";
 import Header from "../component/header/Header";
 import Footer from "../component/footer/Footer";
-
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+import Breadcrumb from "../elements/common/Breadcrumb";
 
 class Contact extends Component {
   static defaultProps = {
@@ -29,26 +28,8 @@ class Contact extends Component {
           colorblack="color--black"
           logoname="logo.png"
         />
-
         {/* Start Breadcrump Area */}
-        <div
-          className="rn-page-title-area pt--120 pb--190 bg_image bg_image--17"
-          data-black-overlay="6"
-        >
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="rn-page-title text-center pt--100">
-                  <h2 className="title theme-gradient">Contact Us</h2>
-                  <p>
-                    Embark on a transformative journey towards digital
-                    brilliance. Let's shape the digital future together.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Breadcrumb title={"Contact Us"} />
         {/* End Breadcrump Area */}
 
         {/* Start Contact Top Area  */}

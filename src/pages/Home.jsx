@@ -10,13 +10,11 @@ import CounterOne from "../elements/counters/CounterOne";
 import Testimonial from "../elements/Testimonial";
 import About from "../component/HomeLayout/About";
 import Portfolio from "../component/HomeLayout/Portfolio";
-// import BlogContent from "../elements/blog/BlogContent";
 import BrandTwo from "../elements/BrandTwo";
 import Helmet from "../component/common/Helmet";
 
 class Home extends Component {
   render() {
-    // const PostList = BlogContent.slice(0, 3);
     return (
       <Fragment>
         <Helmet pageTitle="Premier Digital Agency in Africa | Mobile App & Web Development" />

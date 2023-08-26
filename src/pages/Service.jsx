@@ -31,6 +31,9 @@ const MarketingServices = [
     description:
       "We craft visually appealing display ads that grab attention across websites and platforms. Our targeted approach ensures your ads reach the right people, boosting brand visibility and driving conversions.",
   },
+];
+
+const MarketingList = [
   {
     icon: <LuSearch />,
     title: "Search Engine Marketing (SEM)",
@@ -140,6 +143,23 @@ class Service extends Component {
               {MarketingServices.map((val, i) => (
                 <div
                   className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12"
+                  key={i}
+                >
+                  <a className="text-center" href="/service-details">
+                    <div className="service service__style--2">
+                      <div className="icon">{val.icon}</div>
+                      <div className="content">
+                        <h3 className="title">{val.title}</h3>
+                        <p>{val.description}</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              ))}
+
+              {MarketingList.map((val, i) => (
+                <div
+                  className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12"
                   key={i}
                 >
                   <a className="text-center" href="/service-details">
