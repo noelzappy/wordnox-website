@@ -96,10 +96,6 @@ function ServiceDetails() {
                           src="/assets/images/service/service-02.png"
                           alt="Service Images"
                         />
-
-                        <button className="video-popup">
-                          <span className="play-icon"></span>
-                        </button>
                       </div>
                     </div>
                   </div>

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PageHelmet from "../component/common/Helmet";
 import Breadcrumb from "../elements/common/Breadcrumb";
-import Pagination from "../elements/common/Pagination";
+// import Pagination from "../elements/common/Pagination";
 import ScrollToTop from "react-scroll-up";
 import { FiChevronUp } from "react-icons/fi";
 import Header from "../component/header/Header";
@@ -27,13 +27,13 @@ class Portfolio extends Component {
         <div className="rn-blog-area ptb--120 bg_color--1">
           <div className="container">
             <PortfolioListTwo />
-            <div className="row mt--20">
+            {/*      <div className="row mt--20">
               <div className="col-lg-12">
-                {/* Start Pagination Area */}
+              
                 <Pagination />
-                {/* End Pagination Area */}
+              
               </div>
-            </div>
+    </div>*/}
           </div>
         </div>
         {/* End Blog Area */}

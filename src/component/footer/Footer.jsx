@@ -17,7 +17,7 @@ class Footer extends Component {
               <div className="col-lg-6">
                 <div className="footer-left">
                   <div className="inner">
-                    <span>Ready To Do This</span>
+                    <span>Ready To Do This?</span>
                     <h2>
                       Let's get <br /> to work
                     </h2>
@@ -36,7 +36,7 @@ class Footer extends Component {
                     {/* Start Single Widget  */}
                     <div className="col-lg-6 col-sm-6 col-12">
                       <div className="footer-link">
-                        <h4>Quick Link</h4>
+                        <h4>Quick Links</h4>
                         <ul className="ft-link">
                           <li>
                             <a href="/portfolio">&gt; Our Work</a>

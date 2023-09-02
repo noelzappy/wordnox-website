@@ -9,8 +9,7 @@ class PageHelmet extends Component {
           <title>{this.props.pageTitle} | Wordnox.com </title>
           <meta
             name="description"
-            content="Wordnox: Premier Digital Agency in Africa | Mobile App/Web Development
-      and Digital Marketing"
+            content="Wordnox: Premier Digital Agency in Africa | Mobile App/Web Development and Digital Marketing"
           />
         </Helmet>
       </React.Fragment>

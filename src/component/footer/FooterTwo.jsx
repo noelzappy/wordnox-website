@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  FaTwitter,
-  FaFacebookF,
-  FaLinkedinIn,
-} from "react-icons/fa";
+import { FaTwitter, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 
 const SocialShare = [
   { Social: <FaFacebookF />, link: "https://www.facebook.com/wordnox" },
@@ -23,7 +19,7 @@ const FooterTwo = () => {
             <div className="inner">
               <div className="logo text-center text-sm-left mb_sm--20">
                 <a href="/home-one">
-                  <img src="/assets/images/logo/logo.png" alt="Logo images" />
+                  <img src="/assets/images/logo/logo.png" alt="Wordnox Logo" />
                 </a>
               </div>
             </div>

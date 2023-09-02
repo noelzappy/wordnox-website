@@ -2,39 +2,7 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import { portfolioSlick2 } from "../../page-demo/script";
 import { Link } from "react-router-dom";
-
-const PortfolioList = [
-  {
-    image: "image-1",
-    category: "Development",
-    title: " Getting tickets to the big show",
-  },
-  {
-    image: "image-2",
-    category: "Development",
-    title: " Getting tickets to the big show",
-  },
-  {
-    image: "image-3",
-    category: "Development",
-    title: " Getting tickets to the big show",
-  },
-  {
-    image: "image-4",
-    category: "Development",
-    title: " Getting tickets to the big show",
-  },
-  {
-    image: "image-3",
-    category: "Development",
-    title: " Getting tickets to the big show",
-  },
-  {
-    image: "image-4",
-    category: "Development",
-    title: " Getting tickets to the big show",
-  },
-];
+import PortfolioList from "../../data/portfolio";
 
 class Portfolio extends Component {
   render() {
@@ -59,14 +27,16 @@ class Portfolio extends Component {
               {PortfolioList.map((value, index) => (
                 <div className="portfolio" key={index}>
                   <div className="thumbnail-inner">
-                    <div className={`thumbnail ${value.image}`}></div>
-                    <div className={`bg-blr-image ${value.image}`}></div>
+                    <div className="thumbnail"></div>
+                    <div
+                      className={`bg-blr-image bg_image-01 pbg_image_${value.mainBg}`}
+                    ></div>
                   </div>
                   <div className="content">
                     <div className="inner">
                       <p>{value.category}</p>
                       <h4 className="title">
-                        <a href="/portfolio-details">{value.title}</a>
+                        <a href={`/portfolio/${value.slug}`}>{value.title}</a>
                       </h4>
                       <div className="portfolio-button">
                         <a className="rn-btn" href="/portfolio-details">
@@ -75,7 +45,10 @@ class Portfolio extends Component {
                       </div>
                     </div>
                   </div>
-                  <Link className="link-overlay" to="/portfolio-details"></Link>
+                  <Link
+                    className="link-overlay"
+                    to={`/portfolio/${value.slug}`}
+                  ></Link>
                 </div>
               ))}
             </Slider>
