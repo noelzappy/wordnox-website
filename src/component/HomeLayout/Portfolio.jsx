@@ -39,7 +39,7 @@ class Portfolio extends Component {
                         <a href={`/portfolio/${value.slug}`}>{value.title}</a>
                       </h4>
                       <div className="portfolio-button">
-                        <a className="rn-btn" href="/portfolio-details">
+                        <a className="rn-btn" href={`/portfolio/${value.slug}`}>
                           Case Study
                         </a>
                       </div>
