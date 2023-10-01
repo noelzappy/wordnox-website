@@ -83,23 +83,23 @@ font-family: 'Poppins', sans-serif;
 }
 
 .theme-gradient {
-  background: rgb(248, 31, 1);
+  background: rgb(246, 192, 85);
   background: -moz-linear-gradient(
     145deg,
-    rgba(248, 31, 1, 1) 0%,
-    rgba(238, 7, 110, 1) 100%
+    rgba(246, 192, 85, 1) 0%,
+    rgba(251, 133, 0, 1) 100%
   );
   background: -webkit-linear-gradient(
     145deg,
-    rgba(248, 31, 1, 1) 0%,
-    rgba(238, 7, 110, 1) 100%
+    rgba(246, 192, 85, 1) 0%,
+    rgba(251, 133, 0, 1) 100%
   );
   background: linear-gradient(
     145deg,
-    rgba(248, 31, 1, 1) 0%,
-    rgba(238, 7, 110, 1) 100%
+    rgba(246, 192, 85, 1) 0%,
+    rgba(251, 133, 0, 1) 100%
   );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f81f01', endColorstr='#ee076e',GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6c055', endColorstr='#fb8500',GradientType=1 );
 }
 
 .rn-text-white {
