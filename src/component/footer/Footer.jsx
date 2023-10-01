@@ -79,8 +79,8 @@ class Footer extends Component {
                     <div className="col-lg-12">
                       <div className="copyright-text">
                         <p>
-                          Copyright © {new Date().getFullYear()} Wordnox.com.
-                          All Rights Reserved.
+                          Copyright © {new Date().getFullYear()} Wordnox.com. By
+                          Edromart Technologies LTD
                         </p>
                       </div>
                     </div>

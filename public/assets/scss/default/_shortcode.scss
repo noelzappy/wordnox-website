@@ -149,9 +149,6 @@ font-family: 'Poppins', sans-serif;
   }
 }
 
-.pbg_image_geofrelin {
-  background-image: url(/assets/images/portfolio/geofrelin.webp) !important;
-}
 
 @for $i from 1 through 80 {
   .font--#{$i} {

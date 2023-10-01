@@ -14,7 +14,7 @@ class PortfolioListTwo extends Component {
                     <img
                       className="w-100"
                       src={`/assets/images/portfolio/${value.mainBg}.webp`}
-                      alt="Blog Images"
+                      alt="Portfolio Images"
                     />
                   </a>
                 </div>

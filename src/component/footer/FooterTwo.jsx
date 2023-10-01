@@ -39,8 +39,8 @@ const FooterTwo = () => {
             <div className="inner text-lg-right text-center mt_md--20 mt_sm--20">
               <div className="text">
                 <p>
-                  Copyright © {new Date().getFullYear()} Wordnox.com. All Rights
-                  Reserved.
+                  Copyright © {new Date().getFullYear()} Wordnox.com. By
+                  Edromart Technologies LTD
                 </p>
               </div>
             </div>

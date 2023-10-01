@@ -5,7 +5,7 @@ import ScrollToTop from "react-scroll-up";
 import { FiChevronUp } from "react-icons/fi";
 import Header from "../component/header/Header";
 import Footer from "../component/footer/Footer";
-import PortfolioList, { getPortfolioBySlug } from "../data/portfolio";
+import { getPortfolioBySlug } from "../data/portfolio";
 import { useParams } from "react-router-dom";
 
 const SocialShare = [
@@ -55,6 +55,7 @@ const PortfolioDetails = () => {
               <div className="portfolio-details">
                 <div className="inner">
                   <h2>{item.client}</h2>
+
                   <p className="subtitle">{item.description}</p>
                   <p>{item.body}</p>
 
@@ -64,10 +65,18 @@ const PortfolioDetails = () => {
                       <h4>{item.category}</h4>
                     </div>
 
-                    {/*       <div className="port-view">
-                      <span>Project Types</span>
-                      <h4>Website</h4>
-  </div> */}
+                    <div className="port-view">
+                      <span>Launch Project</span>
+                      <div className="blog-btn">
+                        <a
+                          className="rn-btn text-black"
+                          href={item.projectUrl}
+                          target="_blank"
+                        >
+                          Go to Project
+                        </a>
+                      </div>
+                    </div>
                   </div>
 
                   <div className="portfolio-share-link mt--20 pb--70 pb_sm--40">
