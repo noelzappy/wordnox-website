@@ -72,6 +72,7 @@ const PortfolioDetails = () => {
                           className="rn-btn text-black"
                           href={item.projectUrl}
                           target="_blank"
+                          rel="noopener noreferrer"
                         >
                           Go to Project
                         </a>

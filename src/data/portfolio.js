@@ -1,4 +1,47 @@
+// Ashasie Travel and Tour Website Development:
+// Ashasie Travel & Tour is a travel management company based in Ghana that offers a range of travel services to individuals, families, and businesses. With expertise in the travel industry and a vast network of employees, affiliates, and partners, we provide high-quality travel experiences to our customers.
+// Ashasie Travel & Tour started with a vision to provide exceptional travel experiences to customers in Ghana and beyond.We have grown into a reputable travel management company dedicated to treating our customers with respect, nobility, and fairness.
+
 const PortfolioList = [
+  {
+    title: "Ashasietour.com Website Development",
+    excerpt:
+      "Ashasie Travel & Tour is a travel management company based in Ghana that offers a range of travel services to individuals, families, and businesses.",
+    slug: "ashasie-travel",
+    client: "Ashasie Travel & Tour",
+    description:
+      "Ashasie Travel & Tour started with a vision to provide exceptional travel experiences to customers in Ghana and beyond.",
+    body: "Wordnox.com partnered with Ashasie Travel & Tour to create an engaging and user-friendly website that showcases their travel services. The project aimed to enhance the company's online presence, streamline product showcasing, and boost user engagement. The website features a modern design optimized for various devices, ensuring a seamless user experience. Through comprehensive planning, skilled design and development, and rigorous testing, Wordnox.com delivered ashasietour.com. This elegant website positions Ashasie Travel & Tour as a trusted provider of travel services, connecting the company with a broader audience and driving growth in the digital landscape.",
+    mainBg: "ashasietour",
+    images: [
+      "/assets/images/portfolio/ashasie/1.png",
+      "/assets/images/portfolio/ashasie/2.png",
+      "/assets/images/portfolio/ashasie/3.png",
+      "/assets/images/portfolio/ashasie/4.png",
+      "/assets/images/portfolio/ashasie/5.png",
+    ],
+    category: "Web Development",
+    projectUrl: "https://ashasietour.com/",
+  },
+  {
+    title: "Smakk Technologies Website Development",
+    excerpt:
+      "Smakk Technologies is a leading ICT education game changer, providing innovative and interactive learning solutions for students and educators.",
+    slug: "smakk-technologies",
+    client: "Smakk Technologies LTD.",
+    description:
+      "This dynamic website allows Smakk Technologies to showcase their ICT services and products.",
+    body: "Wordnox.com partnered with Smakk Technologies LTD to create an engaging and user-friendly website that showcases their ICT services and products. The project aimed to enhance the company's online presence, streamline product showcasing, and boost user engagement. The website features a modern design optimized for various devices, ensuring a seamless user experience. Through comprehensive planning, skilled design and development, and rigorous testing, Wordnox.com delivered smakktechnologies.com. This elegant website positions Smakk Technologies LTD as a trusted provider of ICT services and products, connecting the company with a broader audience and driving growth in the digital landscape.",
+    mainBg: "smakk",
+    images: [
+      "/assets/images/portfolio/smakk/1.png",
+      "/assets/images/portfolio/smakk/2.png",
+      "/assets/images/portfolio/smakk/3.png",
+      "/assets/images/portfolio/smakk/4.png",
+    ],
+    category: "Web Development",
+    projectUrl: "https://smakktechnologies.com/",
+  },
   {
     title: "Mzros Website design",
     excerpt:
