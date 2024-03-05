@@ -18,7 +18,7 @@ const Services = () => {
         </h2>
         <p>Here are some of the services we offer.</p>
       </div>
-      <div className="flex flex-row items-center justify-center gap-5 flex-wrap">
+      <div className="flex flex-row items-center justify-center gap-2 flex-wrap">
         {Array.from({ length: 3 }).map((_, index) => (
           <Card className="w-[350px]" key={index}>
             <CardHeader>
