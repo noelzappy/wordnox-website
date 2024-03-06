@@ -15,13 +15,13 @@ const Footer = () => {
       <div className="flex flex-row items-center justify-between mx-5">
         <div className="flex flex-row items-center justify-center gap-5">
           <a href="/services" className="text-white hover:text-yellow-500">
-            Our Services
+            Services
           </a>
           <a href="/about-us" className="text-white hover:text-yellow-500">
             Why Us
           </a>
           <a href="/portfolio" className="text-white hover:text-yellow-500">
-            Portfolio & Case Studies
+            Portfolio
           </a>
         </div>
         <div className="flex flex-row items-center justify-between gap-3 ">
