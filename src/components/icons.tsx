@@ -1,4 +1,5 @@
 type IconProps = React.HTMLAttributes<SVGElement>;
+import { FaTwitter, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 
 export const Icons = {
   Logo: (props: IconProps) => (
@@ -160,4 +161,8 @@ export const Icons = {
       ></path>
     </svg>
   ),
+
+  FaceBook: FaFacebookF,
+  Twitter: FaTwitter,
+  LinkedIn: FaLinkedinIn,
 };
