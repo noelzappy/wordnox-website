@@ -4,6 +4,7 @@ import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Footer from "@/components/sections/footer";
+import { NavBar } from "@/components/nav-bar";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -28,6 +29,7 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
+        <NavBar className="bg-yellow-50 border-none" />
         <main>{children}</main>
         <footer>
           <Footer />

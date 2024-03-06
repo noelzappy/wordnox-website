@@ -13,6 +13,7 @@ import {
 } from "./ui/navigation-menu";
 import { cn } from "@/lib/utils";
 import { Icons } from "./icons";
+import { usePathname } from "next/navigation";
 
 type MenuChildItem = {
   title: string;
@@ -63,7 +64,7 @@ const menuItems: MenuItem[] = [
   },
   {
     label: "Portfolio",
-    href: "#portfolio",
+    href: "/portfolio",
   },
 ];
 
@@ -74,6 +75,16 @@ type NavBarProps = {
 };
 
 export function NavBar(props: Readonly<NavBarProps>) {
+  const path = usePathname();
+
+  const activeClassName = (href: string) => {
+    const isCurrent = path === href || path.startsWith(href);
+
+    return isCurrent
+      ? "bg-yellow-100 text-accent-foreground dark:bg-yellow-900 dark:text-accent-foreground"
+      : "";
+  };
+
   return (
     <header className="sticky top-0 z-50 bg-white dark:bg-gray-800">
       <nav
@@ -137,7 +148,11 @@ export function NavBar(props: Readonly<NavBarProps>) {
                       return (
                         <NavigationMenuItem
                           key={item.href}
-                          className={cn("group ", props.listClassName)}
+                          className={cn(
+                            "group ",
+                            props.listClassName,
+                            activeClassName(item.href)
+                          )}
                         >
                           <NavigationMenuTrigger>
                             {item.label}
@@ -181,6 +196,7 @@ export function NavBar(props: Readonly<NavBarProps>) {
                         key={item.href}
                         title={item.label}
                         href={item.href}
+                        className={activeClassName(item.href)}
                       />
                     );
                   })}
@@ -204,7 +220,7 @@ const ListItem = React.forwardRef<
         <a
           ref={ref}
           className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-yellow-100 hover:text-accent-foreground focus:bg-yellow-100 focus:text-accent-foreground",
             className
           )}
           {...props}
