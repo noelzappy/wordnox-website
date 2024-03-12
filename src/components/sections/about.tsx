@@ -12,10 +12,11 @@ const AboutSection = () => {
             About Us
           </h2>
           <p className="text-center  md:text-left">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-            nostrum eligendi excepturi, id nisi inventore aperiam deserunt
-            labore itaque, ullam vitae incidunt reprehenderit non dolore
-            accusantium iusto corporis dignissimos! Accusamus?
+            As a forward-thinking digital agency, we specialize in delivering
+            comprehensive software development solutions and results-driven
+            digital marketing strategies. Our mission is to empower businesses
+            across Africa with innovative technology and effective online
+            visibility, fostering growth and success in the digital age.
           </p>
           <div className="flex flex-col items-center justify-center my-10 md:items-start md:justify-start">
             <Button className="btn">Learn More</Button>

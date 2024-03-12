@@ -17,3 +17,15 @@ model Service {
   slug         String   @unique
   categoryName String
 }
+
+model Contact {
+  id        String  @id @default(auto()) @map("_id") @db.ObjectId
+  name      String
+  email     String
+  message   String
+  phone     String?
+  responded Boolean @default(false)
+
+  createdAt DateTime @default(now()) @map("createdAt")
+  updatedAt DateTime @default(now()) @updatedAt @map("updatedAt")
+}

@@ -1,6 +1,6 @@
 import React from "react";
-import { Button } from "../ui/button";
 import Image from "next/image";
+import QuickContactForm from "@/components/elements/quick-contact-form";
 
 const Hero = () => {
   return (
@@ -12,7 +12,10 @@ const Hero = () => {
         <p className="text-2xl text-center text-yellow-900">
           Through Software Development and Marketing Excellence.
         </p>
-        <Button className="my-8">Let&apos;s Talk Now</Button>
+
+        <div className="my-8">
+          <QuickContactForm />
+        </div>
       </div>
       <div className="relative items-center justify-center flex">
         <Image
