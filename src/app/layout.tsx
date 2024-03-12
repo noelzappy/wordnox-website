@@ -12,8 +12,11 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "Wordnox",
-  description: "Wordnox.com",
+  title: {
+    template: "%s | Wordnox",
+    default: "Wordnox - Web Design & Development",
+  },
+  description: "Wordnox - Web Design & Development",
 };
 
 export default function RootLayout({

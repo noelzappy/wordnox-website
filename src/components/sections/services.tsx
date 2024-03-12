@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import {
   Card,
@@ -8,8 +10,13 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import type { Service } from "@prisma/client";
 
-const Services = () => {
+type ServicesProps = {
+  services: Service[];
+};
+
+const Services = ({ services }: ServicesProps) => {
   return (
     <div className="py-24 bg-yellow-50" id="services">
       <div className="flex flex-col items-center justify-center my-10">
@@ -19,20 +26,17 @@ const Services = () => {
         <p>Here are some of the services we offer.</p>
       </div>
       <div className="flex flex-row items-center justify-center gap-2 flex-wrap">
-        {Array.from({ length: 3 }).map((_, index) => (
-          <Card className="w-[350px]" key={index}>
+        {services?.map((service) => (
+          <Card className="w-[350px]" key={service.id}>
             <CardHeader>
-              <CardTitle>Web Development</CardTitle>
-              <CardDescription>Software Dev</CardDescription>
+              <CardTitle>{service.name}</CardTitle>
+              <CardDescription>{service.categoryName}</CardDescription>
             </CardHeader>
-            <CardContent>
-              Deploy your new project in one-click. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Cum, esse eum. Voluptate quisquam at
-              et quasi dolore dicta iure vel! Quam rerum unde adipisci!
-              Blanditiis aperiam molestiae officiis ullam et!
-            </CardContent>
+            <CardContent>{service.description}</CardContent>
             <CardFooter>
-              <button className="btn">Learn More</button>
+              <a className="btn" href={`/services/${service.slug}`}>
+                Learn More
+              </a>
             </CardFooter>
           </Card>
         ))}

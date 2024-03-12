@@ -22,9 +22,9 @@ const AboutSection = () => {
           </div>
 
           <div className="flex flex-row items-center justify-between my-10 min-h-11 bg-yellow-900 text-white rounded-md p-5 gap-3">
-            <Counter title="Happy Clients" count={40} />
-            <Counter title="Completed Projects" count={100} />
-            <Counter title="Years of Experience" count={5} />
+            <Counter title="Happy Clients" count={40} interval={50} />
+            <Counter title="Completed Projects" count={100} interval={20} />
+            <Counter title="Years of Experience" count={5} interval={100} />
           </div>
         </div>
         <div className="items-center justify-center flex">
