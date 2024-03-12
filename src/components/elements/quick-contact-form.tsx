@@ -14,11 +14,18 @@ import {
 import { Button } from "@/components/ui/button";
 import * as Yup from "yup";
 import { Form, Formik } from "formik";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
+import { parsePhoneNumber } from "awesome-phonenumber";
+import { Input } from "../ui/input";
 
 const validationSchema = Yup.object().shape({
   name: Yup.string().required("Name is required"),
-  phoneNumber: Yup.string().required("Phone number is required"),
+  phoneNumber: Yup.string()
+    .test("phoneNumber", "Phone number is not valid", (str) => {
+      const pn = parsePhoneNumber(str ?? "");
+      return pn.valid;
+    })
+    .required("Phone number is required"),
   email: Yup.string().email("Invalid email").required("Email is required"),
   message: Yup.string().required("Message is required"),
 });
@@ -88,7 +95,7 @@ const QuickContactForm = () => {
                         value={values.name}
                         onChange={handleChange}
                         onBlur={handleBlur}
-                        className="border border-gray-400 rounded-md h-10"
+                        className="border border-gray-400 rounded-md h-10 p-2"
                       />
                       {errors.name && touched.name && (
                         <div className="text-red-500">{errors.name}</div>
@@ -100,11 +107,13 @@ const QuickContactForm = () => {
                         type="text"
                         id="phoneNumber"
                         name="phoneNumber"
+                        placeholder="+233123456789"
                         value={values.phoneNumber}
                         onChange={handleChange}
                         onBlur={handleBlur}
-                        className="border border-gray-400 rounded-md h-10"
+                        className="border border-gray-400 rounded-md h-10 p-2"
                       />
+
                       {errors.phoneNumber && touched.phoneNumber && (
                         <div className="text-red-500">{errors.phoneNumber}</div>
                       )}
@@ -118,7 +127,7 @@ const QuickContactForm = () => {
                         value={values.email}
                         onChange={handleChange}
                         onBlur={handleBlur}
-                        className="border border-gray-400 rounded-md h-10"
+                        className="border border-gray-400 rounded-md h-10 p-2"
                       />
                       {errors.email && touched.email && (
                         <div className="text-red-500">{errors.email}</div>
@@ -132,7 +141,7 @@ const QuickContactForm = () => {
                         value={values.message}
                         onChange={handleChange}
                         onBlur={handleBlur}
-                        className="border border-gray-400 rounded-md h-20 resize-none"
+                        className="border border-gray-400 rounded-md h-20 resize-none p-2"
                       />
                       {errors.message && touched.message && (
                         <div className="text-red-500">{errors.message}</div>
