@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/sections/nav-bar";
 import Footer from "@/components/sections/footer";
+import "react-modern-drawer/dist/index.css";
 
 const inter = Poppins({ weight: "400", subsets: ["latin"] });
 
