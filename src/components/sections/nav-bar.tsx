@@ -23,8 +23,8 @@ export default function NavBar() {
   const [openDrawer, setOpenDrawer] = useState(false);
 
   return (
-    <nav className="z-50">
-      <div className="flex justify-between items-center p-4 px-10 bg-yellow-50 pt-5 sticky top-0">
+    <>
+      <div className="flex justify-between items-center p-4 px-10 bg-yellow-50 pt-5 sticky top-0 z-50">
         <div className="flex items-center flex-1">
           <a href="/">
             <span className="border p-2 rounded-sm font-bold text-gray-800 uppercase flex items-center">
@@ -41,11 +41,11 @@ export default function NavBar() {
         </div>
 
         <div>
-          <div className="hidden md:flex flex-row flex-1">
+          <div className="hidden md:flex flex-row flex-1 items-center">
             <ul className="flex">
               {MENU.map((item) => {
                 return (
-                  <li key={item.name} className="m-3">
+                  <li key={item.name} className="m-2">
                     <a
                       href={item.link}
                       className="text-gray-800 font-bold cursor-pointer hover:text-gray-600 underline uppercase"
@@ -55,7 +55,7 @@ export default function NavBar() {
                   </li>
                 );
               })}
-              <li className="m-3">
+              <li className="m-2">
                 <a
                   href="/contact"
                   className="text-white font-bold cursor-pointer hover:bg-yellow-300 uppercase bg-yellow-700 p-10 py-2 rounded-md"
@@ -120,6 +120,6 @@ export default function NavBar() {
           </ul>
         </div>
       </Drawer>
-    </nav>
+    </>
   );
 }

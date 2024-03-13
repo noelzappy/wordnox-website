@@ -1,12 +1,26 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { FaFacebook } from "react-icons/fa";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { BsLinkedin } from "react-icons/bs";
 
 export default function Footer() {
   return (
-    <>
-      <div className="overflow-hidden bg-yellow-300 mt-14">
+    <Fragment>
+      <div className="mt-14 text-center items-center bg-black py-20">
+        <h1 className="text-5xl text-white font-bold sm:text-6xl uppercase">
+          Start a project with us
+        </h1>
+        <div className="mt-10 sm:mt-16 text-lg text-white">
+          <a
+            className="text-white font-bold cursor-pointer hover:text-gray-600 underline"
+            href="/contact"
+          >
+            CONTACT US
+          </a>
+        </div>
+      </div>
+
+      <div className="overflow-hidden bg-yellow-300">
         <div className="animate-marquee whitespace-nowrap">
           <span className="text-4xl text-neutral-600 font-bold sm:text-6xl px-10 sm:px-0 uppercase">
             Best Creative Agency ❤️{" "}
@@ -22,7 +36,7 @@ export default function Footer() {
           </span>
         </div>
       </div>
-      <footer className="bg-black text-white p-10 py-20">
+      <footer className="bg-black text-white p-10 py-20 ">
         <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10 items-center justify-between">
           <div>
             <h3 className="text-2xl font-bold">WORDNOX</h3>
@@ -97,6 +111,6 @@ export default function Footer() {
           <p>&copy; {new Date().getFullYear()} WORDNOX. All rights reserved.</p>
         </div>
       </footer>
-    </>
+    </Fragment>
   );
 }
