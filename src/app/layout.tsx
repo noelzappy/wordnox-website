@@ -4,6 +4,7 @@ import "./globals.css";
 import NavBar from "@/components/sections/nav-bar";
 import Footer from "@/components/sections/footer";
 import "react-modern-drawer/dist/index.css";
+import { Toaster } from "react-hot-toast";
 
 const inter = Poppins({ weight: "400", subsets: ["latin"] });
 
@@ -28,6 +29,7 @@ export default function RootLayout({
         className={`${inter.className} bg-neutral-300
       `}
       >
+        <Toaster />
         <NavBar />
         {children}
         <Footer />

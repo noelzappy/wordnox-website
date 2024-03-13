@@ -26,7 +26,7 @@ export default function NavBar() {
 
   return (
     <>
-      <div className="flex justify-between items-center p-4 px-10 pt-5 sticky top-0 z-50 backdrop-blur-sm">
+      <div className="flex justify-between items-center p-4 px-10 pt-5 sticky top-0 z-50 backdrop-blur-md">
         <div className="flex items-center flex-1">
           <a href="/">
             <span className="border p-2 rounded-sm font-bold text-gray-800 uppercase flex items-center">

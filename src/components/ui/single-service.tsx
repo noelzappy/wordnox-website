@@ -3,6 +3,7 @@
 import React, { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import SimpleContactForm from "../sections/simple-contact-form";
+import toast from "react-hot-toast";
 
 type Props = {
   service: {
@@ -17,8 +18,34 @@ export default function SingleService({ service }: Readonly<Props>) {
   const [open, setOpen] = useState(false);
 
   const onSubmit = (vals: any) => {
-    console.log("Form Submitted", vals);
+    toast.loading("Submitting form...", {
+      id: "submitting",
+    });
+    fetch("/api/forms", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ ...vals, service: service.name }),
+    })
+      .then((res) => {
+        if (res.ok) {
+          toast.success("Form submitted successfully", {
+            id: "submitting",
+          });
+          setOpen(false);
+        } else {
+          throw new Error("Form submission failed");
+        }
+      })
+      .catch((data) => {
+        toast.error("Form submission failed", {
+          id: "submitting",
+        });
+        console.log(data);
+      });
   };
+
   return (
     <>
       <div
