@@ -6,16 +6,18 @@ import Drawer from "react-modern-drawer";
 
 const MENU = [
   {
-    name: "Services",
-    link: "/services",
+    name: "About Us",
+    link: "/about",
   },
+
   {
     name: "Projects",
     link: "/projects",
   },
+
   {
-    name: "About Us",
-    link: "/about",
+    name: "Services",
+    link: "/services",
   },
 ];
 

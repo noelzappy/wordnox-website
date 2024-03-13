@@ -25,7 +25,7 @@ export default function RootLayout({
         <link rel="icon" href="/logo.png" />
       </head>
       <body
-        className={`${inter.className} bg-neutral-300
+        className={`${inter.className} bg-neutral-100
       `}
       >
         <NavBar />

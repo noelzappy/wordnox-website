@@ -41,7 +41,7 @@ export default function ServiceSection() {
               return (
                 <div
                   key={service.id}
-                  className=" bg-neutral-100 p-5 lg:p-12 rounded-lg shadow-lg"
+                  className=" bg-neutral-100 p-5 lg:p-12 hover:-mt-4 cursor-pointer relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150"
                 >
                   <div key={service.id}>
                     <h3 className="text-2xl text-neutral-600 font-bold">
