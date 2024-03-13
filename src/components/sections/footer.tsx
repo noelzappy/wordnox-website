@@ -1,51 +1,83 @@
 import React from "react";
+import { FaFacebook } from "react-icons/fa";
+import { AiFillTwitterCircle } from "react-icons/ai";
+import { BsLinkedin } from "react-icons/bs";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white p-10">
-      <div className="flex flex-row justify-between">
+    <footer className="bg-black text-white p-10 py-20">
+      <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10 items-center justify-between">
         <div>
-          <span className="text-2xl font-bold border p-2">WORDNOX</span>
+          <h3 className="text-2xl font-bold">WORDNOX</h3>
+          <p className="mt-4">
+            We are a digital agency that specializes in developing digital
+            products to support your business.
+          </p>
+          <ul className="mt-4">
+            <li className="mb-2">
+              <a
+                href="mailto:info@wordnox.com"
+                className="text-white font-bold cursor-pointer hover:text-gray-600"
+              >
+                Email: <span className="underline">info@wordnox.com</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="tel:+233506441493"
+                className="text-white font-bold cursor-pointer hover:text-gray-600"
+              >
+                Phone: <span className="underline">+233506441493</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 className="text-2xl font-bold">Quick Links</h3>
+          <p className="mt-4">
+            <a
+              href="/services"
+              className="text-white font-bold cursor-pointer hover:text-gray-600 uppercase underline"
+            >
+              Services
+            </a>
+            <br />
+            <a
+              href="/projects"
+              className="text-white font-bold cursor-pointer hover:text-gray-600 uppercase underline"
+            >
+              Projects
+            </a>
+            <br />
+            <a
+              href="/contact"
+              className="text-white font-bold cursor-pointer hover:text-gray-600 uppercase underline"
+            >
+              Contact
+            </a>
+            <br />
+          </p>
+        </div>
+        <div>
+          <h3 className="text-2xl font-bold">Social</h3>
+          <div className="mt-4 flex items-center space-x-4">
+            <a href="https://www.facebook.com/wordnox">
+              <FaFacebook size={30} />
+            </a>
 
-          <div className="my-5">
-            <ul>
-              <li className="flex items-center mt-2 cursor-pointer hover:text-gray-200">
-                <a
-                  href="mailto:info@wordnox.com"
-                  className="ml-2 text-slate-200"
-                >
-                  info@wordnox.com
-                </a>
-              </li>
-              <li className="flex items-center mt-2 cursor-pointer hover:text-gray-200">
-                <a href="tel:+233506441493" className="ml-2">
-                  +233506441493
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div>
-          <span className="text-2xl font-bold">Follow Us</span>
-          <div className="flex flex-row mt-5">
-            <a
-              href="https://www.facebook.com/wordnox"
-              target="_blank"
-              rel="noreferrer"
-              className="text-white cursor-pointer hover:text-gray-200"
-            >
-              Facebook
+            <a href="https://www.twitter.com/wordnox">
+              <AiFillTwitterCircle size={35} />
             </a>
-            <a
-              href="https://www.twitter.com/wordnox"
-              target="_blank"
-              rel="noreferrer"
-              className="ml-5 text-white cursor-pointer hover:text-gray-200"
-            >
-              Twitter
+
+            <a href="https://www.linkedin.com/company/wordnoxinc">
+              <BsLinkedin size={30} />
             </a>
           </div>
         </div>
+      </div>
+      <hr className="my-10" />
+      <div className="text-center">
+        <p>&copy; {new Date().getFullYear()} WORDNOX. All rights reserved.</p>
       </div>
     </footer>
   );
