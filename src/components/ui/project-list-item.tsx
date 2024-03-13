@@ -19,33 +19,22 @@ export default function ProjectListItem({
   project,
 }: Readonly<ProjectListItemProps>) {
   return (
-    <div className="transition-all duration-300 ease-in-out hover:scale-105 bg-neutral-200 rounded-md m-5">
-      <Image
-        src={project.image}
-        alt={project.name}
-        width={400}
-        height={400}
-        className="rounded-t-md"
-      />
-      <div className="mt-5 p-5">
-        <p className="text-xs text-gray-800 font-bold uppercase tracking-wider">
+    <div className="w-full lg:w-4/12 px-4">
+      <h5 className="text-xl font-semibold pb-4 text-center">{project.name}</h5>
+      <div className="hover:-mt-4 cursor-pointer relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150">
+        <img
+          src={project.image}
+          alt={project.name}
+          className="align-middle border-none max-w-full h-auto rounded-lg"
+        />
+      </div>
+
+      {/* <p className="text-xs text-gray-800 font-bold uppercase tracking-wider">
           {project.category}
         </p>
         <h2 className="text-3xl text-neutral-600 font-bold md:text-4xl">
           {project.name}
-        </h2>
-
-        <hr className="border-0 bg-gray-800 h-px text-center items-center w-full my-3" />
-        <div className="flex flex-row justify-between items-center w-full my-3">
-          <a
-            href={`/projects/${project.slug}`}
-            className="text-gray-800 font-bold cursor-pointer hover:text-gray-600 underline uppercase"
-          >
-            View Project
-          </a>
-          <BiLinkExternal />
-        </div>
-      </div>
+        </h2> */}
     </div>
   );
 }

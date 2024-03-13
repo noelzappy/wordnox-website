@@ -37,7 +37,8 @@ export const PROJECTS: Project[] = [
     name: "Project 1",
     description: "Project 1 description",
     slug: "project-1",
-    image: "https://images.pexels.com/photos/335257/pexels-photo-335257.jpeg",
+    image:
+      "https://www.creative-tim.com/learning-lab/tailwind-starter-kit/img/login.jpg",
     category: "Web Design & Development",
   },
   {
@@ -45,7 +46,8 @@ export const PROJECTS: Project[] = [
     name: "Project 2",
     description: "Project 2 description",
     slug: "project-2",
-    image: "https://images.pexels.com/photos/335257/pexels-photo-335257.jpeg",
+    image:
+      "https://www.creative-tim.com/learning-lab/tailwind-starter-kit/img/login.jpg",
     category: "Mobile App Development",
   },
   {
@@ -53,7 +55,8 @@ export const PROJECTS: Project[] = [
     name: "Project 3",
     description: "Project 3 description",
     slug: "project-3",
-    image: "https://images.pexels.com/photos/335257/pexels-photo-335257.jpeg",
+    image:
+      "https://www.creative-tim.com/learning-lab/tailwind-starter-kit/img/login.jpg",
     category: "Digital Marketing",
   },
   {
@@ -61,7 +64,8 @@ export const PROJECTS: Project[] = [
     name: "Project 4",
     description: "Project 4 description",
     slug: "project-4",
-    image: "https://images.pexels.com/photos/335257/pexels-photo-335257.jpeg",
+    image:
+      "https://www.creative-tim.com/learning-lab/tailwind-starter-kit/img/login.jpg",
     category: "Custom Software Development",
   },
 ];
