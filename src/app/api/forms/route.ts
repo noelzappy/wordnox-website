@@ -5,5 +5,7 @@ export async function POST(req: NextRequest) {
 
   console.log({ name, email, phone, message, service });
 
-  return NextResponse.json({ message: "Form submitted" });
+  return NextResponse.json({
+    message: "Form submitted. We will contact you shortly",
+  });
 }
