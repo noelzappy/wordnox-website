@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AboutHero() {
   return (
-    <section className="pt-5 sm:pt-10 bg-yellow-50 pb-10 sm:pb-24 px-10">
+    <section className="pt-5 sm:pt-10 pb-10 sm:pb-24 px-10">
       <p className="uppercase text-neutral-600">About Us</p>
       <div>
         <h1 className="text-5xl text-neutral-600 font-bold max-w-4xl sm:text-6xl">

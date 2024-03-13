@@ -1,5 +1,6 @@
 import { SERVICES } from "@/data";
-import React, { Fragment } from "react";
+import React from "react";
+import SingleService from "../ui/single-service";
 
 export default function ServiceSection() {
   return (
@@ -38,27 +39,7 @@ export default function ServiceSection() {
         <div className="flex-1">
           <div className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-2 gap-10 ">
             {SERVICES.map((service) => {
-              return (
-                <div
-                  key={service.id}
-                  className=" bg-neutral-100 p-5 lg:p-12 hover:-mt-4 cursor-pointer relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150"
-                >
-                  <div key={service.id}>
-                    <h3 className="text-2xl text-neutral-600 font-bold">
-                      {service.name}
-                    </h3>
-                    <p className="mt-2 text-gray-800">{service.description}</p>
-                  </div>
-                  <div className="mt-4 ">
-                    <a
-                      href={`/services/${service.slug}`}
-                      className=" text-gray-800 font-bold cursor-pointer hover:text-gray-600 underline uppercase"
-                    >
-                      Learn More
-                    </a>
-                  </div>
-                </div>
-              );
+              return <SingleService service={service} key={service.id} />;
             })}
           </div>
         </div>
