@@ -1,73 +1,52 @@
 import React from "react";
-import { Button } from "@/components/ui/button";
-import { Icons } from "../icons";
 
-const Footer = () => {
+export default function Footer() {
   return (
-    <div className="bg-black text-white py-10">
-      <div className="flex flex-col items-center justify-center my-10">
-        <h2 className="text-4xl font-bold text-center text-yellow-500">
-          Let&apos;s Talk About Your Next Project
-        </h2>
-        <Button className="mt-10">Contact Us</Button>
-      </div>
-
-      <div className="flex flex-row items-center justify-between mx-5">
-        <div className="flex flex-row items-center justify-center gap-5">
-          <a href="/services" className="text-white hover:text-yellow-500">
-            Services
-          </a>
-          <a href="/about-us" className="text-white hover:text-yellow-500">
-            Why Us
-          </a>
-          <a href="/portfolio" className="text-white hover:text-yellow-500">
-            Portfolio
-          </a>
-        </div>
-        <div className="flex flex-row items-center justify-between gap-3 ">
-          <a
-            href="https://facebook.com/wordnox"
-            target="_blank"
-            className="text-white hover:text-yellow-500"
-          >
-            <Icons.FaceBook />
-          </a>
-          <a
-            href="https://linkedin.com/company/wordnoxinc"
-            target="_blank"
-            className="text-white hover:text-yellow-500"
-          >
-            <Icons.LinkedIn />
-          </a>
-          <a
-            href="https://twitter.com/wordnox"
-            target="_blank"
-            className="text-white hover:text-yellow-500"
-          >
-            <Icons.Twitter />
-          </a>
-        </div>
-      </div>
-      <hr className="w-full mx-auto border-yellow-500" />
-      <div className="flex flex-row items-center justify-between mx-5 mt-10">
+    <footer className="bg-black text-white p-10">
+      <div className="flex flex-row justify-between">
         <div>
-          <p>© {new Date().getFullYear()} All Rights Reserved</p>
-        </div>
+          <span className="text-2xl font-bold border p-2">WORDNOX</span>
 
-        <div className="flex flex-row items-center justify-center gap-5">
-          <a
-            href="/privacy-policy"
-            className="text-white hover:text-yellow-500"
-          >
-            Privacy Policy
-          </a>
-          <a href="/terms" className="text-white hover:text-yellow-500">
-            Terms & Conditions
-          </a>
+          <div className="my-5">
+            <ul>
+              <li className="flex items-center mt-2 cursor-pointer hover:text-gray-200">
+                <a
+                  href="mailto:info@wordnox.com"
+                  className="ml-2 text-slate-200"
+                >
+                  info@wordnox.com
+                </a>
+              </li>
+              <li className="flex items-center mt-2 cursor-pointer hover:text-gray-200">
+                <a href="tel:+233506441493" className="ml-2">
+                  +233506441493
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <span className="text-2xl font-bold">Follow Us</span>
+          <div className="flex flex-row mt-5">
+            <a
+              href="https://www.facebook.com/wordnox"
+              target="_blank"
+              rel="noreferrer"
+              className="text-white cursor-pointer hover:text-gray-200"
+            >
+              Facebook
+            </a>
+            <a
+              href="https://www.twitter.com/wordnox"
+              target="_blank"
+              rel="noreferrer"
+              className="ml-5 text-white cursor-pointer hover:text-gray-200"
+            >
+              Twitter
+            </a>
+          </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
-};
-
-export default Footer;
+}

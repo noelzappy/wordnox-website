@@ -1,23 +1,13 @@
-import AboutSection from "@/components/sections/about";
 import Hero from "@/components/sections/hero";
-import Portfolio from "@/components/sections/portfolio";
-import Services from "@/components/sections/services";
-import { fetcher } from "@/lib/http";
+import ProjectSection from "@/components/sections/project-section";
+import ServiceSection from "@/components/sections/service-section";
 
-const getData = async () => {
-  const data = await fetcher("/api/services");
-  return data;
-};
-
-export default async function Home() {
-  const services = await getData();
-
+export default function Home() {
   return (
-    <div className="scroll-smooth">
+    <main className="">
       <Hero />
-      <Portfolio />
-      <Services services={services} />
-      <AboutSection />
-    </div>
+      <ServiceSection />
+      <ProjectSection />
+    </main>
   );
 }

@@ -1,23 +1,14 @@
 import type { Metadata } from "next";
-import { Inter as FontSans } from "next/font/google";
-import { Toaster } from "react-hot-toast";
-
+import { Poppins } from "next/font/google";
 import "./globals.css";
-import { cn } from "@/lib/utils";
+import NavBar from "@/components/sections/nav-bar";
 import Footer from "@/components/sections/footer";
-import { NavBar } from "@/components/nav-bar";
 
-const fontSans = FontSans({
-  subsets: ["latin"],
-  variable: "--font-sans",
-});
+const inter = Poppins({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: {
-    template: "%s | Wordnox",
-    default: "Wordnox - Web Design & Development",
-  },
-  description: "Wordnox - Web Design & Development",
+  title: "Wordnox.com",
+  description: "Wordnox.com",
 };
 
 export default function RootLayout({
@@ -27,18 +18,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/logo.png" />
+      </head>
       <body
-        className={cn(
-          "min-h-screen bg-background font-sans antialiased scroll-smooth",
-          fontSans.variable
-        )}
+        className={`${inter.className} bg-neutral-300
+      `}
       >
-        <Toaster />
-        <NavBar className="bg-yellow-50 border-none" />
-        <main>{children}</main>
-        <footer>
-          <Footer />
-        </footer>
+        <NavBar />
+        {children}
+        <Footer />
       </body>
     </html>
   );

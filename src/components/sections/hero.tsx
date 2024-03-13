@@ -1,34 +1,34 @@
 import React from "react";
-import Image from "next/image";
-import QuickContactForm from "@/components/elements/quick-contact-form";
 
-const Hero = () => {
+export default function Hero() {
   return (
-    <div className="bg-yellow-50" id="home">
-      <div className="flex flex-col items-center justify-center px-2 h-96">
-        <h1 className="text-6xl font-bold text-center text-yellow-900">
-          Fostering Business Growth
+    <section className="mt-20  sm:mt-32">
+      <div className="px-10">
+        <h1 className="text-5xl text-neutral-600 font-bold max-w-4xl sm:text-6xl">
+          We develop digital products with the goal to support your business.
         </h1>
-        <p className="text-2xl text-center text-yellow-900">
-          Through Software Development and Marketing Excellence.
-        </p>
-
-        <div className="my-8">
-          <QuickContactForm />
+        <div className="mt-10 sm:mt-16 text-lg text-gray-800 max-w-4xl">
+          <span className="text-gray-800 font-bold cursor-pointer hover:text-gray-600 underline">
+            GET STARTED
+          </span>
         </div>
       </div>
-      <div className="relative items-center justify-center flex">
-        <Image
-          src="/teams.webp"
-          width={1500}
-          height={500}
-          objectFit="cover"
-          alt="Hero Image"
-          className="rounded-t-3xl"
-        />
+      <div className="overflow-hidden bg-yellow-300 mt-14">
+        <div className="animate-marquee whitespace-nowrap">
+          <span className="text-4xl text-neutral-600 font-bold sm:text-6xl px-10 sm:px-0 uppercase">
+            Best Creative Agency ❤️{" "}
+          </span>
+          <span className="text-4xl text-neutral-600 font-bold sm:text-6xl px-10 sm:px-0 uppercase">
+            Best Creative Agency ❤️{" "}
+          </span>
+          <span className="text-4xl text-neutral-600 font-bold sm:text-6xl px-10 sm:px-0 uppercase">
+            Best Creative Agency ❤️{" "}
+          </span>
+          <span className="text-4xl text-neutral-600 font-bold sm:text-6xl px-10 sm:px-0 uppercase">
+            Best Creative Agency ❤️{" "}
+          </span>
+        </div>
       </div>
-    </div>
+    </section>
   );
-};
-
-export default Hero;
+}
