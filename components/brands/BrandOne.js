@@ -1,14 +1,14 @@
-import Image from 'next/image';
-import { useEffect, useState } from 'react';
-import BrandData from '../../data/Brands.json';
-import SectionTitle from '../common/SectionTitle';
+import Image from "next/image";
+import { useEffect, useState } from "react";
+import BrandData from "../../data/Brands.json";
+import SectionTitle from "../common/SectionTitle";
 import Link from "next/link";
 
 const BrandOne = ({
   title = "We’ve built solutions for...",
   subtitle = "top clients",
   description = "Nulla facilisi. Nullam in magna id dolor blandit rutrum eget.",
-  bgColor = "bg-color-white"
+  bgColor = "bg-color-white",
 }) => {
   const [brands, setBrands] = useState([]);
 
@@ -38,10 +38,10 @@ const BrandOne = ({
                     <Link href="#">
                       <a>
                         <Image
-                            width={brand.image.width}
-                            height={brand.image.height}
-                            src={brand.image.src}
-                            alt="Brand Logo Images"
+                          width={brand.image.width}
+                          height={brand.image.height}
+                          src={brand.image.src}
+                          alt="Brand Logo Images"
                         />
                       </a>
                     </Link>
