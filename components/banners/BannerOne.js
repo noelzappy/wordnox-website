@@ -26,16 +26,15 @@ const BannerOne = () => {
                   Create live segments and target the right people for
                   <br /> messages based on their behaviors.
                 </p>
-                <Link href="/portfolio">
-                  <a
-                    className="axil-button btn-large btn-transparent"
-                    data-aos="aos-fade-in-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="400"
-                  >
-                    <span className="button-text">View Showcase</span>
-                    <span className="button-icon" />
-                  </a>
+                <Link
+                  href="/portfolio"
+                  className="axil-button btn-large btn-transparent"
+                  data-aos="aos-fade-in-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="400"
+                >
+                  <span className="button-text">View Showcase</span>
+                  <span className="button-icon" />
                 </Link>
               </div>
             </div>

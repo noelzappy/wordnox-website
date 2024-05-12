@@ -7,7 +7,7 @@ const ErrorPage = () => {
   return (
     <Layout showFooter={false}>
       <Head>
-        <title>404 || Keystroke Creative Agency Bootstrap 5 Template</title>
+        <title>404 | Wordnox.com</title>
       </Head>
 
       <main className="page-wrapper page-error">
@@ -23,11 +23,12 @@ const ErrorPage = () => {
                       Enim, recusandae <br /> consectetur nesciunt magnam
                       facilis aliquid amet earum alias?
                     </p>
-                    <Link href="/home-01">
-                      <a className="axil-button btn-large btn-transparent">
-                        <span className="button-text">Go Back</span>
-                        <span className="button-icon" />
-                      </a>
+                    <Link
+                      href="/home-01"
+                      className="axil-button btn-large btn-transparent"
+                    >
+                      <span className="button-text">Go Back</span>
+                      <span className="button-icon" />
                     </Link>
 
                     <div className="text-image">

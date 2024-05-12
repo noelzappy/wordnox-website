@@ -1,70 +1,39 @@
 import Link from "next/link";
 import Image from "next/image";
-import { useEffect } from "react";
+import { Constants } from "../../helpers/constants";
+import { formatDate } from "../../helpers/formatDate";
 
-const BlogSidebar = ({ categories, tags, recentPost }) => {
+const BlogSidebar = ({ tags, recentPost }) => {
   return (
     <div className="axil-blog-sidebar">
-      <div className="axil-single-widget search">
-        <h4 className="title mb--30">Search</h4>
-        <div className="inner">
-          <form action="#" className="blog-search">
-            <input type="text" placeholder="Search…" />
-            <button className="search-button">
-              <i className="fal fa-search"></i>
-            </button>
-          </form>
-        </div>
-      </div>
-
-      <div className="axil-single-widget category mt--80 mt_sm--30 mt_md--30 mt_lg--40">
-        <h4 className="title mb--30">Categories</h4>
-        <div className="inner">
-          <ul className="category-list">
-            {categories?.map((category, categoryIndex) => (
-              <li key={`category-${categoryIndex}`}>
-                <Link href={`/blog/category/${category.slug}`}>
-                  {category.title}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-
-      <div className="axil-single-widget share mt--80 mt_sm--30 mt_md--30 mt_lg--40">
+      <div
+        className="axil-single-widget share mt--80 mt_sm--30 mt_md--30 mt_lg--40"
+        style={{
+          backgroundColor: Constants.color.yellow,
+        }}
+      >
         <div className="inner">
           <div className="blog-share d-flex flex-wrap">
-            <span>Follow:</span>
+            <span>Follow Us:</span>
             <ul className="social-list d-flex">
               <li>
-                <a href="#">
-                  <i className="fab fa-facebook-f"/>
+                <a href="https://facebook.com/wordnox">
+                  <i className="fab fa-facebook-f" />
                 </a>
               </li>
               <li>
-                <a href="#">
-                  <i className="fa-brands fa-x-twitter"/>
+                <a href="https://x.com/wordnox">
+                  <i className="fa-brands fa-x-twitter" />
                 </a>
               </li>
               <li>
-                <a href="#">
-                  <i className="fab fa-instagram"/>
+                <a href="https://instagram.com/wordnox">
+                  <i className="fab fa-instagram" />
                 </a>
               </li>
               <li>
-                <a href="#">
-                  <i className="fab fa-linkedin-in"/>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i className="fab fa-instagram"/>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i className="fab fa-youtube"/>
+                <a href="https://www.linkedin.com/in/wordnoxinc">
+                  <i className="fab fa-linkedin-in" />
                 </a>
               </li>
             </ul>
@@ -79,20 +48,24 @@ const BlogSidebar = ({ categories, tags, recentPost }) => {
             <div className="small-post" key={`recent-post-${index}`}>
               <div className="thumbnail flex-shrink-0">
                 <Link href={`/blog/${post.slug}`}>
-                  <a>
-                    <Image width={100} height={80} src={post.postdata.thumbnail.large} alt="Blog Image" />
-                  </a>
+                  <Image
+                    width={100}
+                    height={80}
+                    src={post.feature_image}
+                    alt={post.title}
+                  />
                 </Link>
               </div>
               <div className="content">
                 <h6>
-                  <Link href={`/blog/${post.slug}`}>
-                    <a>{post.postdata.title}</a>
-                  </Link>
+                  <Link href={`/blog/${post.slug}`}>{post.title}</Link>
                 </h6>
                 <ul className="blog-meta">
-                  <li>{post.postdata.publishedAt}</li>
-                  <li>{post.postdata.readingTime}</li>
+                  <li>{formatDate(post.published_at)}</li>
+                  <li>
+                    {post.reading_time} {post.reading_time > 1 ? "mins" : "min"}{" "}
+                    read
+                  </li>
                 </ul>
               </div>
             </div>
@@ -106,7 +79,7 @@ const BlogSidebar = ({ categories, tags, recentPost }) => {
           <ul className="tags-list">
             {tags?.map((tag, tagIndex) => (
               <li key={`tag-${tagIndex}`}>
-                <Link href={`/blog/tag/${tag.slug}`}>{tag.title}</Link>
+                <Link href={`/blog/tag/${tag.slug}`}>{tag.name}</Link>
               </li>
             ))}
           </ul>

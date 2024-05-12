@@ -36,14 +36,12 @@ const BrandOne = ({
                 {brands?.map((brand, index) => (
                   <li key={`brand-${index}`}>
                     <Link href="#">
-                      <a>
-                        <Image
-                          width={brand.image.width}
-                          height={brand.image.height}
-                          src={brand.image.src}
-                          alt="Brand Logo Images"
-                        />
-                      </a>
+                      <Image
+                        width={brand.image.width}
+                        height={brand.image.height}
+                        src={brand.image.src}
+                        alt="Brand Logo Images"
+                      />
                     </Link>
                   </li>
                 ))}

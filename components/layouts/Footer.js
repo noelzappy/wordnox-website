@@ -70,13 +70,14 @@ const Footer = ({ footerSetting = {} }) => {
                           </h2>
                         </div>
                         <div className="button-wrapper">
-                          <Link href="/contact">
-                            <a className="axil-button btn-large btn-solid bgextra07-color">
-                              <span className="button-text">
-                                Let&rsquo;s Talk
-                              </span>
-                              <span className="button-icon" />
-                            </a>
+                          <Link
+                            href="/contact"
+                            className="axil-button btn-large btn-solid bgextra07-color"
+                          >
+                            <span className="button-text">
+                              Let&rsquo;s Talk
+                            </span>
+                            <span className="button-icon" />
                           </Link>
                         </div>
                       </div>
@@ -128,9 +129,7 @@ const Footer = ({ footerSetting = {} }) => {
                         <>
                           <div className="logo">
                             <Link href="/home-01">
-                              <a>
-                                <Logo variant="two" fillTextColor="#fff" />
-                              </a>
+                              <Logo variant="two" fillTextColor="#fff" />
                             </Link>
                           </div>
                           <div className="axil-ft-address">

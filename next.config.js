@@ -1,8 +1,20 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath: process.env.NODE_ENV === 'production' ? process.env.NEXT_PUBLIC_BASEPATH : "",
-    reactStrictMode: false,
-    swcMinify: true,
+  reactStrictMode: false,
+  swcMinify: true,
+
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "*",
+      },
+      {
+        protocol: "http",
+        hostname: "*",
+      },
+    ],
+  },
 };
 
 module.exports = nextConfig;

@@ -91,14 +91,12 @@ const MobileMenu = () => {
         <div className="mobileheader">
           <div className="logo">
             <Link href="/">
-              <a>
-                <Image
-                  width={50}
-                  height={50}
-                  src="/images/logo/logo.png"
-                  alt="Wordnox Logo"
-                />
-              </a>
+              <Image
+                width={50}
+                height={50}
+                src="/images/logo/logo.png"
+                alt="Wordnox Logo"
+              />
             </Link>
           </div>
           <button

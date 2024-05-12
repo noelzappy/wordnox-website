@@ -100,13 +100,9 @@ const Header = ({ headerSetting = {} }) => {
               <div className={headerSettings.leftColumn}>
                 <div className="logo">
                   <Link href="/">
-                    <a>
-                      <Logo
-                        variant={
-                          headerSettings.style === "four" ? "two" : "one"
-                        }
-                      />
-                    </a>
+                    <Logo
+                      variant={headerSettings.style === "four" ? "two" : "one"}
+                    />
                   </Link>
                 </div>
               </div>
@@ -176,13 +172,12 @@ const Header = ({ headerSetting = {} }) => {
 
                     {headerSettings.style === "four" && (
                       <div className="ax-header-button ml--40 ml_lg--10 d-none d-sm-block">
-                        <Link href="/contact">
-                          <a className="axil-button btn-solid btn-extra02-color">
-                            <span className="button-text">
-                              Let&lsquo;s Talk
-                            </span>
-                            <span className="button-icon" />
-                          </a>
+                        <Link
+                          href="/contact"
+                          className="axil-button btn-solid btn-extra02-color"
+                        >
+                          <span className="button-text">Let&lsquo;s Talk</span>
+                          <span className="button-icon" />
                         </Link>
                       </div>
                     )}
