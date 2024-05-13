@@ -36,3 +36,17 @@ export const getPortfolioPosts = async () => {
 export const getTags = async () => {
   return await api.tags.browse();
 };
+
+export const getPostsByTag = async (tag) => {
+  return await api.posts.browse({
+    limit: "all",
+    filter: `tag:${tag}`,
+    include: "tags,authors",
+  });
+};
+
+export const getTag = async (tag) => {
+  return await api.tags.read({
+    slug: tag,
+  });
+};

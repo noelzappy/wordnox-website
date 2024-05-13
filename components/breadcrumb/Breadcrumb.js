@@ -3,7 +3,7 @@ import Link from "next/link";
 const Breadcrumb = ({
   title = "Blog",
   root = "Home",
-  rootUrl = "/home-01",
+  rootUrl = "/",
   current = "Blog",
 }) => {
   return (
@@ -16,7 +16,10 @@ const Breadcrumb = ({
                 <li className="axil-breadcrumb-item">
                   <Link href={rootUrl}>{root}</Link>
                 </li>
-                <li className="axil-breadcrumb-item text-capitalize active" aria-current="page">
+                <li
+                  className="axil-breadcrumb-item text-capitalize active"
+                  aria-current="page"
+                >
                   {current}
                 </li>
               </ul>
@@ -26,9 +29,9 @@ const Breadcrumb = ({
         </div>
       </div>
       <div className="shape-images">
-        <i className="shape shape-1 icon icon-bcm-01"/>
-        <i className="shape shape-2 icon icon-bcm-02"/>
-        <i className="shape shape-3 icon icon-bcm-03"/>
+        <i className="shape shape-1 icon icon-bcm-01" />
+        <i className="shape shape-2 icon icon-bcm-02" />
+        <i className="shape shape-3 icon icon-bcm-03" />
       </div>
     </div>
   );

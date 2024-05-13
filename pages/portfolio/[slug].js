@@ -42,9 +42,7 @@ const PortfolioDetails = ({ portfolio }) => {
   return (
     <Layout>
       <Head>
-        <title>
-          {portfolio.title} || Keystroke Creative Agency Bootstrap 5 Template
-        </title>
+        <title>{portfolio.title} | Wordnox Creative Agency</title>
       </Head>
 
       <main className="page-wrapper">
