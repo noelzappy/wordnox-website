@@ -6,7 +6,7 @@
       "height": "36",
       "src": "/images/counterup/shape-01.png"
     },
-    "amount": 15,
+    "amount": 5,
     "title": "Years of operation"
   },
   {
@@ -16,8 +16,8 @@
       "height": "28",
       "src": "/images/counterup/shape-02.png"
     },
-    "amount": 360,
-    "title": "Projects deliverd"
+    "amount": 100,
+    "title": "Projects delivered"
   },
   {
     "id": 3,
@@ -26,8 +26,8 @@
       "height": "24",
       "src": "/images/counterup/shape-03.png"
     },
-    "amount": 600,
-    "title": "Specialist"
+    "amount": 60,
+    "title": "Businesses served"
   },
   {
     "id": 4,
@@ -36,7 +36,7 @@
       "height": "36",
       "src": "/images/counterup/shape-04.png"
     },
-    "amount": 64,
-    "title": "Years of operation"
+    "amount": 10,
+    "title": "Team members"
   }
 ]

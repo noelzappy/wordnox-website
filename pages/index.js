@@ -24,11 +24,10 @@ const HomeOne = ({ posts }) => {
       <main className="page-wrapper">
         <BannerOne />
 
+        <AboutOne />
         <ServiceOne />
 
         <SliderOne />
-
-        <AboutOne />
 
         <PortfolioOne />
 

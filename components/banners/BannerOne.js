@@ -15,7 +15,7 @@ const BannerOne = () => {
                   data-aos="aos-fade-in-up"
                   data-aos-duration="1000"
                 >
-                  Build stunning websites & apps.
+                  Software solutions & impactful digital marketing.
                 </h1>
                 <p
                   className="subtitle-3"
@@ -23,17 +23,18 @@ const BannerOne = () => {
                   data-aos-duration="1000"
                   data-aos-delay="200"
                 >
-                  Create live segments and target the right people for
-                  <br /> messages based on their behaviors.
+                  Choose Wordnox as your Software, <br />
+                  Web design & Digital marketing solutions partner to unlock
+                  result-driven solutions that grow your business
                 </p>
                 <Link
-                  href="/portfolio"
+                  href="/contact"
                   className="axil-button btn-large btn-transparent"
                   data-aos="aos-fade-in-up"
                   data-aos-duration="1000"
                   data-aos-delay="400"
                 >
-                  <span className="button-text">View Showcase</span>
+                  <span className="button-text">Get In Touch</span>
                   <span className="button-icon" />
                 </Link>
               </div>

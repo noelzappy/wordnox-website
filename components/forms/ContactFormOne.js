@@ -1,40 +1,23 @@
-import emailjs from "@emailjs/browser";
 import React, { useRef, useState } from "react";
 import Alert from "./Alert";
 import Input from "./Input";
+import axios from "axios";
 
 const ContactFormOne = () => {
   const [showAlert, setShowAlert] = useState(false);
   const [isMessageSent, setIsMessageSent] = useState(false);
   const form = useRef();
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_mxdohie",
-        "template_z5cioqm",
-        form.current,
-        "jpLEXw_LKyA6GgI_U"
-      )
-      .then(
-        (result) => {
-          console.log(result);
-
-          setShowAlert(true);
-          setIsMessageSent(true);
-
-          setTimeout(() => {
-            setShowAlert(false);
-          }, 4000);
-        },
-        (error) => {
-          console.log(error.text);
-
-          setIsMessageSent(false);
-        }
-      );
+    setShowAlert(false);
+    try {
+      await axios.post("/api/contact", new FormData(form.current));
+      setIsMessageSent(true);
+    } catch (error) {
+      setShowAlert(true);
+      console.error(error);
+    }
   };
 
   return (
@@ -45,7 +28,7 @@ const ContactFormOne = () => {
       <Input name="phone" label="Phone" isClear={isMessageSent} />
       <div className="form-group">
         <button className="axil-button btn-large btn-transparent w-100">
-          <span className="button-text">Get Pricing Now</span>
+          <span className="button-text">Get Quote</span>
           <span className="button-icon" />
         </button>
       </div>
