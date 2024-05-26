@@ -1,4 +1,3 @@
-import emailjs from "@emailjs/browser";
 import React, { useRef, useState } from "react";
 import Alert from "./Alert";
 import Input from "./Input";
@@ -10,31 +9,7 @@ const ContactFormThree = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_mxdohie",
-        "template_z5cioqm",
-        form.current,
-        "jpLEXw_LKyA6GgI_U"
-      )
-      .then(
-        (result) => {
-          console.log(result);
-
-          setShowAlert(true);
-          setIsMessageSent(true);
-
-          setTimeout(() => {
-            setShowAlert(false);
-          }, 4000);
-        },
-        (error) => {
-          console.log(error.text);
-
-          setIsMessageSent(false);
-        }
-      );
+    console.log(form.current);
   };
 
   return (
