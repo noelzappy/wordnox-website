@@ -50,7 +50,7 @@ const AboutOne = () => {
           <div className="col-lg-6 col-xl-5 offset-xl-1 col-md-12 col-12 mt_md--30 mt_sm--30">
             <div className="contact-form-wrapper">
               <div className="axil-contact-form contact-form-style-1">
-                <h3 className="title">Get a free Wordnox quote now</h3>
+                <h3 className="title">Get a free quote now</h3>
                 <ContactFormOne />
                 <div className="callto-action-wrapper text-center">
                   <span className="text">Or call us now</span>

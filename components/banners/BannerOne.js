@@ -15,7 +15,7 @@ const BannerOne = () => {
                   data-aos="aos-fade-in-up"
                   data-aos-duration="1000"
                 >
-                  Software solutions & impactful digital marketing.
+                  Software & digital marketing.
                 </h1>
                 <p
                   className="subtitle-3"
