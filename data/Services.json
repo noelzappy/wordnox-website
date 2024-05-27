@@ -8,45 +8,45 @@
       "height": "36"
     },
     "iconColorClass": "",
-    "title": "Design",
-    "description": "We design professional looking yet simple websites. Our designs are search engine and user friendly.",
+    "title": "Website Design",
+    "description": "We at Wordnox offers expert end-to-end website design and development services, ensuring your business have a strong online presence for success.",
     "category": "Default",
-    "slug": "design",
+    "slug": "website-design",
     "process": {
-      "title": "Our design process",
-      "description": "Our comprehensive design strategy ensures a perfectly crafted design for your business.",
+      "title": "Our Web Design Process",
+      "description": "With our website design and development services, we'll help you establish a captivating online presence that resonates with your audience, drives engagement, and propels your business forward in the digital realm.",
       "strategies": [
         {
           "id": 1,
-          "title": "Discover",
-          "subtitle": "our four step process",
-          "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
+          "title": "Discovery and Planning",
+          "subtitle": "the discovery phase",
+          "description": "We begin by understanding your business goals, target audience, and unique requirements. Through collaborative sessions, we define the website's objectives, gather insights, and create a comprehensive plan.",
           "highlightColor": "extra04-color",
-          "image": "/images/process/process-01.jpg"
+          "image": "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
         },
         {
           "id": 2,
-          "title": "Prototype",
-          "subtitle": "our four step process",
-          "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
+          "title": "User-Centric Design",
+          "subtitle": "the design phase",
+          "description": "Our designers craft visually stunning and intuitive interfaces, ensuring an exceptional user experience. We combine aesthetics with usability, creating a seamless journey for your visitors.",
           "highlightColor": "extra05-color",
-          "image": "/images/process/process-02.jpg"
+          "image": "/images/process/user-design.jpg"
         },
         {
           "id": 3,
-          "title": "Test",
-          "subtitle": "our four step process",
-          "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
+          "title": "Development and Integration",
+          "subtitle": "the development phase",
+          "description": "Our skilled developers bring your vision to life, utilizing the latest technologies and industry best practices. We ensure your website is responsive, secure, and optimized for performance.",
           "highlightColor": "extra06-color",
-          "image": "/images/process/process-03.jpg"
+          "image": "/images/process/programmers.png"
         },
         {
           "id": 4,
-          "title": "Build",
+          "title": "Testing and Deployment",
           "subtitle": "our four step process",
-          "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
+          "description": "Before launch, we rigorously test your website across various devices and browsers, ensuring flawless functionality. Once approved, we seamlessly deploy your website, providing ongoing support and maintenance.",
           "highlightColor": "extra07-color",
-          "image": "/images/process/process-04.jpg"
+          "image": "/images/process/testing.jpg"
         }
       ]
     }

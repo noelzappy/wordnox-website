@@ -1,39 +1,10 @@
+import React from "react";
 import Head from "next/head";
-import { useEffect, useState } from "react";
 import SectionTitle from "../../components/common/SectionTitle";
-import VideoPlayer from "../../components/common/VideoPlayer";
-import CounterTwo from "../../components/counters/CounterTwo";
 import Layout from "../../components/layouts/Layout";
-import TeamMember from "../../components/teams/TeamMember";
-import TeamData from "../../data/Team.json";
-import { flatDeep } from "../../helpers/utilities";
 import Image from "next/image";
 
 const Team = () => {
-  const [isWindow, setIsWindow] = useState(false);
-  const [departments, setDepartments] = useState([]);
-  const [activeDepartment, setActiveDepartment] = useState(0);
-
-  const getDepartments = () => {
-    let allDepartments = TeamData.map((item) => item.department),
-      singleDepartmentArray = flatDeep(allDepartments),
-      departments = "";
-
-    departments = singleDepartmentArray.reduce((a, b) => {
-      if (a.indexOf(b) < 0) {
-        a.push(b);
-      }
-      return a;
-    }, []);
-
-    setDepartments(departments);
-  };
-
-  useEffect(() => {
-    getDepartments();
-    setIsWindow(true);
-  }, []);
-
   return (
     <Layout>
       <Head>

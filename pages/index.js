@@ -18,13 +18,14 @@ const HomeOne = ({ posts }) => {
   return (
     <Layout>
       <Head>
-        <title>Home | Wordnox Creative Agency </title>
+        <title>Home | Wordnox</title>
       </Head>
 
       <main className="page-wrapper">
         <BannerOne />
 
         <AboutOne />
+
         <ServiceOne />
 
         <SliderOne />

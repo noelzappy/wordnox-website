@@ -47,16 +47,16 @@ const BannerOne = () => {
                       <Image
                         width={500}
                         height={630}
-                        src="/images/others/keystoke-image-3.jpg"
-                        alt="Keystoke Images"
+                        src="https://images.pexels.com/photos/4350099/pexels-photo-4350099.jpeg?auto=compress&cs=tinysrgb&w=800"
+                        alt="Wordnox Images"
                       />
                     </div>
                     <div className="dark-image">
                       <Image
                         width={500}
                         height={630}
-                        src="/images/others/keystoke-image-6.png"
-                        alt="Keystoke Images"
+                        src="https://images.pexels.com/photos/4350099/pexels-photo-4350099.jpeg?auto=compress&cs=tinysrgb&w=800"
+                        alt="Wordnox Images"
                       />
                     </div>
                   </div>
@@ -66,7 +66,7 @@ const BannerOne = () => {
                       height={326}
                       className="paralax-image"
                       src="/images/others/keystoke-image-4.svg"
-                      alt="Keystoke Images"
+                      alt="Wordnox Images"
                     />
                   </div>
                   <div className="shape-group">
