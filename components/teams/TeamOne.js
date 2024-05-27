@@ -25,7 +25,7 @@ const TeamOne = () => {
                 <SectionTitle
                   title="Together we can do so much."
                   subtitle="Our Team"
-                  description="From seasoned marketers with a global agency background to senior web and mobile developers with an impressive portfolio, our team is equipped to tackle any digital challenge with precision and creativity."
+                  description="Behind every successful project at Wordnox is a team of dedicated professionals with years of experience in their respective fields."
                   color="extra08-color"
                   alignment="left"
                 />

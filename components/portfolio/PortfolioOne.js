@@ -6,7 +6,7 @@ import SectionTitle from "../common/SectionTitle";
 import PortfolioCard from "./PortfolioCard";
 import PortfolioFilter from "./PortfolioFilter";
 
-const PortfolioOne = ({ bgColor = "bg-color-lightest" }) => {
+const PortfolioOne = ({ bgColor = "bg-color-lightest", showMoreLink }) => {
   const [activePortfolio, setActivePortfolio] = useState(0);
   const [filterdPortfolioData, setFilterdPortfolioData] = useState([]);
   const [activeGenre, setActiveGenre] = useState(0);
@@ -38,7 +38,7 @@ const PortfolioOne = ({ bgColor = "bg-color-lightest" }) => {
           <div className="col-lg-5 col-md-12">
             <SectionTitle
               title="Some of our finest work."
-              subtitle="our projects"
+              subtitle="Our Projects"
               titleClass="mb-0"
               color="extra07-color"
               alignment="left"
@@ -71,15 +71,17 @@ const PortfolioOne = ({ bgColor = "bg-color-lightest" }) => {
                 />
               ))}
             </motion.div>
-            <div className="view-all-portfolio-button mt--60 text-center">
-              <Link
-                href="/portfolio"
-                className="axil-button btn-large btn-transparent btn-xxl"
-              >
-                <span className="button-text">Discover More Projects</span>
-                <span className="button-icon" />
-              </Link>
-            </div>
+            {showMoreLink && (
+              <div className="view-all-portfolio-button mt--60 text-center">
+                <Link
+                  href="/portfolio"
+                  className="axil-button btn-large btn-transparent btn-xxl"
+                >
+                  <span className="button-text">Discover More Projects</span>
+                  <span className="button-icon" />
+                </Link>
+              </div>
+            )}
           </div>
         </div>
       </div>

@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import FooterMenu from "../../data/FooterMenu";
+import FooterMenu from "../../data/FooterMenu.json";
 import axios from "axios";
 import toast from "react-hot-toast";
+import Image from "next/image";
 
 const Footer = ({ footerSetting = {} }) => {
   const [footerSettings, setFooterSettings] = useState({});
@@ -207,6 +208,12 @@ const Footer = ({ footerSetting = {} }) => {
               <div className="col-lg-6 col-md-6 col-sm-12 col-12">
                 <div className="inner text-center text-md-start">
                   <p>
+                    <Image
+                      src="/images/logo.png"
+                      alt="Wordnox Software Solutions"
+                      width={27}
+                      height={27}
+                    />{" "}
                     © {new Date().getFullYear()}. Wordnox by{" "}
                     <Link target="_blank" href="https://edromart.com">
                       Edromart Tech. LTD.

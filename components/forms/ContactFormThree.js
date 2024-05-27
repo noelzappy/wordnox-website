@@ -2,15 +2,25 @@ import React, { useRef, useState } from "react";
 import Alert from "./Alert";
 import Input from "./Input";
 import axios from "axios";
+import toast from "react-hot-toast";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const ContactFormThree = () => {
   const [showAlert, setShowAlert] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [loading, setLoading] = useState(false);
   const form = useRef();
+  const [reCaptureToken, setReCaptureToken] = useState(null);
 
   const sendEmail = async (e) => {
     e.preventDefault();
+
+    if (!reCaptureToken) {
+      toast.error("Please verify that you are not a robot", {
+        position: "top-right",
+      });
+      return;
+    }
 
     setLoading(true);
     setIsSuccess(false);
@@ -52,6 +62,13 @@ const ContactFormThree = () => {
         isClear={isSuccess}
         required
       />
+
+      <div className="form-group">
+        <ReCAPTCHA
+          sitekey="6LcX6egpAAAAAGGMwCkFaKkrISPcVifTveNpakv-"
+          onChange={setReCaptureToken}
+        />
+      </div>
       <div className="form-group">
         <input
           type="submit"

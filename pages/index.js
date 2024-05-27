@@ -29,7 +29,7 @@ const HomeOne = ({ posts }) => {
 
         <SliderOne />
 
-        <PortfolioOne />
+        <PortfolioOne showMoreLink />
 
         <CounterOne />
 

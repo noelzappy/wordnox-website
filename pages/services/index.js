@@ -109,7 +109,7 @@ const Services = () => {
                   }`}
                   href="#section2"
                 >
-                  Software Development
+                  Software Dev.
                 </a>
               </li>
               <li className="nav-item">
@@ -122,26 +122,7 @@ const Services = () => {
                   Digital Marketing
                 </a>
               </li>
-              <li className="nav-item">
-                <a
-                  className={`nav-link smoth-animation ${
-                    activeServiceSection === "section4" ? "active" : ""
-                  }`}
-                  href="#section4"
-                >
-                  Domain & Web Hosting
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className={`nav-link smoth-animation ${
-                    activeServiceSection === "section5" ? "active" : ""
-                  }`}
-                  href="#section5"
-                >
-                  Custom Business Email
-                </a>
-              </li>
+
               <li className="nav-item">
                 <a
                   className={`nav-link smoth-animation ${

@@ -1,27 +1,25 @@
-import Head from 'next/head';
-import BannerSeven from '../../components/banners/BannerSeven';
-import Layout from '../../components/layouts/Layout';
-import PortfolioOne from '../../components/portfolio/PortfolioOne';
+import Head from "next/head";
+import BannerSeven from "../../components/banners/BannerSeven";
+import Layout from "../../components/layouts/Layout";
+import PortfolioOne from "../../components/portfolio/PortfolioOne";
 
 const Portfolio = () => {
-    return (
-        <Layout>
-            <Head>
-                <title>
-                    Portfolio || keystroke Creative Agency Bootstrap5 Template
-                </title>
-            </Head>
+  return (
+    <Layout>
+      <Head>
+        <title>Portfolio - Our projects | Wordnox</title>
+      </Head>
 
-            <main className="page-wrapper">
-                <BannerSeven
-                    title="Our projects"
-                    subtitle="A quick view of industry specific problems solved with design by the awesome team at Keystroke."
-                />
+      <main className="page-wrapper">
+        <BannerSeven
+          title="Our projects"
+          subtitle="We delight in helping brands evolve, engage and grow in the digital space. View our digital portfolio."
+        />
 
-                <PortfolioOne bgColor="bg-transparent"/>
-            </main>
-        </Layout>
-    );
+        <PortfolioOne bgColor="bg-transparent" />
+      </main>
+    </Layout>
+  );
 };
 
 export default Portfolio;
