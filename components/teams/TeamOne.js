@@ -17,22 +17,15 @@ const TeamOne = () => {
                   alt="Team Images"
                 />
               </div>
-              <div className="total-team-button">
-                <Link href="/team">
-                  <span>20+</span>
-                </Link>
-              </div>
             </div>
           </div>
           <div className="col-lg-5 col-xl-5 offset-xl-1 mt_md--40 mt_sm--40">
             <div className="content">
               <div className="inner">
                 <SectionTitle
-                  title="Alone we can do so little; together we can do so much."
-                  subtitle="our team"
-                  description="Donec metus lorem, vulputate at sapien sit amet, auctor
-                  iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus
-                  velit. Aliquam tristique libero."
+                  title="Together we can do so much."
+                  subtitle="Our Team"
+                  description="From seasoned marketers with a global agency background to senior web and mobile developers with an impressive portfolio, our team is equipped to tackle any digital challenge with precision and creativity."
                   color="extra08-color"
                   alignment="left"
                 />
@@ -44,9 +37,9 @@ const TeamOne = () => {
                     <span className="button-text">Our Team</span>
                     <span className="button-icon"></span>
                   </Link>
-                  <a className="axil-button axil-link-button" href="#">
+                  {/*              <a className="axil-button axil-link-button" href="#">
                     Careers
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>

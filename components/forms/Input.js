@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-const Input = ({ type = "text", name, label, isClear = false }) => {
+const Input = ({ type = "text", name, label, isClear = false, ...props }) => {
   const [isFocused, setIsFocused] = useState(false);
 
   const inputElement = useRef(null);
@@ -38,6 +38,7 @@ const Input = ({ type = "text", name, label, isClear = false }) => {
           onChange={onChange}
           onFocus={onFocus}
           onBlur={onBlur}
+          {...props}
         />
       )}
       {type === "textarea" && (
@@ -48,6 +49,7 @@ const Input = ({ type = "text", name, label, isClear = false }) => {
           onChange={onChange}
           onFocus={onFocus}
           onBlur={onBlur}
+          {...props}
         ></textarea>
       )}
       <label>{label}</label>

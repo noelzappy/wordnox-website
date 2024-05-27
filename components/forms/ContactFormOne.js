@@ -6,8 +6,8 @@ import axios from "axios";
 const ContactFormOne = () => {
   const [showAlert, setShowAlert] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
-  const form = useRef();
   const [loading, setLoading] = useState(false);
+  const form = useRef();
 
   const sendEmail = async (e) => {
     e.preventDefault();

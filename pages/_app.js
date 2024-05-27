@@ -8,6 +8,7 @@ import "../assets/css/plugins/icomoon.css";
 import "../assets/css/plugins/plugins.css";
 import "../assets/scss/style.scss";
 import "react-loading-skeleton/dist/skeleton.css";
+import { Toaster } from "react-hot-toast";
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -21,7 +22,8 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <NextTopLoader />
-      <Component {...pageProps} />;
+      <Toaster />
+      <Component {...pageProps} />
     </>
   );
 }

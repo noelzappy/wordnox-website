@@ -6,8 +6,8 @@ import Link from "next/link";
 
 const BrandOne = ({
   title = "We’ve built solutions for...",
-  subtitle = "top clients",
-  description = "Nulla facilisi. Nullam in magna id dolor blandit rutrum eget.",
+  subtitle = "Top Clients",
+  description = "Clients our team has provided with innovative solutions.",
   bgColor = "bg-color-white",
 }) => {
   const [brands, setBrands] = useState([]);
@@ -35,12 +35,18 @@ const BrandOne = ({
               <ul className="brand-list liststyle d-flex flex-wrap justify-content-center">
                 {brands?.map((brand, index) => (
                   <li key={`brand-${index}`}>
-                    <Link href="#">
+                    <Link
+                      aria-disabled={true}
+                      href="#"
+                      style={{
+                        pointerEvents: "none",
+                      }}
+                    >
                       <Image
+                        {...brand.image}
+                        alt={brand.title}
                         width={brand.image.width}
                         height={brand.image.height}
-                        src={brand.image.src}
-                        alt="Brand Logo Images"
                       />
                     </Link>
                   </li>

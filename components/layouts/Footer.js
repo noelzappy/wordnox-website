@@ -1,10 +1,13 @@
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import Logo from "../common/Logo";
+import { useEffect, useRef, useState } from "react";
 import FooterMenu from "../../data/FooterMenu";
+import axios from "axios";
+import toast from "react-hot-toast";
 
 const Footer = ({ footerSetting = {} }) => {
   const [footerSettings, setFooterSettings] = useState({});
+
+  const form = useRef(null);
 
   useEffect(() => {
     if (footerSetting === "") {
@@ -16,6 +19,28 @@ const Footer = ({ footerSetting = {} }) => {
       setFooterSettings(footerSetting);
     }
   }, [footerSetting]);
+
+  const onSubscribe = async (e) => {
+    e.preventDefault();
+    const email = e.target.email.value;
+    toast.loading("Subscribing...", {
+      id: "subscribe",
+      position: "bottom-left",
+    });
+    try {
+      await axios.post("/api/subscribe", { email, name: "Subscriber" });
+      toast.success("Subscribed successfully", {
+        id: "subscribe",
+        position: "bottom-left",
+      });
+      form.current?.reset();
+    } catch (error) {
+      toast.error("Failed to subscribe. Please try again", {
+        id: "subscribe",
+        position: "bottom-left",
+      });
+    }
+  };
 
   return (
     <footer
@@ -36,130 +61,66 @@ const Footer = ({ footerSetting = {} }) => {
       >
         {!footerSettings.showCopyrightOnly && (
           <>
-            {footerSettings.style !== "three" ? (
-              <div className="ft-social-icon-wrapper ax-section-gapTop">
-                <div className="container">
-                  <div className="row">
-                    <div className="col-lg-12">
-                      <ul className="ft-social-share d-flex justify-content-center liststyle flex-wrap">
-                        {FooterMenu.social?.map((socialItem, index) => (
-                          <li key={`social-${index}`}>
-                            <a
-                              href={socialItem.url}
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              <i className={`fab ${socialItem.icon}`} />
-                            </a>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ) : (
-              <div className="axil-call-to-action callaction-style-2 pt--110 pt_sm--60 pt_md--80">
-                <div className="container">
-                  <div className="row">
-                    <div className="col-lg-12">
-                      <div className="inner">
-                        <div className="text">
-                          <h2 className="title">
-                            Interested in collaborations?
-                          </h2>
-                        </div>
-                        <div className="button-wrapper">
-                          <Link
-                            href="/contact"
-                            className="axil-button btn-large btn-solid bgextra07-color"
+            <div className="ft-social-icon-wrapper ax-section-gapTop">
+              <div className="container">
+                <div className="row">
+                  <div className="col-lg-12">
+                    <ul className="ft-social-share d-flex justify-content-center liststyle flex-wrap">
+                      {FooterMenu.social?.map((socialItem, index) => (
+                        <li key={`social-${index}`}>
+                          <a
+                            href={socialItem.url}
+                            target="_blank"
+                            rel="noreferrer"
                           >
-                            <span className="button-text">
-                              Let&rsquo;s Talk
-                            </span>
-                            <span className="button-icon" />
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
+                            <i className={`fab ${socialItem.icon}`} />
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
               </div>
-            )}
+            </div>
 
             <div className="footer-top ax-section-gap">
               <div className="container">
                 <div className="row">
                   <div
-                    className={`${
-                      footerSettings.style === "three"
-                        ? "col-xl-5 col-lg-3 col-md-6 col-sm-6 col-12"
-                        : "col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12"
-                    }`}
+                    className={`${"col-xl-5 col-lg-3 col-md-6 col-sm-6 col-12"}`}
                   >
-                    <div
-                      className={`${
-                        footerSettings.style === "three"
-                          ? "footer-widget-item"
-                          : "footer-widget-item axil-border-right"
-                      }`}
-                    >
-                      {footerSettings.style !== "three" ? (
-                        <>
-                          <h2>Get in touch!</h2>
-                          <p>
-                            Fusce varius&sbquo; dolor tempor interdum
-                            tristique&sbquo; dui urna <br /> bibendum
-                            magna&sbquo; ut ullamcorper purus
-                          </p>
-                          <div className="axil-newsletter">
-                            <form className="newsletter-form" action="#">
-                              <input type="email" placeholder="Email" />
-                              <a
-                                className="axil-button btn-transparent"
-                                href="#"
-                              >
-                                <span className="button-text">Subscribe</span>
-                                <span className="button-icon" />
-                              </a>
-                            </form>
-                          </div>
-                        </>
-                      ) : (
-                        <>
-                          <div className="logo">
-                            <Link href="/home-01">
-                              <Logo variant="two" fillTextColor="#fff" />
-                            </Link>
-                          </div>
-                          <div className="axil-ft-address">
-                            <div className="address">
-                              <p>
-                                <span>A.</span>3078 Simpson Square&sbquo;
-                                Clinton&sbquo; Oklahoma&sbquo; <br />{" "}
-                                73601&sbquo; Londan
-                              </p>
-                              <p>
-                                <span>T.</span>
-                                <a href="#">+123 4567 8901</a>
-                              </p>
-                              <p>
-                                <span>E.</span>
-                                <a href="#">contact@Keystroke.com</a>
-                              </p>
-                            </div>
-                          </div>
-                        </>
-                      )}
+                    <div className={`${"footer-widget-item"}`}>
+                      <>
+                        <h2>Get in touch!</h2>
+                        <p>
+                          Let&apos;s start working on your project <br /> today
+                        </p>
+                        <div className="axil-newsletter">
+                          <form
+                            className="newsletter-form"
+                            onSubmit={onSubscribe}
+                            ref={form}
+                          >
+                            <input
+                              type="email"
+                              placeholder="Email"
+                              required
+                              name="email"
+                            />
+                            <button
+                              type="submit"
+                              className="axil-button btn-transparent"
+                            >
+                              <span className="button-text">Subscribe</span>
+                            </button>
+                          </form>
+                        </div>
+                      </>
                     </div>
                   </div>
 
                   <div
-                    className={`${
-                      footerSettings.style === "three"
-                        ? "col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mt_mobile--30"
-                        : "col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mt_mobile--30"
-                    }`}
+                    className={`${"col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mt_mobile--30"}`}
                   >
                     <div className="footer-widget-item">
                       <h6 className="title">Services</h6>
@@ -182,11 +143,7 @@ const Footer = ({ footerSetting = {} }) => {
                   </div>
 
                   <div
-                    className={`${
-                      footerSettings.style === "three"
-                        ? "col-xl-2 col-lg-3 col-md-6 col-sm-6 col-12 mt_md--30 mt_sm--30"
-                        : "col-xl-2 col-lg-6 col-md-6 col-sm-6 col-12 mt_lg--30 mt_md--30 mt_sm--30"
-                    }`}
+                    className={`${"col-xl-2 col-lg-3 col-md-6 col-sm-6 col-12 mt_md--30 mt_sm--30"}`}
                   >
                     <div className="footer-widget-item">
                       <h6 className="title">Resourses</h6>
