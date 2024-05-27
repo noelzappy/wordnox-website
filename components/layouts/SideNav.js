@@ -41,19 +41,22 @@ const SideNav = ({ toggleSidenav }) => {
             <div className="col-lg-5 col-xl-6 col-12">
               <ul className="main-navigation">
                 <li>
-                  <Link href="/">Digital Agency</Link>
+                  <Link href="#">Digital Marketing</Link>
                 </li>
                 <li>
-                  <Link href="/">Creative Agency</Link>
+                  <Link href="#">Web Design</Link>
                 </li>
                 <li>
-                  <Link href="/">Personal Portfolio</Link>
+                  <Link href="#">Creative Content</Link>
                 </li>
-                <li>
-                  <Link href="/">Home Startup</Link>
-                </li>
-                <li>
-                  <Link href="/">Corporate Agency</Link>
+
+                <li
+                  style={{
+                    lineHeight: "1",
+                    marginTop: "-10px",
+                  }}
+                >
+                  <Link href="#">Software Development</Link>
                 </li>
               </ul>
             </div>
@@ -62,26 +65,19 @@ const SideNav = ({ toggleSidenav }) => {
               <div className="axil-contact-info-inner">
                 <div className="axil-contact-info">
                   <address className="address">
-                    <span className="title">Contact Information</span>
-                    <p>
-                      Theodore Lowe&sbquo; Ap #867-859 <br /> Sit Rd&sbquo;
-                      Azusa New York
-                    </p>
-                  </address>
-                  <address className="address">
                     <span className="title">
                       We&lsquo;re Available 24/ 7. Call Now.
                     </span>
                     <p>
-                      <a className="tel" href="tel:8884562790">
+                      <a className="tel" href="tel:233208432103">
                         <i className="fas fa-phone" />
-                        (888) 456-2790
+                        (233)20 843 2103
                       </a>
                     </p>
                     <p>
-                      <a className="tel" href="tel:12125553333">
-                        <i className="fas fa-fax" />
-                        (121) 255-53333
+                      <a className="tel" href="mailto:info@wordnox.com">
+                        <i className="fas fa-envelope" />
+                        info@wordnox.com
                       </a>
                     </p>
                   </address>
@@ -93,7 +89,7 @@ const SideNav = ({ toggleSidenav }) => {
                     <ul className="social-share style-rounded">
                       <li>
                         <a
-                          href="https://www.facebook.com/"
+                          href="https://www.facebook.com/wordnox"
                           target="_blank"
                           rel="noreferrer"
                         >
@@ -102,7 +98,7 @@ const SideNav = ({ toggleSidenav }) => {
                       </li>
                       <li>
                         <a
-                          href="https://twitter.com/"
+                          href="https://twitter.com/wordnox"
                           target="_blank"
                           rel="noreferrer"
                         >
@@ -111,16 +107,16 @@ const SideNav = ({ toggleSidenav }) => {
                       </li>
                       <li>
                         <a
-                          href="https://www.behance.net/"
+                          href="https://www.intagram.com/wordnox"
                           target="_blank"
                           rel="noreferrer"
                         >
-                          <i className="fab fa-behance" />
+                          <i className="fab fa-instagram" />
                         </a>
                       </li>
                       <li>
                         <a
-                          href="https://www.linkedin.com/"
+                          href="https://www.linkedin.com/in/wordnoxinc"
                           target="_blank"
                           rel="noreferrer"
                         >

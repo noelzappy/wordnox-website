@@ -80,7 +80,7 @@ const Services = () => {
   return (
     <Layout>
       <Head>
-        <title>Services | Wordnox</title>
+        <title>Our Services | Wordnox</title>
       </Head>
 
       <main className="page-wrapper">

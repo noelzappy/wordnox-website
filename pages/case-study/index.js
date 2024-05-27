@@ -17,15 +17,13 @@ const CaseStudy = () => {
   return (
     <Layout>
       <Head>
-        <title>
-          Case Study || Keystroke Creative Agency Bootstrap 5 Template
-        </title>
+        <title>Case Studies | Wordnox</title>
       </Head>
 
       <main className="page-wrapper">
         <BannerSeven
-          title="Case study"
-          subtitle="A quick view of industry specific problems solved with design by the awesome team at Keystroke."
+          title="Case studies"
+          subtitle="A quick view of our success stories."
         />
 
         <div className="axil-featured-area ax-section-gap bg-color-lightest color-darkest">

@@ -16,9 +16,9 @@ const TestimonialOne = () => {
         <div className="row">
           <div className="col-lg-12">
             <SectionTitle
-              title="From getting started"
-              subtitle="testimonials"
-              description="In vel varius turpis, non dictum sem. Aenean in efficitur ipsum, in egestas ipsum. Mauris in mi ac tellus."
+              title="Client Testimonials"
+              subtitle="Testimonies"
+              description="What Our Clients Are Saying About Us"
               color="extra05-color"
               alignment="center"
             />

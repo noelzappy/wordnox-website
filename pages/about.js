@@ -4,6 +4,9 @@ import Layout from "../components/layouts/Layout";
 import TeamOne from "../components/teams/TeamOne";
 import AboutSectionTwo from "../components/abouts/AboutSectionTwo";
 import ContactFormOne from "../components/forms/ContactFormOne";
+import CounterTwo from "../components/counters/CounterTwo";
+import TestimonialOne from "../components/testimonials/TestimonialOne";
+import BrandOne from "../components/brands/BrandOne";
 
 const About = () => {
   return (
@@ -92,7 +95,7 @@ const About = () => {
           </div>
         </div>
 
-        <AboutSectionTwo />
+        <CounterTwo />
 
         <TeamOne />
 
@@ -170,6 +173,10 @@ const About = () => {
             </div>
           </div>
         </div>
+
+        <TestimonialOne />
+
+        <BrandOne />
       </main>
     </Layout>
   );

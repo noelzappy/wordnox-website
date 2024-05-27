@@ -13,7 +13,7 @@ const BlogDetails = ({ post, posts }) => {
   return (
     <Layout>
       <Head>
-        <title> Wordnox.com</title>
+        <title> {post ? post.title : "Loading..."} | Wordnox.com</title>
       </Head>
 
       <Breadcrumb

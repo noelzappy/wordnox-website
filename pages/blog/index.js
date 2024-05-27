@@ -23,7 +23,7 @@ const Blog = ({ posts, meta, tags }) => {
   return (
     <Layout>
       <Head>
-        <title>Blog | Wordnox.com</title>
+        <title>Blog Posts | Wordnox.com</title>
       </Head>
 
       <Breadcrumb />

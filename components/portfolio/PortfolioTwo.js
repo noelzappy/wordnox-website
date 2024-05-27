@@ -5,7 +5,7 @@ import PortfolioCard from "./PortfolioCard";
 
 const PortfolioTwo = () => {
   const [activePortfolio, setActivePortfolio] = useState(0);
-  
+
   const changeActive = (index) => {
     setActivePortfolio(index);
   };
@@ -17,7 +17,7 @@ const PortfolioTwo = () => {
           <div className="col-lg-12 col-md-12">
             <SectionTitle
               title="Featured Designs"
-              subtitle="our projects"
+              subtitle="Our Projects"
               titleClass="mb-0"
               color="extra07-color"
               alignment="center"
