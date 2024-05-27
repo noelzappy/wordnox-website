@@ -60,45 +60,45 @@
       "height": "24"
     },
     "iconColorClass": "gradient-color-02",
-    "title": "Development",
-    "description": "We design professional looking yet simple websites. Our designs are search engine and user friendly.",
+    "title": "Custom Software Development",
+    "description": "We specialize in developing custom software applications tailored to your unique needs, whether it's a mobile app, web application, or desktop solution.",
     "category": "Default",
-    "slug": "development",
+    "slug": "custom-software-development",
     "process": {
       "title": "Our development process",
-      "description": "Our comprehensive development strategy ensures a perfectly crafted application for your business.",
+      "description": "Whether you require a robust mobile app, a feature-rich web application, or a powerful desktop solution, our custom software development services ensure you receive a tailored software product that meets your specific requirements, streamlines your operations, and provides a competitive edge in your industry.",
       "strategies": [
         {
           "id": 1,
-          "title": "Discover",
-          "subtitle": "our four step process",
-          "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
+          "title": "Requirement Gathering & Analysis",
+          "subtitle": "requirements gathering",
+          "description": "We begin by conducting a comprehensive analysis of your business requirements, goals, and challenges. Through collaborative discussions, we gain a deep understanding of your specific needs and gather detailed requirements for your custom software project.",
           "highlightColor": "extra04-color",
-          "image": "/images/process/process-01.jpg"
+          "image": "/images/process/planning-01.jpg"
         },
         {
           "id": 2,
-          "title": "Prototype",
-          "subtitle": "our four step process",
-          "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
+          "title": "Solution Architecture & Design",
+          "subtitle": "solution architecture",
+          "description": "Our experienced architects and designers work closely with you to develop a robust and scalable software architecture. We leverage industry best practices and cutting-edge technologies to ensure your solution is future-proof, user-friendly, and aligned with your business objectives.",
           "highlightColor": "extra05-color",
-          "image": "/images/process/process-02.jpg"
+          "image": "/images/process/planning.jpg"
         },
         {
           "id": 3,
-          "title": "Test",
-          "subtitle": "our four step process",
-          "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
+          "title": "Agile Development & Implementation",
+          "subtitle": "agile development",
+          "description": "Our skilled development team utilizes an agile methodology, ensuring iterative development and continuous collaboration. We work in sprints, delivering incremental features and incorporating your feedback at every step. This approach allows for flexibility and adaptability throughout the development process.",
           "highlightColor": "extra06-color",
-          "image": "/images/process/process-03.jpg"
+          "image": "/images/process/agile-dev.jpg"
         },
         {
           "id": 4,
-          "title": "Build",
-          "subtitle": "our four step process",
-          "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
+          "title": "Testing, Deployment, & Maintenance",
+          "subtitle": "testing & deployment",
+          "description": "Before deployment, we rigorously test your custom software solution across various scenarios, devices, and environments, ensuring optimal performance and functionality. Once approved, we seamlessly deploy your solution and provide ongoing maintenance, support, and enhancements as your business evolves.",
           "highlightColor": "extra07-color",
-          "image": "/images/process/process-04.jpg"
+          "image": "/images/process/testing-software.jpg"
         }
       ]
     }
