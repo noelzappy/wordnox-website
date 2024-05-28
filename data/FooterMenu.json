@@ -23,22 +23,26 @@
   ],
   "services": [
     {
-      "title": "Digital Marketing",
-      "url": "/services/design/mobile-app-design"
+      "title": "SEO",
+      "url": "/services/seo"
     },
     { "title": "Web Design", "url": "/services/web-design" },
     {
       "title": "Software Development",
-      "url": "/services/design/website-design"
+      "url": "/services/custom-software-development"
     },
     {
-      "title": "Mobile App Development",
-      "url": "/services/design/mobile-app-design"
+      "title": "Digital Strategy",
+      "url": "/services/digital-strategy"
+    },
+    {
+      "title": "Social Media Management",
+      "url": "/services/social-media-management"
     }
   ],
   "resources": [
     { "title": "Blog", "url": "/blog" },
-    { "title": "Case Studies", "url": "/case-study" },
+    { "title": "Case Studies", "url": "/case-studies" },
     { "title": "Portfolio", "url": "/portfolio" }
   ],
   "support": [

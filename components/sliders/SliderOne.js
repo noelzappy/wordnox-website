@@ -57,7 +57,7 @@ const SliderOne = () => {
                         </span>
                         <h2 className="title">
                           <Link
-                            href={`/case-study/${slugify(
+                            href={`/case-studies/${slugify(
                               CaseStudyData[0].title
                             )}`}
                           >
@@ -66,7 +66,7 @@ const SliderOne = () => {
                         </h2>
                         <p className="subtitle-2">{item.description}</p>
                         <Link
-                          href={`/case-study/${slugify(
+                          href={`/case-studies/${slugify(
                             CaseStudyData[0].title
                           )}`}
                           className="axil-button btn-large btn-transparent"

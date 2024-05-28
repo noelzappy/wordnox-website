@@ -66,13 +66,15 @@ const CaseStudy = () => {
                         {caseStudy.subtitle}
                       </span>
                       <h2 className="title">
-                        <Link href={`/case-study/${slugify(caseStudy.title)}`}>
+                        <Link
+                          href={`/case-studies/${slugify(caseStudy.title)}`}
+                        >
                           {caseStudy.title}
                         </Link>
                       </h2>
                       <p className="subtitle-2">{caseStudy.description}</p>
                       <Link
-                        href={`/case-study/${slugify(caseStudy.title)}`}
+                        href={`/case-studies/${slugify(caseStudy.title)}`}
                         className="axil-button btn-large btn-transparent"
                       >
                         <span className="button-text">Read Case Study</span>

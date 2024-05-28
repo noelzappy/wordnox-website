@@ -7,7 +7,7 @@ const ErrorPage = () => {
   return (
     <Layout showFooter={false}>
       <Head>
-        <title>404 | Wordnox.com</title>
+        <title>404 | Wordnox</title>
       </Head>
 
       <main className="page-wrapper page-error">
@@ -19,15 +19,15 @@ const ErrorPage = () => {
                   <div className="inner">
                     <h1 className="title mb--20">Page not Found</h1>
                     <p className="subtitle-2 mb--30">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Enim, recusandae <br /> consectetur nesciunt magnam
-                      facilis aliquid amet earum alias?
+                      The page you are looking for might have been removed had{" "}
+                      <br />
+                      its name changed or is temporarily unavailable.
                     </p>
                     <Link
-                      href="/home-01"
+                      href="/"
                       className="axil-button btn-large btn-transparent"
                     >
-                      <span className="button-text">Go Back</span>
+                      <span className="button-text">Go Home</span>
                       <span className="button-icon" />
                     </Link>
 

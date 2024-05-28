@@ -1,6 +1,27 @@
+import Image from "next/image";
 import Link from "next/link";
 import Router from "next/router";
 import { useEffect } from "react";
+
+const menuItem = [
+  {
+    title: "SEO",
+    url: "/services/seo",
+  },
+  { title: "Web Design", url: "/services/web-design" },
+  {
+    title: "Software Dev.",
+    url: "/services/custom-software-development",
+  },
+  {
+    title: "Digital Strategy",
+    url: "/services/digital-strategy",
+  },
+  {
+    title: "SMM",
+    url: "/services/social-media-management",
+  },
+];
 
 const SideNav = ({ toggleSidenav }) => {
   const closeSideNav = () => {
@@ -22,42 +43,24 @@ const SideNav = ({ toggleSidenav }) => {
   return (
     <div className="side-nav">
       <div className="side-nav-inner">
-        <form action="#" className="side-nav-search-form">
-          <div className="form-group search-field">
-            <input
-              type="text"
-              className="search-field"
-              name="search-field"
-              placeholder="Search..."
-            />
-            <button className="side-nav-search-btn">
-              <i className="fas fa-search" />
-            </button>
-          </div>
-        </form>
+        <div className="logo mb-4">
+          <Image
+            src="/images/logo.png"
+            alt="Wordnox Software Solutions"
+            width={100}
+            height={100}
+          />
+        </div>
 
         <div className="side-nav-content">
           <div className="row ">
             <div className="col-lg-5 col-xl-6 col-12">
               <ul className="main-navigation">
-                <li>
-                  <Link href="#">Digital Marketing</Link>
-                </li>
-                <li>
-                  <Link href="#">Web Design</Link>
-                </li>
-                <li>
-                  <Link href="#">Creative Content</Link>
-                </li>
-
-                <li
-                  style={{
-                    lineHeight: "1",
-                    marginTop: "-10px",
-                  }}
-                >
-                  <Link href="#">Software Development</Link>
-                </li>
+                {menuItem.map((item, index) => (
+                  <li key={index}>
+                    <Link href={item.url}>{item.title}</Link>
+                  </li>
+                ))}
               </ul>
             </div>
 
