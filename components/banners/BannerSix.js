@@ -8,8 +8,7 @@ const BannerSix = ({
   bannerTitleClass = "page-title mb--20",
   leftColumn = "col-lg-5 order-2 order-lg-1 mt_md--30 mt_sm--30",
   rightColumn = "col-lg-7 order-1 order-lg-2",
-  bannerImageOne = "/images/others/user.jpg",
-  bannerImageTwo = "/images/others/keystoke-image-2.svg",
+  bannerImageOne = "/images/others/smiling-lady.jpg",
   shapeImage = "/images/slider/single-service-02.png",
   isServiceDetails = false,
   showPersonImage = true,
@@ -40,17 +39,7 @@ const BannerSix = ({
                     />
                   </Tilt>
                 </div>
-                <div className="image-group">
-                  <Tilt tiltMaxAngleX={9} tiltMaxAngleY={9}>
-                    <Image
-                      width={267}
-                      height={363}
-                      className="paralax-image"
-                      src={bannerImageTwo}
-                      alt="Wordnox Images"
-                    />
-                  </Tilt>
-                </div>
+
                 <div className="shape-group">
                   <div className="shape shape-1">
                     <i className="icon icon-breadcrumb-1" />

@@ -60,15 +60,7 @@ const BannerOne = () => {
                       />
                     </div>
                   </div>
-                  <div className="image-group">
-                    <Image
-                      width={294}
-                      height={326}
-                      className="paralax-image"
-                      src="/images/others/keystoke-image-4.svg"
-                      alt="Wordnox Images"
-                    />
-                  </div>
+
                   <div className="shape-group">
                     <div className="shape shape-1 paralax--1">
                       <i className="icon icon-shape-05" />
