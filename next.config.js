@@ -2,7 +2,6 @@
 const nextConfig = {
   reactStrictMode: false,
   swcMinify: true,
-
   images: {
     remotePatterns: [
       {
@@ -15,6 +14,7 @@ const nextConfig = {
       },
     ],
   },
+  distDir: "build",
 };
 
 module.exports = nextConfig;
