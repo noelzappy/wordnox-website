@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Home",
+    "url": "/",
+    "hasChildren": false
+  },
+  {
+    "id": 2,
+    "title": "Our Services",
+    "url": "/services",
+    "hasChildren": false
+  },
+  {
+    "id": 3,
+    "title": "About Us",
+    "url": "/about",
+    "hasChildren": false
+  },
+  {
+    "id": 4,
+    "title": "Blog",
+    "url": "/blog",
+    "hasChildren": false
+  },
+  {
+    "id": 5,
+    "title": "Our Works",
+    "url": "/portfolio",
+    "hasChildren": false
+  },
+  {
+    "id": 6,
+    "title": "Contact Us",
+    "url": "/contact",
+    "hasChildren": false
+  }
+]

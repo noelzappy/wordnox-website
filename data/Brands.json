@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "image": {
+      "src": "https://telecelgroup.com/wp-content/uploads/elementor/thumbs/Entities-png-04-qcmuinnz2dtqqlgloa7oq5w7qgnsx09uuwu836mr54.png",
+      "width": 110,
+      "height": 110
+    }
+  },
+  {
+    "id": 2,
+    "image": {
+      "src": "https://av.sc.com/corp-en/nr/content/images/sc-lock-up-english-grey-rgb-750x422.png",
+      "width": 123,
+      "height": 56
+    }
+  },
+  {
+    "id": 3,
+    "image": {
+      "src": "https://ashasietour.com/wp-content/uploads/2024/01/ashesielogo_1-1-300x300.png",
+      "width": 100,
+      "height": 100
+    }
+  },
+  {
+    "id": 4,
+    "image": {
+      "src": "https://reenogroup.com.gh/wp-content/uploads/2024/03/cropped-LOGO_FOR-REENO-GROUP-01-300x108.png",
+      "width": 110,
+      "height": 40
+    }
+  },
+  {
+    "id": 5,
+    "image": {
+      "src": "https://thebrif.com/content/images/2024/05/brif-logo-2048x930.png",
+      "width": 123,
+      "height": 56
+    }
+  },
+  {
+    "id": 6,
+    "image": {
+      "src": "https://built.africa/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo2.d9c417ee.png&w=828&q=75",
+      "width": 110,
+      "height": 36,
+      "style": {
+        "background": "#0E2E57"
+      }
+    }
+  }
+]

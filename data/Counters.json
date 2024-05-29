@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "icon": {
+      "width": "28",
+      "height": "36",
+      "src": "/images/counterup/shape-01.png"
+    },
+    "amount": 5,
+    "title": "Years of operation"
+  },
+  {
+    "id": 2,
+    "icon": {
+      "width": "40",
+      "height": "28",
+      "src": "/images/counterup/shape-02.png"
+    },
+    "amount": 100,
+    "title": "Projects delivered"
+  },
+  {
+    "id": 3,
+    "icon": {
+      "width": "40",
+      "height": "24",
+      "src": "/images/counterup/shape-03.png"
+    },
+    "amount": 60,
+    "title": "Businesses served"
+  },
+  {
+    "id": 4,
+    "icon": {
+      "width": "28",
+      "height": "36",
+      "src": "/images/counterup/shape-04.png"
+    },
+    "amount": 10,
+    "title": "Team members"
+  }
+]

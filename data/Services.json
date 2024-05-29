@@ -1,0 +1,262 @@
+[
+  {
+    "id": 1,
+    "imageLayer": "/images/icons/layer.svg",
+    "imageIcon": {
+      "src": "/images/icons/icon-04.svg",
+      "width": "23",
+      "height": "36"
+    },
+    "iconColorClass": "",
+    "title": "Website Design",
+    "description": "We at Wordnox offers expert end-to-end website design and development services, ensuring your business have a strong online presence for success.",
+    "category": "Default",
+    "slug": "website-design",
+    "process": {
+      "title": "Our Web Design Process",
+      "description": "With our website design and development services, we'll help you establish a captivating online presence that resonates with your audience, drives engagement, and propels your business forward in the digital realm.",
+      "strategies": [
+        {
+          "id": 1,
+          "title": "Discovery and Planning",
+          "subtitle": "the discovery phase",
+          "description": "We begin by understanding your business goals, target audience, and unique requirements. Through collaborative sessions, we define the website's objectives, gather insights, and create a comprehensive plan.",
+          "highlightColor": "extra04-color",
+          "image": "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        },
+        {
+          "id": 2,
+          "title": "User-Centric Design",
+          "subtitle": "the design phase",
+          "description": "Our designers craft visually stunning and intuitive interfaces, ensuring an exceptional user experience. We combine aesthetics with usability, creating a seamless journey for your visitors.",
+          "highlightColor": "extra05-color",
+          "image": "/images/process/user-design.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Development and Integration",
+          "subtitle": "the development phase",
+          "description": "Our skilled developers bring your vision to life, utilizing the latest technologies and industry best practices. We ensure your website is responsive, secure, and optimized for performance.",
+          "highlightColor": "extra06-color",
+          "image": "/images/process/programmers.png"
+        },
+        {
+          "id": 4,
+          "title": "Testing and Deployment",
+          "subtitle": "our four step process",
+          "description": "Before launch, we rigorously test your website across various devices and browsers, ensuring flawless functionality. Once approved, we seamlessly deploy your website, providing ongoing support and maintenance.",
+          "highlightColor": "extra07-color",
+          "image": "/images/process/testing.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "imageLayer": "/images/icons/layer.svg",
+    "imageIcon": {
+      "src": "/images/icons/icon-02.svg",
+      "width": "41",
+      "height": "24"
+    },
+    "iconColorClass": "gradient-color-02",
+    "title": "Custom Software Development",
+    "description": "We specialize in developing custom software applications tailored to your unique needs, whether it's a mobile app, web application, or desktop solution.",
+    "category": "Default",
+    "slug": "custom-software-development",
+    "process": {
+      "title": "Our development process",
+      "description": "Whether you require a robust mobile app, a feature-rich web application, or a powerful desktop solution, our custom software development services ensure you receive a tailored software product that meets your specific requirements, streamlines your operations, and provides a competitive edge in your industry.",
+      "strategies": [
+        {
+          "id": 1,
+          "title": "Requirement Gathering & Analysis",
+          "subtitle": "requirements gathering",
+          "description": "We begin by conducting a comprehensive analysis of your business requirements, goals, and challenges. Through collaborative discussions, we gain a deep understanding of your specific needs and gather detailed requirements for your custom software project.",
+          "highlightColor": "extra04-color",
+          "image": "/images/process/planning-01.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Solution Architecture & Design",
+          "subtitle": "solution architecture",
+          "description": "Our experienced architects and designers work closely with you to develop a robust and scalable software architecture. We leverage industry best practices and cutting-edge technologies to ensure your solution is future-proof, user-friendly, and aligned with your business objectives.",
+          "highlightColor": "extra05-color",
+          "image": "/images/process/planning.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Agile Development & Implementation",
+          "subtitle": "agile development",
+          "description": "Our skilled development team utilizes an agile methodology, ensuring iterative development and continuous collaboration. We work in sprints, delivering incremental features and incorporating your feedback at every step. This approach allows for flexibility and adaptability throughout the development process.",
+          "highlightColor": "extra06-color",
+          "image": "/images/process/agile-dev.jpg"
+        },
+        {
+          "id": 4,
+          "title": "Testing, Deployment, & Maintenance",
+          "subtitle": "testing & deployment",
+          "description": "Before deployment, we rigorously test your custom software solution across various scenarios, devices, and environments, ensuring optimal performance and functionality. Once approved, we seamlessly deploy your solution and provide ongoing maintenance, support, and enhancements as your business evolves.",
+          "highlightColor": "extra07-color",
+          "image": "/images/process/testing-software.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "imageLayer": "/images/icons/layer.svg",
+    "imageIcon": {
+      "src": "/images/icons/icon-03.svg",
+      "width": "34",
+      "height": "34"
+    },
+    "iconColorClass": "gradient-color-03",
+    "title": "Digital Strategy",
+    "description": "Our digital strategy services empower you to navigate the digital landscape with confidence, enabling you to connect with your target audience, drive engagement, and achieve sustainable growth in the online realm.",
+    "category": "Default",
+    "slug": "digital-strategy",
+    "process": {
+      "title": "Our Digital Strategy Process",
+      "description": "In the ever-evolving digital landscape, having a well-defined digital strategy is crucial for businesses to stay ahead of the curve. At Wordnox, we understand the importance of aligning your digital efforts with your overall business objectives. Our digital strategy services are designed to help you navigate the complexities of the online realm and maximize your digital presence.",
+      "strategies": [
+        {
+          "id": 1,
+          "title": "Discovery & Analysis",
+          "subtitle": "discovery",
+          "description": "We begin by conducting a comprehensive analysis of your business, industry, target audience, and competitive landscape. Through in-depth research and collaborative discussions, we gain a deep understanding of your unique challenges, opportunities, and goals.",
+          "highlightColor": "extra04-color",
+          "image": "https://images.pexels.com/photos/268460/pexels-photo-268460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        },
+        {
+          "id": 2,
+          "title": "Strategy Development",
+          "subtitle": "strategy",
+          "description": "Our experienced strategists work closely with you to develop a comprehensive digital strategy tailored to your business needs. We identify key focus areas, define measurable objectives, and create a roadmap for success, incorporating best practices and industry insights.",
+          "highlightColor": "extra05-color",
+          "image": "/images/process/content-stra.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Channel Integration and Implementation",
+          "subtitle": "our four step process",
+          "description": "With your digital strategy in place, we seamlessly integrate various digital channels, including website optimization, social media marketing, content creation, email campaigns, and more. Our cross-functional team ensures a cohesive and consistent brand experience across all touchpoints.",
+          "highlightColor": "extra06-color",
+          "image": "https://images.pexels.com/photos/38544/imac-apple-mockup-app-38544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        },
+        {
+          "id": 4,
+          "title": "Measurement and Optimization",
+          "subtitle": "our four step process",
+          "description": "We believe in data-driven decision-making. Throughout the implementation process, we continuously monitor and analyze key performance indicators (KPIs) to measure the effectiveness of your digital strategy. Based on these insights, we optimize and refine your strategy, ensuring you stay ahead of the competition and achieve your desired outcomes.",
+          "highlightColor": "extra07-color",
+          "image": "https://images.pexels.com/photos/18069083/pexels-photo-18069083/free-photo-of-an-artist-s-illustration-of-artificial-intelligence-ai-this-image-represents-the-role-of-ai-in-computer-optimisation-for-reduced-energy-consumption-it-was-created-by-linus-zoll-as-part.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        }
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "imageLayer": "/images/icons/layer.svg",
+    "imageIcon": {
+      "src": "/images/icons/icon-03.svg",
+      "width": "34",
+      "height": "34"
+    },
+    "iconColorClass": "gradient-color-04",
+    "title": "Search Engine Optimization (SEO)",
+    "description": "By combining technical expertise, data-driven insights, and a comprehensive approach, our SEO services help you gain a competitive edge in the digital landscape, driving organic traffic, increasing brand visibility, and ultimately boosting your bottom line.",
+    "category": "Default",
+    "slug": "seo",
+    "process": {
+      "title": "Our SEO Process",
+      "description": "In today's digital world, having a strong online presence is essential for businesses to succeed. At Wordnox, we understand the importance of Search Engine Optimization (SEO) in driving organic traffic, increasing visibility, and reaching your target audience. Our SEO services are designed to help you achieve higher search engine rankings, improve user experience, and ultimately drive more qualified leads and conversions.",
+      "strategies": [
+        {
+          "id": 1,
+          "title": "Comprehensive Website Audit",
+          "subtitle": "website audit",
+          "description": "We begin by conducting a thorough audit of your website, including technical SEO analysis, content evaluation, and competitor research. This step allows us to identify areas for improvement, uncover opportunities, and establish a baseline for measuring success.",
+          "highlightColor": "extra04-color",
+          "image": "/images/process/web-audit.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Keyword Research & Strategy Development",
+          "subtitle": "keyword research",
+          "description": "Our team of SEO experts conducts in-depth keyword research to identify the most relevant and high-converting keywords for your business. We then develop a customized SEO strategy that aligns with your business goals, target audience, and industry trends.",
+          "highlightColor": "extra05-color",
+          "image": "/images/process/keyword.jpg"
+        },
+        {
+          "id": 3,
+          "title": "On-Page Optimization & Content Creation",
+          "subtitle": "content optimization",
+          "description": "With a solid strategy in place, we optimize your website's on-page elements, including titles, meta descriptions, header tags, and content structure. Our content team creates compelling, SEO-friendly content that engages your audience and satisfies search engine algorithms.",
+          "highlightColor": "extra06-color",
+          "image": "/images/process/brand-strategy.jpg"
+        },
+        {
+          "id": 4,
+          "title": "Link Building & Off-Page Optimization",
+          "subtitle": "our four step process",
+          "description": "Off-page SEO plays a crucial role in improving your search engine rankings. Our team implements ethical link-building strategies, leveraging high-quality backlinks from authoritative sources. We also optimize your online presence across various platforms, including local directories, social media, and industry-specific sites.",
+          "highlightColor": "extra07-color",
+          "image": "/images/process/linking.jpg"
+        }
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "imageLayer": "/images/icons/layer.svg",
+    "imageIcon": {
+      "src": "/images/icons/icon-03.svg",
+      "width": "41",
+      "height": "24"
+    },
+    "iconColorClass": "gradient-color-06",
+    "title": "Social Media Management",
+    "description": "With our comprehensive social media management services, you can harness the power of social media to connect with your audience, build brand loyalty, and drive business growth in the digital realm.",
+    "category": "Default",
+    "slug": "social-media-management",
+    "process": {
+      "title": "Our SMM Process",
+      "description": "In the age of digital connectivity, social media has become a powerful tool for businesses to engage with their audience, build brand awareness, and drive growth. At Wordnox, we understand the complexities of social media marketing and offer comprehensive social media management services to help you establish a strong online presence and connect with your target audience effectively.",
+      "strategies": [
+        {
+          "id": 1,
+          "title": "Strategy Development",
+          "subtitle": "strategy",
+          "description": "We begin by gaining a deep understanding of your business goals, target audience, and industry landscape. Our social media experts then develop a tailored strategy that aligns with your objectives, identifies the most relevant platforms, and defines key performance indicators (KPIs) to measure success.",
+          "highlightColor": "extra04-color",
+          "image": "/images/process/social-feed.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Content Creation & Curation",
+          "subtitle": "curation",
+          "description": "Our team of creative professionals crafts compelling and engaging content tailored for each social media platform. From visually stunning graphics and videos to thought-provoking posts and interactive campaigns, we ensure your brand's voice resonates with your audience and sparks conversations.",
+          "highlightColor": "extra05-color",
+          "image": "/images/process/testing.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Community Management & Engagement",
+          "subtitle": "engagement",
+          "description": "Effective social media management goes beyond just posting content. Our dedicated community managers actively engage with your audience, responding to comments and messages, fostering discussions, and building lasting relationships. We monitor your brand's online reputation and address any concerns promptly.",
+          "highlightColor": "extra06-color",
+          "image": "/images/process/social-engagement.jpg"
+        },
+        {
+          "id": 4,
+          "title": "Analytics and Optimization",
+          "subtitle": "analytics",
+          "description": "We believe in data-driven decision-making. Our social media experts continuously analyze key metrics, including reach, engagement, conversions, and sentiment analysis. Based on these insights, we optimize your social media strategy, refine content, and adjust tactics to ensure maximum impact and ROI.",
+          "highlightColor": "extra07-color",
+          "image": "/images/process/planning-01.jpg"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "social": [
+    {
+      "type": "facebook",
+      "icon": "fa-facebook-f",
+      "url": "https://www.facebook.com/wordnox"
+    },
+    {
+      "type": "twitter",
+      "icon": "fa-brands fa-x-twitter",
+      "url": "https://twitter.com/wordnox"
+    },
+    {
+      "type": "linkedin",
+      "icon": "fa-linkedin-in",
+      "url": "https://www.linkedin.com/in/wordnoxinc"
+    },
+    {
+      "type": "instagram",
+      "icon": "fa-instagram",
+      "url": "https://www.instagram.com/wordnox"
+    }
+  ],
+  "services": [
+    {
+      "title": "SEO",
+      "url": "/services/seo"
+    },
+    { "title": "Web Design", "url": "/services/web-design" },
+    {
+      "title": "Software Development",
+      "url": "/services/custom-software-development"
+    },
+    {
+      "title": "Digital Strategy",
+      "url": "/services/digital-strategy"
+    },
+    {
+      "title": "Social Media Management",
+      "url": "/services/social-media-management"
+    }
+  ],
+  "resources": [
+    { "title": "Blog", "url": "/blog" },
+    { "title": "Case Studies", "url": "/case-studies" },
+    { "title": "Portfolio", "url": "/portfolio" }
+  ],
+  "support": [
+    { "title": "Contact Us", "url": "/contact" },
+    { "title": "Email", "url": "mailto:info@wordnox.com" }
+  ]
+}
