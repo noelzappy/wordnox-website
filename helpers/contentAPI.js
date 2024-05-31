@@ -4,7 +4,7 @@ export const API_URL = "https://blog.wordnox.com";
 
 const api = new GhostContentAPI({
   url: API_URL,
-  key: "dea544fcbcfbbb694b00e8bc2f",
+  key: "cc968451eca1a19da4ebe86943",
   version: "v5.82",
 });
 
