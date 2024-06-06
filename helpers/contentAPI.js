@@ -4,8 +4,8 @@ export const API_URL = "https://blog.wordnox.com";
 
 const api = new GhostContentAPI({
   url: API_URL,
-  key: "cc968451eca1a19da4ebe86943",
-  version: "v5.82",
+  key: "eb58cc06b4ccbf25a52d509aba",
+  version: "v5.83",
 });
 
 // fetch post that do not have the tag portfolio

@@ -23,9 +23,9 @@ const BannerOne = () => {
                   data-aos-duration="1000"
                   data-aos-delay="200"
                 >
-                  Choose Wordnox as your Software, <br />
-                  Web design & Digital marketing solutions partner to unlock
-                  result-driven solutions that grow your business
+                  Since 2019, we have been empowering businesses with <br />
+                  our web solutions, software development, and digital marketing
+                  services to drive business growth.
                 </p>
                 <Link
                   href="/contact"
