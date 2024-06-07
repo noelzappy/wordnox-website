@@ -4,15 +4,6 @@ const Document = () => {
   return (
     <Html>
       <Head>
-        <link
-          rel="icon"
-          type="image/x-icon"
-          href={`${
-            process.env.NODE_ENV === "production"
-              ? process.env.NEXT_PUBLIC_BASEPATH ?? ""
-              : ""
-          }/logo.png`}
-        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"

@@ -1,80 +1,23 @@
 [
   {
     "id": 1,
-    "image": "/images/portfolio/portfolio-01.jpg",
-    "categories": ["ios", "design"],
+    "image": "/images/featured/ashasie-website.webp",
+    "categories": ["Web Design", "SEO"],
     "categoryIds": [1, 2],
-    "title": "Creative Agency",
-    "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales. <br/><br/> et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
-    "delivered": "Ut condimentum enim nec diam convallis mollis. Sed felis quam, semper dapibus purus sed, rhoncus ullamcorper lacus.",
-    "strategy": "Aenean hendrerit laoreet vehicula. Nullam convallis augue at enim gravida pellentesque.",
-    "design": "Aenean hendrerit laoreet vehicula. Nullam convallis augue at enim gravida pellentesque.",
-    "development": "Aenean hendrerit laoreet vehicula. Nullam convallis augue at enim gravida pellentesque.",
-    "videoUrl": "https://www.youtube.com/watch?v=Pj_geat9hvI"
-  },
-  {
-    "id": 2,
-    "image": "/images/portfolio/portfolio-02.jpg",
-    "categories": ["Branding"],
-    "categoryIds": [2, 3],
-    "title": "Rent bike",
-    "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales. <br/><br/> et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
-    "delivered": "Ut condimentum enim nec diam convallis mollis. Sed felis quam, semper dapibus purus sed, rhoncus ullamcorper lacus.",
-    "strategy": "Aenean hendrerit laoreet vehicula. Nullam convallis augue at enim gravida pellentesque.",
-    "design": "Aenean hendrerit laoreet vehicula. Nullam convallis augue at enim gravida pellentesque.",
-    "development": "Aenean hendrerit laoreet vehicula. Nullam convallis augue at enim gravida pellentesque.",
-    "videoUrl": "https://www.youtube.com/watch?v=Pj_geat9hvI"
-  },
-  {
-    "id": 3,
-    "image": "/images/portfolio/portfolio-03.jpg",
-    "categories": ["Web application"],
-    "categoryIds": [3, 4],
-    "title": "All Volees",
-    "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales. <br/><br/> et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
-    "delivered": "Ut condimentum enim nec diam convallis mollis. Sed felis quam, semper dapibus purus sed, rhoncus ullamcorper lacus.",
-    "strategy": "Aenean hendrerit laoreet vehicula. Nullam convallis augue at enim gravida pellentesque.",
-    "design": "Aenean hendrerit laoreet vehicula. Nullam convallis augue at enim gravida pellentesque.",
-    "development": "Aenean hendrerit laoreet vehicula. Nullam convallis augue at enim gravida pellentesque.",
-    "videoUrl": "https://www.youtube.com/watch?v=Pj_geat9hvI"
-  },
-  {
-    "id": 4,
-    "image": "/images/portfolio/portfolio-04.jpg",
-    "categories": ["Branding", "design"],
-    "categoryIds": [5, 6],
-    "title": "Larq",
-    "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales. <br/><br/> et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
-    "delivered": "Ut condimentum enim nec diam convallis mollis. Sed felis quam, semper dapibus purus sed, rhoncus ullamcorper lacus.",
-    "strategy": "Aenean hendrerit laoreet vehicula. Nullam convallis augue at enim gravida pellentesque.",
-    "design": "Aenean hendrerit laoreet vehicula. Nullam convallis augue at enim gravida pellentesque.",
-    "development": "Aenean hendrerit laoreet vehicula. Nullam convallis augue at enim gravida pellentesque.",
-    "videoUrl": "https://www.youtube.com/watch?v=Pj_geat9hvI"
-  },
-  {
-    "id": 5,
-    "image": "/images/portfolio/portfolio-05.jpg",
-    "categories": ["Branding"],
-    "categoryIds": [1, 2],
-    "title": "Trendy Design",
-    "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales. <br/><br/> et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
-    "delivered": "Ut condimentum enim nec diam convallis mollis. Sed felis quam, semper dapibus purus sed, rhoncus ullamcorper lacus.",
-    "strategy": "Aenean hendrerit laoreet vehicula. Nullam convallis augue at enim gravida pellentesque.",
-    "design": "Aenean hendrerit laoreet vehicula. Nullam convallis augue at enim gravida pellentesque.",
-    "development": "Aenean hendrerit laoreet vehicula. Nullam convallis augue at enim gravida pellentesque.",
-    "videoUrl": "https://www.youtube.com/watch?v=Pj_geat9hvI"
-  },
-  {
-    "id": 6,
-    "image": "/images/portfolio/portfolio-01.jpg",
-    "categories": ["ios", "design"],
-    "categoryIds": [3, 4],
-    "title": "Jet Airplane",
-    "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales. <br/><br/> et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
-    "delivered": "Ut condimentum enim nec diam convallis mollis. Sed felis quam, semper dapibus purus sed, rhoncus ullamcorper lacus.",
-    "strategy": "Aenean hendrerit laoreet vehicula. Nullam convallis augue at enim gravida pellentesque.",
-    "design": "Aenean hendrerit laoreet vehicula. Nullam convallis augue at enim gravida pellentesque.",
-    "development": "Aenean hendrerit laoreet vehicula. Nullam convallis augue at enim gravida pellentesque.",
-    "videoUrl": "https://www.youtube.com/watch?v=Pj_geat9hvI"
+    "title": "Ashasie Travel & Tours",
+    "description": "Ashasie Travel & Tour is a well-established travel management company based in Ghana, offering a comprehensive range of travel services to individuals, families, and businesses. With a strong vision to provide exceptional travel experiences, they approached us to create a comprehensive website that would showcase their offerings, enhance their online presence, and streamline the booking process for their customers.",
+    "delivered": "We delivered a visually captivating and highly functional website that accurately represented Ashasie Travel & Tour's brand. The intuitive user interface and seamless booking capabilities provided an exceptional online experience. Our SEO efforts improved search engine visibility, driving organic traffic and increasing their online reach.",
+    "strategy": "Our strategy focused on creating a user-friendly and visually appealing website that would effectively communicate Ashasie Travel & Tour's services and expertise. We conducted extensive research to understand the company's brand, target audience, and industry trends. This informed our approach to content development, user experience (UX) design, and search engine optimization (SEO) efforts.",
+    "design": "The design process prioritized creating a modern and visually stunning interface that reflected Ashasie Travel & Tour's brand identity. Our team crafted a clean and intuitive layout, utilizing high-quality images and videos to showcase various destinations and travel experiences. The color scheme and typography were carefully selected to evoke a sense of adventure and wanderlust, aligning with the company's ethos.",
+    "development": "Our development team utilized the latest web technologies to build a responsive and feature-rich website. Key functionalities included a comprehensive travel package listing, an event calendar, and a secure online booking system. We integrated powerful search and filtering capabilities to enhance the user experience, allowing customers to easily find and book their desired travel packages. Furthermore, we implemented robust back-end systems to streamline the management of travel packages, bookings, and customer data, ensuring efficient operations for Ashasie Travel & Tour's team.",
+    "images": [
+      "/images/featured/ashasie-1.png",
+      "/images/featured/ashasie-2.png",
+      "/images/featured/ashasie-3.png",
+      "/images/featured/ashasie-4.png",
+      "/images/featured/ashasie-5.png"
+    ],
+    "slug": "ashasie-travel-tours",
+    "projectUrl": "https://ashasietour.com/"
   }
 ]

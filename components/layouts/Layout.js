@@ -48,6 +48,7 @@ const Layout = ({
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content={"@wordnox"} />
         <meta name="twitter:description" content={metaDescription} />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <div className="main-content">

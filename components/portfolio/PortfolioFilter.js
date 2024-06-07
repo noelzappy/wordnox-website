@@ -34,14 +34,14 @@ const PortfolioFilter = ({
         <span className="filter-text">Web Apps</span>
       </button>
       <button
-        onClick={() => setActiveGenre(3)}
-        className={activeGenre === 3 ? "is-checked" : ""}
+        onClick={() => setActiveGenre(2)}
+        className={activeGenre === 2 ? "is-checked" : ""}
       >
         <span className="filter-text">Digital Marketing</span>
       </button>
       <button
-        onClick={() => setActiveGenre(2)}
-        className={activeGenre === 2 ? "is-checked" : ""}
+        onClick={() => setActiveGenre(3)}
+        className={activeGenre === 3 ? "is-checked" : ""}
       >
         <span className="filter-text">Mobile Apps</span>
       </button>

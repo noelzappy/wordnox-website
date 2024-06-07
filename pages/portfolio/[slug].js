@@ -1,18 +1,17 @@
 import Link from "next/link";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import CallToActionOne from "../../components/call-to-actions/CallToActionOne";
 import VideoPlayer from "../../components/common/VideoPlayer";
 import Layout from "../../components/layouts/Layout";
 import PortfolioData from "../../data/Portfolio.json";
-import { slugify } from "../../helpers/utilities";
 import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
+import Tilt from "react-parallax-tilt";
 
 export async function getStaticPaths() {
   return {
-    paths: PortfolioData?.map(({ title }) => ({
+    paths: PortfolioData?.map(({ slug }) => ({
       params: {
-        slug: slugify(title),
+        slug,
       },
     })),
     fallback: false,
@@ -20,9 +19,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const portfolio = PortfolioData.find(
-    (item) => slugify(item.title) === params.slug
-  );
+  const portfolio = PortfolioData.find((item) => item.slug === params.slug);
 
   return {
     props: {
@@ -69,7 +66,8 @@ const PortfolioDetails = ({ portfolio }) => {
                       }}
                     />
                     <Link
-                      href="#"
+                      href={portfolio.projectUrl}
+                      target="_blank"
                       className="axil-button btn-large btn-transparent"
                     >
                       <span className="button-text">Launch The Site </span>
@@ -179,25 +177,20 @@ const PortfolioDetails = ({ portfolio }) => {
             <div className="row">
               <div className="col-lg-12">
                 <div className="inner text-center">
-                  <div className="thumbnail position-relative">
-                    <Image
-                      width={930}
-                      height={521}
-                      className="w-100"
-                      src="/images/portfolio/portfolio-big-image-01.jpg"
-                      alt="POrtfolio Images"
-                    />
-                    <div className="video-button position-to-top">
-                      <a
-                        className="play__btn video-btn"
-                        href="https://www.youtube.com/watch?v=Pj_geat9hvI"
-                        data-bs-toggle="modal"
-                        data-bs-target="#exampleModal"
-                      >
-                        <span className="triangle" />
-                      </a>
+                  {portfolio.images.map((image) => (
+                    <div
+                      className="mt--60"
+                      key={`project-solution-image-${image}`}
+                    >
+                      <Tilt tiltMaxAngleX={5} tiltMaxAngleY={5}>
+                        <img
+                          className="image w-100 paralax-image"
+                          src={image}
+                          alt={portfolio.title}
+                        />
+                      </Tilt>
                     </div>
-                  </div>
+                  ))}
                 </div>
               </div>
             </div>

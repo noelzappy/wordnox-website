@@ -6,7 +6,11 @@ import SectionTitle from "../common/SectionTitle";
 import PortfolioCard from "./PortfolioCard";
 import PortfolioFilter from "./PortfolioFilter";
 
-const PortfolioOne = ({ bgColor = "bg-color-lightest", showMoreLink }) => {
+const PortfolioOne = ({
+  bgColor = "bg-color-lightest",
+  showMoreLink,
+  count,
+}) => {
   const [activePortfolio, setActivePortfolio] = useState(0);
   const [filterdPortfolioData, setFilterdPortfolioData] = useState([]);
   const [activeGenre, setActiveGenre] = useState(0);
@@ -28,7 +32,9 @@ const PortfolioOne = ({ bgColor = "bg-color-lightest", showMoreLink }) => {
   };
 
   useEffect(() => {
-    setFilterdPortfolioData(PortfolioData);
+    setFilterdPortfolioData(
+      PortfolioData.slice(0, count ? count : PortfolioData.length)
+    );
   }, []);
 
   return (

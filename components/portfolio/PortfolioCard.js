@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import Tilt from "react-parallax-tilt";
-import { slugify } from "../../helpers/utilities";
 
 const PortfolioCard = ({ data, index, activeIndex, changeActive }) => {
   const item = {
@@ -24,7 +23,7 @@ const PortfolioCard = ({ data, index, activeIndex, changeActive }) => {
       <div className="inner">
         <Tilt tiltMaxAngleX={9} tiltMaxAngleY={9}>
           <div className="thumb">
-            <Link href={`/portfolio/${slugify(data.title)}`}>
+            <Link href={`/portfolio/${data.slug}`}>
               <Image
                 width={400}
                 height={380}
@@ -35,18 +34,11 @@ const PortfolioCard = ({ data, index, activeIndex, changeActive }) => {
           </div>
         </Tilt>
 
-        <div className="port-overlay-info">
+        <div className="port-overlay-info text-center">
           <div className="hover-action">
             <h4 className="title">
-              <Link href={`/portfolio/${slugify(data.title)}`}>
-                {data.title}
-              </Link>
+              <Link href={`/portfolio/${data.slug}`}>{data.title}</Link>
             </h4>
-            <span className="category">
-              {data.categories?.map((category, index) => {
-                return category;
-              })}
-            </span>
           </div>
         </div>
       </div>

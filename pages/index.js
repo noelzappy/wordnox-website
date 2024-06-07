@@ -26,7 +26,7 @@ const HomeOne = ({ posts }) => {
 
         <SliderOne />
 
-        <PortfolioOne showMoreLink />
+        <PortfolioOne showMoreLink count={3} />
 
         <CounterOne />
 
@@ -46,11 +46,16 @@ const HomeOne = ({ posts }) => {
 export default HomeOne;
 
 export async function getStaticProps() {
-  const posts = await getPosts();
+  let posts = [];
+  try {
+    posts = await getPosts();
+  } catch (error) {
+    // console.log(error)
+  }
 
   return {
     props: {
-      posts: posts,
+      posts,
     },
   };
 }

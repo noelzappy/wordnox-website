@@ -11,7 +11,6 @@ const api = new GhostContentAPI({
 // fetch post that do not have the tag portfolio
 export const getPosts = async () => {
   return await api.posts.browse({
-    filter: "tag:-portfolio",
     include: "tags,authors",
     limit: 10,
   });
