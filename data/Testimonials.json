@@ -4,19 +4,19 @@
     "client": {
       "id": 1,
       "image": "/images/testimonial/client-01.jpg",
-      "fullName": "Martha Maldonado",
-      "designation": "Executive Chairman @ Google"
+      "fullName": "Daniel Atompoya",
+      "designation": "Founder @ Ashasie Travel & Tours"
     },
-    "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit."
+    "description": "Wordnox's team truly understood our need. Our new website from them has really helped our business. It's been a pleasure working with them."
   },
   {
     "id": 2,
     "client": {
       "id": 2,
       "image": "/images/testimonial/client-02.jpg",
-      "fullName": "Martha Maldonado",
-      "designation": "Executive Chairman @ Google"
+      "fullName": "Ezzat Halabi Ahma",
+      "designation": "CEO @ Reeno Group"
     },
-    "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit."
+    "description": "We are very happy with the work done by Wordnox. They are very professional and responsive. We will definitely work with them again."
   }
 ]

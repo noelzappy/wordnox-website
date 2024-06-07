@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -40,11 +39,7 @@ const PortfolioDetails = ({ portfolio }) => {
   }, []);
 
   return (
-    <Layout>
-      <Head>
-        <title>{portfolio.title} | Wordnox Creative Agency</title>
-      </Head>
-
+    <Layout title={portfolio.title}>
       <main className="page-wrapper">
         <Breadcrumb title="Portfolio Details" current="Portfolio Details" />
 

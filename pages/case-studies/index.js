@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Tilt from "react-parallax-tilt";
@@ -15,11 +14,7 @@ const CaseStudy = () => {
   const [inView, setInView] = useState(false);
 
   return (
-    <Layout>
-      <Head>
-        <title>Case Studies | Wordnox</title>
-      </Head>
-
+    <Layout title="Case Studies">
       <main className="page-wrapper">
         <BannerSeven
           title="Case studies"

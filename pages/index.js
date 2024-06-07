@@ -16,11 +16,7 @@ import { getPosts } from "../helpers/contentAPI";
 
 const HomeOne = ({ posts }) => {
   return (
-    <Layout>
-      <Head>
-        <title>Home | Wordnox</title>
-      </Head>
-
+    <Layout title="Home">
       <main className="page-wrapper">
         <BannerOne />
 

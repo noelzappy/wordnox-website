@@ -5,11 +5,7 @@ import Image from "next/image";
 
 const ErrorPage = () => {
   return (
-    <Layout showFooter={false}>
-      <Head>
-        <title>404 | Wordnox</title>
-      </Head>
-
+    <Layout showFooter={false} title="Page Not Found">
       <main className="page-wrapper page-error">
         <div className="axil-error-not-found fullscreen d-flex align-items-center theme-gradient-7 list-active">
           <div className="container">

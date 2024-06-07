@@ -1,6 +1,4 @@
-import Head from "next/head";
 import Image from "next/image";
-import { useEffect, useState } from "react";
 import Tilt from "react-parallax-tilt";
 import CallToActionOne from "../../components/call-to-actions/CallToActionOne";
 import Layout from "../../components/layouts/Layout";
@@ -33,11 +31,7 @@ export async function getStaticProps({ params }) {
 
 const CaseStudyDetails = ({ caseStudy }) => {
   return (
-    <Layout>
-      <Head>
-        <title>{caseStudy.title} | Wordnox</title>
-      </Head>
-
+    <Layout title={caseStudy.title}>
       <main className="page-wrapper">
         <BannerSix
           title={caseStudy.title}

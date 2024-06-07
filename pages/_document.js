@@ -11,7 +11,7 @@ const Document = () => {
             process.env.NODE_ENV === "production"
               ? process.env.NEXT_PUBLIC_BASEPATH ?? ""
               : ""
-          }/favicon.ico`}
+          }/logo.png`}
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link

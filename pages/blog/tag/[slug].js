@@ -1,4 +1,3 @@
-import Head from "next/head";
 import BlogPost from "../../../components/blogs/BlogPost";
 import BlogSidebar from "../../../components/blogs/BlogSidebar";
 import Breadcrumb from "../../../components/breadcrumb/Breadcrumb";
@@ -14,11 +13,7 @@ import {
 
 const TagPost = ({ posts, tag, tags, allPosts }) => {
   return (
-    <Layout>
-      <Head>
-        <title>Blog Posts | Wordnox </title>
-      </Head>
-
+    <Layout title="Blog Posts">
       <Breadcrumb
         title={tag?.name || "Loading..."}
         current={tag?.name || "Loading..."}

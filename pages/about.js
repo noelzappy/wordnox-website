@@ -1,8 +1,6 @@
-import Head from "next/head";
 import BannerSeven from "../components/banners/BannerSeven";
 import Layout from "../components/layouts/Layout";
 import TeamOne from "../components/teams/TeamOne";
-import AboutSectionTwo from "../components/abouts/AboutSectionTwo";
 import ContactFormOne from "../components/forms/ContactFormOne";
 import CounterTwo from "../components/counters/CounterTwo";
 import TestimonialOne from "../components/testimonials/TestimonialOne";
@@ -10,11 +8,7 @@ import BrandOne from "../components/brands/BrandOne";
 
 const About = () => {
   return (
-    <Layout>
-      <Head>
-        <title>About Us | Wordnox</title>
-      </Head>
-
+    <Layout title="About Us">
       <main className="page-wrapper">
         <BannerSeven />
 
@@ -45,12 +39,12 @@ const About = () => {
                       data-aos-duration="1000"
                       data-aos-delay="400"
                     >
-                      Welcome to Wordnox, where we transform digital aspirations
-                      into tangible business results. As a provider of web
-                      development, software solutions, and digital marketing
-                      services, we pride ourselves on delivering comprehensive
-                      online solutions that drive success for businesses of all
-                      sizes.
+                      Wordnox is a leading software development and digital
+                      marketing agency based in Ghana. Established in 2019, We
+                      are a trusted provider of software development, web
+                      design, and digital marketing services. ﻿ Our approach is
+                      rooted in collaboration, understanding your unique needs
+                      and goals to tailor solutions that align with your vision.
                     </p>
                   </div>
                 </div>

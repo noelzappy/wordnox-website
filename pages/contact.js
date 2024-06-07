@@ -7,11 +7,7 @@ import Image from "next/image";
 
 const Contact = () => {
   return (
-    <Layout>
-      <Head>
-        <title>Contact Us | Wordnox </title>
-      </Head>
-
+    <Layout title="Contact Us">
       <Breadcrumb title="Contact" current="Contact" />
 
       <main className="main-wrapper">

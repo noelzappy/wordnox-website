@@ -2,8 +2,8 @@ import Tilt from "react-parallax-tilt";
 import Image from "next/image";
 
 const BannerSeven = ({
-  title = "Empowering Businesses, Shaping Digital Futures",
-  subtitle = "We provide web development, software solutions, and digital marketing services.",
+  title = "Empowering Businesses Through Digital Transformation",
+  subtitle = "We provide software development solutions, web design, and strategic digital marketing campaigns that drive tangible results. Unlock your business's full potential with Wordnox.",
   thumbnailImageOne = "/images/slider/white-shape.png",
   thumbnailImageTwo = "/images/slider/banner-about.svg",
 }) => {

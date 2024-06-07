@@ -1,19 +1,14 @@
-import Head from "next/head";
 import BannerSeven from "../../components/banners/BannerSeven";
 import Layout from "../../components/layouts/Layout";
 import PortfolioOne from "../../components/portfolio/PortfolioOne";
 
 const Portfolio = () => {
   return (
-    <Layout>
-      <Head>
-        <title>Portfolio - Our projects | Wordnox</title>
-      </Head>
-
+    <Layout title="Our Work">
       <main className="page-wrapper">
         <BannerSeven
           title="Our projects"
-          subtitle="We delight in helping brands evolve, engage and grow in the digital space. View our digital portfolio."
+          subtitle="Explore our diverse portfolio of successful client projects spanning various industries and sectors. See how our solutions have helped businesses achieve their goals."
         />
 
         <PortfolioOne bgColor="bg-transparent" />

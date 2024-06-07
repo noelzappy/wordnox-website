@@ -18,25 +18,13 @@ const TestimonialCard = ({
         onMouseEnter={() => changeActive(index)}
       >
         <div className="inner">
-          <div className="clint-info-wrapper">
-            <div className="thumb">
-              <Image
-                width={60}
-                height={60}
-                src={data.client.image}
-                alt={data.client.fullName}
-              />
-            </div>
-            <div className="client-info">
-              <h4 className="title">{data.client.fullName}</h4>
-              <span>{data.client.designation}</span>
-            </div>
+          <div className="client-info">
+            <h4 className="title">{data.client.fullName}</h4>
+            <span>{data.client.designation}</span>
           </div>
+
           <div className="description">
             <p className="subtitle-3">{data.description}</p>
-            <Link href="#" className="axil-link-button" aria-disabled="true">
-              Read Project Case Study
-            </Link>
           </div>
         </div>
       </div>

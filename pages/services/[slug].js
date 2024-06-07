@@ -1,5 +1,3 @@
-import Head from "next/head";
-import AboutTwo from "../../components/abouts/AboutTwo";
 import BannerSix from "../../components/banners/BannerSix";
 import CallToActionOne from "../../components/call-to-actions/CallToActionOne";
 import Layout from "../../components/layouts/Layout";
@@ -34,11 +32,7 @@ export async function getStaticProps(context) {
 
 const ServiceDetails = ({ service }) => {
   return (
-    <Layout>
-      <Head>
-        <title>{service.title} | Wordnox</title>
-      </Head>
-
+    <Layout title={service.title}>
       <div className="main-wrapper">
         <BannerSix
           title={service.title}

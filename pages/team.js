@@ -3,9 +3,6 @@ import SectionTitle from "../components/common/SectionTitle";
 import Layout from "../components/layouts/Layout";
 import Image from "next/image";
 import TeamData from "../data/Team.json";
-import { motion } from "framer-motion";
-import Tilt from "react-parallax-tilt";
-import Link from "next/link";
 import TeamMember from "../components/teams/TeamMember";
 
 const Team = () => {

@@ -1,6 +1,4 @@
-import { marked } from "marked";
 import Image from "next/image";
-import Head from "next/head";
 import BlogSidebar from "../../components/blogs/BlogSidebar";
 import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
 import CallToActionOne from "../../components/call-to-actions/CallToActionOne";
@@ -8,14 +6,14 @@ import Layout from "../../components/layouts/Layout";
 import { getPostBySlug, getPosts } from "../../helpers/contentAPI";
 import { formatDate } from "../../helpers/formatDate";
 import Skeleton from "react-loading-skeleton";
+import MarkdownSyntaxHighlighter from "../../components/blogs/MarkdownSyntaxHighlighter";
 
 const BlogDetails = ({ post, posts }) => {
   return (
-    <Layout>
-      <Head>
-        <title> {post ? post.title : "Loading..."} | Wordnox.com</title>
-      </Head>
-
+    <Layout
+      title={post ? post.title : "Loading..."}
+      ogImage={post ? post.feature_image : undefined}
+    >
       <Breadcrumb
         title={post ? post.title : "Loading..."}
         root="Blog"
@@ -69,11 +67,12 @@ const BlogDetails = ({ post, posts }) => {
                           </div>
 
                           <div className="content mb--40 mb_sm--20 mb_md--20">
-                            <div
+                            <MarkdownSyntaxHighlighter content={post.html} />
+                            {/*      <div
                               dangerouslySetInnerHTML={{
                                 __html: marked(post.html),
                               }}
-                            />
+                            /> */}
                           </div>
                         </div>
                       )}

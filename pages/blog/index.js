@@ -1,5 +1,4 @@
-import Head from "next/head";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import BlogPost from "../../components/blogs/BlogPost";
 import BlogSidebar from "../../components/blogs/BlogSidebar";
 import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
@@ -21,11 +20,7 @@ const Blog = ({ posts, meta, tags }) => {
   };
 
   return (
-    <Layout>
-      <Head>
-        <title>Blog Posts | Wordnox.com</title>
-      </Head>
-
+    <Layout title="Blog Posts">
       <Breadcrumb />
 
       <main className="page-wrappper">
