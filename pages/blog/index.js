@@ -63,10 +63,20 @@ const Blog = ({ posts, meta, tags }) => {
 export default Blog;
 
 export async function getStaticProps() {
-  const posts = await getPosts();
-  const tags = await getTags();
+  let posts = [];
+  let tags = [];
+  let meta = {
+    pagination: {},
+  };
 
-  const meta = posts.meta;
+  try {
+    posts = await getPosts();
+    tags = await getTags();
+
+    meta = posts.meta;
+  } catch (error) {
+    //console.log(error);
+  }
 
   return {
     props: {
