@@ -1,158 +1,41 @@
 [
   {
     "id": 1,
-    "title": "Los Marineros",
-    "subtitle": "featured case study",
-    "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
-    "image": "/images/featured/featured-image-01.jpg",
+    "title": "Ashasie Travel & Tours Website",
+    "subtitle": "booking website design",
+    "description": "The objective was to develop a modern, user-friendly website that effectively communicates the company's services and enhances its online presence. The website should also provide a seamless booking experience for users. The website was designed to be responsive and mobile-friendly, ensuring that users can access it from any device.",
+    "image": "/images/featured/ashasie-website.webp",
+    "slug": "ashasie-travel-tours-website",
     "counter": [
       {
         "title": "ROI increase",
-        "amount": 15
+        "amount": 46
       },
       {
         "title": "Monthly website visits",
-        "amount": 60
+        "amount": 7
       }
     ],
     "buttonText": "Read Case Study",
-    "videoUrl": "https://www.youtube.com/watch?v=Pj_geat9hvI",
-    "projectBreif1": {
-      "image": "/images/featured/featured-brief-01.jpg",
+    "projectBrief": {
+      "image": "/images/featured/ashasie-website-01.webp",
       "description": [
-        "Nulla et velit gravida, facilisis quam a, molestie ante. Mauris placerat suscipit dui, eget maximus tellus blandit a. Praesent non tellus sed ligula commodo blandit in et mauris. Quisque efficitur ipsum ut dolor molestie pellentesque.",
-        "Nulla pharetra hendrerit mi quis dapibus. Quisque luctus, tortor a venenatis fermentum, est lacus feugiat nisl, id pharetra odio enim eget libero."
-      ]
-    },
-    "projectBreif2": {
-      "image": "",
-      "description": [
-        "Nulla et velit gravida, facilisis quam a, molestie ante. Mauris placerat suscipit dui, eget maximus tellus blandit a. Praesent non tellus sed ligula commodo blandit in et mauris. Quisque efficitur ipsum ut dolor molestie pellentesque.",
-        "Nulla pharetra hendrerit mi quis dapibus. Quisque luctus, tortor a venenatis fermentum, est lacus feugiat nisl, id pharetra odio enim eget libero."
+        "Ashasie Travel & Tours, a reputable travel & tour provider, approached us to revamp their online presence. Their existing website was outdated and failed to communicate their services and brand values effectively. The primary objective was to create a modern, visually appealing, and user-friendly website to attract potential clients and enhance their digital footprint."
       ]
     },
     "solution": {
       "image": "",
       "description": [
-        "Nulla et velit gravida, facilisis quam a, molestie ante. Mauris placerat suscipit dui, eget maximus tellus blandit a. Praesent non tellus sed ligula commodo blandit in et mauris. Quisque efficitur ipsum ut dolor molestie pellentesque.",
-        "Nulla pharetra hendrerit mi quis dapibus. Quisque luctus, tortor a venenatis fermentum, est lacus feugiat nisl, id pharetra odio enim eget libero."
+        "Following an in-depth discovery phase, our team designed a clean and intuitive interface that showcased the company's packages and tours. The website's responsive design ensured optimal viewing experiences across various devices. We integrated an online booking system and a secure user portal to streamline communication and improve user engagement.",
+        "Additionally, our SEO specialists optimized the website's content and structure, significantly improving its visibility on search engines and driving organic traffic. The result was a visually stunning and highly functional website that accurately represented the company's brand, leading to overall business growth."
       ]
     },
-    "process": {
-      "title": "Our design process",
-      "description": "Our comprehensive design strategy ensures a perfectly crafted design for your business.",
-      "strategies": [
-        {
-          "id": 1,
-          "title": "Discover",
-          "subtitle": "our four step process",
-          "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
-          "highlightColor": "extra04-color",
-          "image": "/images/process/process-01.jpg"
-        },
-        {
-          "id": 2,
-          "title": "Prototype",
-          "subtitle": "our four step process",
-          "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
-          "highlightColor": "extra05-color",
-          "image": "/images/process/process-02.jpg"
-        },
-        {
-          "id": 3,
-          "title": "Test",
-          "subtitle": "our four step process",
-          "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
-          "highlightColor": "extra06-color",
-          "image": "/images/process/process-03.jpg"
-        },
-        {
-          "id": 4,
-          "title": "Build",
-          "subtitle": "our four step process",
-          "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
-          "highlightColor": "extra07-color",
-          "image": "/images/process/process-04.jpg"
-        }
-      ]
-    }
-  },
-  {
-    "id": 2,
-    "title": "Whitehorse",
-    "subtitle": "featured case study",
-    "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
-    "image": "/images/featured/featured-image-03.jpg",
-    "buttonText": "Read Case Study",
-    "counter": [
-      {
-        "title": "ROI increase",
-        "amount": 15
-      },
-      {
-        "title": "Monthly website visits",
-        "amount": 60
-      }
-    ],
-    "videoUrl": "https://www.youtube.com/watch?v=Pj_geat9hvI",
-    "projectBreif1": {
-      "image": "/images/featured/featured-brief-02.jpg",
-      "description": [
-        "Nulla et velit gravida, facilisis quam a, molestie ante. Mauris placerat suscipit dui, eget maximus tellus blandit a. Praesent non tellus sed ligula commodo blandit in et mauris. Quisque efficitur ipsum ut dolor molestie pellentesque.",
-        "Nulla pharetra hendrerit mi quis dapibus. Quisque luctus, tortor a venenatis fermentum, est lacus feugiat nisl, id pharetra odio enim eget libero."
-      ]
-    },
-    "projectBreif2": {
-      "image": "",
-      "description": [
-        "Nulla et velit gravida, facilisis quam a, molestie ante. Mauris placerat suscipit dui, eget maximus tellus blandit a. Praesent non tellus sed ligula commodo blandit in et mauris. Quisque efficitur ipsum ut dolor molestie pellentesque.",
-        "Nulla pharetra hendrerit mi quis dapibus. Quisque luctus, tortor a venenatis fermentum, est lacus feugiat nisl, id pharetra odio enim eget libero."
-      ]
-    },
-    "solution": {
-      "image": "",
-      "description": [
-        "Nulla et velit gravida, facilisis quam a, molestie ante. Mauris placerat suscipit dui, eget maximus tellus blandit a. Praesent non tellus sed ligula commodo blandit in et mauris. Quisque efficitur ipsum ut dolor molestie pellentesque.",
-        "Nulla pharetra hendrerit mi quis dapibus. Quisque luctus, tortor a venenatis fermentum, est lacus feugiat nisl, id pharetra odio enim eget libero."
-      ]
-    },
-    "process": {
-      "title": "Our design process",
-      "description": "Our comprehensive design strategy ensures a perfectly crafted design for your business.",
-      "strategies": [
-        {
-          "id": 1,
-          "title": "Discover",
-          "subtitle": "our four step process",
-          "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
-          "highlightColor": "extra04-color",
-          "image": "/images/process/process-01.jpg"
-        },
-        {
-          "id": 2,
-          "title": "Prototype",
-          "subtitle": "our four step process",
-          "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
-          "highlightColor": "extra05-color",
-          "image": "/images/process/process-02.jpg"
-        },
-        {
-          "id": 3,
-          "title": "Test",
-          "subtitle": "our four step process",
-          "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
-          "highlightColor": "extra06-color",
-          "image": "/images/process/process-03.jpg"
-        },
-        {
-          "id": 4,
-          "title": "Build",
-          "subtitle": "our four step process",
-          "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
-          "highlightColor": "extra07-color",
-          "image": "/images/process/process-04.jpg"
-        }
-      ]
-    }
+    "images": [
+      "/images/featured/ashasie-1.png",
+      "/images/featured/ashasie-2.png",
+      "/images/featured/ashasie-3.png",
+      "/images/featured/ashasie-4.png",
+      "/images/featured/ashasie-5.png"
+    ]
   }
 ]

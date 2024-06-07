@@ -6,7 +6,6 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import CaseStudyData from "../../data/CaseStudies.json";
 import Link from "next/link";
-import { slugify } from "../../helpers/utilities";
 
 const SliderOne = () => {
   const [ref, inView] = useInView({
@@ -40,8 +39,8 @@ const SliderOne = () => {
                   <div className="col-lg-6 col-xl-6 col-md-12 col-12">
                     <div className="thumbnail">
                       <Image
-                        width={661}
-                        height={668}
+                        width={760}
+                        height={650}
                         className="image w-100"
                         src={item.image}
                         alt="Featured Images"
@@ -55,13 +54,13 @@ const SliderOne = () => {
                           {item.subtitle}
                         </span>
                         <h2 className="title">
-                          <Link href={`/case-studies/${slugify(item.title)}`}>
+                          <Link href={`/case-studies/${item.slug}`}>
                             {item.title}
                           </Link>
                         </h2>
                         <p className="subtitle-2">{item.description}</p>
                         <Link
-                          href={`/case-studies/${slugify(item.title)}`}
+                          href={`/case-studies/${item.slug}`}
                           className="axil-button btn-large btn-transparent"
                         >
                           <span className="button-text">{item.buttonText}</span>

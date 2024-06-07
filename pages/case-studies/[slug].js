@@ -4,13 +4,12 @@ import CallToActionOne from "../../components/call-to-actions/CallToActionOne";
 import Layout from "../../components/layouts/Layout";
 import CaseStudiesData from "../../data/CaseStudies.json";
 import BannerSix from "../../components/banners/BannerSix";
-import { slugify } from "../../helpers/utilities";
 
 export async function getStaticPaths() {
   return {
-    paths: CaseStudiesData?.map(({ title }) => ({
+    paths: CaseStudiesData?.map(({ slug }) => ({
       params: {
-        slug: slugify(title),
+        slug: slug,
       },
     })),
     fallback: false,
@@ -18,9 +17,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const caseStudy = CaseStudiesData.find(
-    (item) => slugify(item.title) === params.slug
-  );
+  const caseStudy = CaseStudiesData.find((item) => item.slug === params.slug);
 
   return {
     props: {
@@ -35,7 +32,7 @@ const CaseStudyDetails = ({ caseStudy }) => {
       <main className="page-wrapper">
         <BannerSix
           title={caseStudy.title}
-          subtitle="A quick view of our success stories."
+          subtitle={caseStudy.description}
           bannerStyleClass="axil-breadcrumb-area breadcrumb-style-2 single-service pt--170 pb--70 theme-gradient"
           bannerTitleClass="title"
           leftColumn="col-lg-6 order-2 order-lg-1 mt_md--30 mt_sm--20"
@@ -57,7 +54,7 @@ const CaseStudyDetails = ({ caseStudy }) => {
                       width={550}
                       height={596}
                       className="image w-100 paralax-image"
-                      src={caseStudy.projectBreif1.image}
+                      src={caseStudy.projectBrief.image}
                       alt="Featured Images"
                     />
                   </Tilt>
@@ -83,80 +80,20 @@ const CaseStudyDetails = ({ caseStudy }) => {
               <div className="col-lg-6 col-xl-5 offset-xl-1 col-md-12 col-12">
                 <div className="content mt_md--30 mt_sm--30">
                   <div className="inner">
-                    <h2 className="title mb--20">Project brief</h2>
-                    {caseStudy.projectBreif1.description?.map(
-                      (breif, index) => (
-                        <p
-                          key={`project-breif-${index}`}
-                          className={
-                            index !==
-                            caseStudy.projectBreif1.description.length - 1
-                              ? "mb--30"
-                              : ""
-                          }
-                        >
-                          {breif}
-                        </p>
-                      )
-                    )}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="axil-project-brief project-bief-styles order-style-2 ax-section-gap bg-color-lightest">
-          <div className="container">
-            <div className="row align-items-center">
-              <div className="col-lg-6 col-xl-5 col-md-12 col-12 order-2 order-lg-1 mt_md--30 mt_sm--30">
-                <div className="content">
-                  <div className="inner">
-                    <h2 className="title mb--20">Project brief</h2>
-                    {caseStudy.projectBreif2.description?.map(
-                      (breif, index) => (
-                        <p
-                          key={`project-breif-${index}`}
-                          className={
-                            index !==
-                            caseStudy.projectBreif2.description.length - 1
-                              ? "mb--30"
-                              : ""
-                          }
-                        >
-                          {breif}
-                        </p>
-                      )
-                    )}
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-6 col-xl-6 offset-xl-1 col-md-12 col-12 order-1 order-lg-2">
-                <div className="thumbnail position-relative">
-                  <Tilt tiltMaxAngleX={5} tiltMaxAngleY={5}>
-                    <Image
-                      width={550}
-                      height={596}
-                      className="image w-100 paralax-image"
-                      src="/images/featured/featured-image-07.jpg"
-                      alt="Featured Images"
-                    />
-                  </Tilt>
-                  <div className="shape-group shape-01">
-                    <Image
-                      width={257}
-                      height={179}
-                      src="/images/others/contact-01.svg"
-                      alt="Shape image"
-                    />
-                  </div>
-                  <div className="shape-group shape-02">
-                    <Image
-                      width={410}
-                      height={424}
-                      src="/images/others/contact-03.svg"
-                      alt="Shape image"
-                    />
+                    <h2 className="title mb--20">Project Brief</h2>
+                    {caseStudy.projectBrief.description?.map((brief, index) => (
+                      <p
+                        key={`project-breif-${index}`}
+                        className={
+                          index !==
+                          caseStudy.projectBrief.description.length - 1
+                            ? "mb--30"
+                            : ""
+                        }
+                      >
+                        {brief}
+                      </p>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -184,20 +121,21 @@ const CaseStudyDetails = ({ caseStudy }) => {
                       </p>
                     ))}
                   </div>
-                  <div className="thumbnail mt--60">
-                    <Tilt tiltMaxAngleX={5} tiltMaxAngleY={5}>
-                      <Image
-                        width={910}
-                        height={500}
-                        className="w-100 paralax-image"
-                        src="/images/featured/featured-b1.jpg"
-                        alt="Featured Images"
-                      />
-                    </Tilt>
-                  </div>
                 </div>
               </div>
             </div>
+
+            {caseStudy.images.map((image) => (
+              <div className="mt--60" key={`project-solution-image-${image}`}>
+                <Tilt tiltMaxAngleX={5} tiltMaxAngleY={5}>
+                  <img
+                    className="image w-100 paralax-image"
+                    src={image}
+                    alt={caseStudy.title}
+                  />
+                </Tilt>
+              </div>
+            ))}
           </div>
           <div className="shape-group">
             <div className="shape">
