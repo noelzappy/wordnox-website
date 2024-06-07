@@ -100,8 +100,8 @@ const PrivacyPolicy = () => {
                             services we think may interest you.
                           </li>
                           <li>
-                            Website: Wordnox's site, which can be accessed via
-                            this URL: https://wordnox.com
+                            Website: Wordnox&apos;s site, which can be accessed
+                            via this URL: https://wordnox.com
                           </li>
                           <li>
                             You: a person or entity that is registered with
@@ -288,7 +288,7 @@ const PrivacyPolicy = () => {
                         need to use your information and there is no need for us
                         to keep it to comply with our legal or regulatory
                         obligations, we’ll either remove it from our systems or
-                        depersonalize it so that we can't identify you.
+                        depersonalize it so that we can&apos;t identify you.
                       </p>
 
                       <h1>How Do We Protect Your Information?</h1>
@@ -441,14 +441,14 @@ const PrivacyPolicy = () => {
                       <p>
                         We may disclose information (including personal
                         information) about you to our Corporate Affiliates. For
-                        purposes of this Privacy Policy, "Corporate Affiliate"
-                        means any person or entity which directly or indirectly
-                        controls, is controlled by or is under common control
-                        with Wordnox, whether by ownership or otherwise. Any
-                        information relating to you that we provide to our
-                        Corporate Affiliates will be treated by those Corporate
-                        Affiliates in accordance with the terms of this Privacy
-                        Policy.
+                        purposes of this Privacy Policy, &quot;Corporate
+                        Affiliate&quot; means any person or entity which
+                        directly or indirectly controls, is controlled by or is
+                        under common control with Wordnox, whether by ownership
+                        or otherwise. Any information relating to you that we
+                        provide to our Corporate Affiliates will be treated by
+                        those Corporate Affiliates in accordance with the terms
+                        of this Privacy Policy.
                       </p>
 
                       <h1>Governing Law</h1>
@@ -482,12 +482,12 @@ const PrivacyPolicy = () => {
 
                       <h1>Your Consent</h1>
                       <p>
-                        We've updated our Privacy Policy to provide you with
-                        complete transparency into what is being set when you
-                        visit our site and how it's being used. By using our
-                        website, registering an account, or making a purchase,
-                        you hereby consent to our Privacy Policy and agree to
-                        its terms.
+                        We&apos;ve updated our Privacy Policy to provide you
+                        with complete transparency into what is being set when
+                        you visit our site and how it&apos;s being used. By
+                        using our website, registering an account, or making a
+                        purchase, you hereby consent to our Privacy Policy and
+                        agree to its terms.
                       </p>
 
                       <h1>Links to Other Websites</h1>
@@ -509,40 +509,40 @@ const PrivacyPolicy = () => {
                       </p>
                       <h1>Cookies</h1>
                       <p>
-                        Wordnox uses "Cookies" to identify the areas of our
-                        website that you have visited. A Cookie is a small piece
-                        of data stored on your computer or mobile device by your
-                        web browser. We use Cookies to enhance the performance
-                        and functionality of our website but are non-essential
-                        to their use. However, without these cookies, certain
-                        functionality like videos may become unavailable or you
-                        would be required to enter your login details every time
-                        you visit the website as we would not be able to
-                        remember that you had logged in previously. Most web
-                        browsers can be set to disable the use of Cookies.
-                        However, if you disable Cookies, you may not be able to
-                        access functionality on our website correctly or at all.
-                        We never place Personally Identifiable Information in
-                        Cookies.
+                        Wordnox uses &quot;Cookies&quot; to identify the areas
+                        of our website that you have visited. A Cookie is a
+                        small piece of data stored on your computer or mobile
+                        device by your web browser. We use Cookies to enhance
+                        the performance and functionality of our website but are
+                        non-essential to their use. However, without these
+                        cookies, certain functionality like videos may become
+                        unavailable or you would be required to enter your login
+                        details every time you visit the website as we would not
+                        be able to remember that you had logged in previously.
+                        Most web browsers can be set to disable the use of
+                        Cookies. However, if you disable Cookies, you may not be
+                        able to access functionality on our website correctly or
+                        at all. We never place Personally Identifiable
+                        Information in Cookies.
                       </p>
 
                       <h1>
                         Blocking and disabling cookies and similar technologies
                       </h1>
                       <p>
-                        Wherever you're located you may also set your browser to
-                        block cookies and similar technologies, but this action
-                        may block our essential cookies and prevent our website
-                        from functioning properly, and you may not be able to
-                        fully utilize all of its features and services. You
-                        should also be aware that you may also lose some saved
-                        information (e.g. saved login details, site preferences)
-                        if you block cookies on your browser. Different browsers
-                        make different controls available to you. Disabling a
-                        cookie or category of cookie does not delete the cookie
-                        from your browser, you will need to do this yourself
-                        from within your browser, you should visit your
-                        browser's help menu for more information.
+                        Wherever you&apos;re located you may also set your
+                        browser to block cookies and similar technologies, but
+                        this action may block our essential cookies and prevent
+                        our website from functioning properly, and you may not
+                        be able to fully utilize all of its features and
+                        services. You should also be aware that you may also
+                        lose some saved information (e.g. saved login details,
+                        site preferences) if you block cookies on your browser.
+                        Different browsers make different controls available to
+                        you. Disabling a cookie or category of cookie does not
+                        delete the cookie from your browser, you will need to do
+                        this yourself from within your browser, you should visit
+                        your browser&apos;s help menu for more information.
                       </p>
                       <h1>Remarketing Services</h1>
                       <p>
@@ -550,11 +550,11 @@ const PrivacyPolicy = () => {
                         digital marketing, remarketing (or retargeting) is the
                         practice of serving ads across the internet to people
                         who have already visited your website. It allows your
-                        company to seem like they're “following” people around
-                        the internet by serving ads on the websites and
+                        company to seem like they&apos;re “following” people
+                        around the internet by serving ads on the websites and
                         platforms they use most.
                       </p>
-                      <h1>Kids' Privacy</h1>
+                      <h1>Kids&apos; Privacy</h1>
                       <p>
                         We do not address anyone under the age of 13. We do not
                         knowingly collect personally identifiable information
@@ -586,7 +586,8 @@ const PrivacyPolicy = () => {
                         We may display, include or make available third-party
                         content (including data, information, applications and
                         other products services) or provide links to third-party
-                        websites or services ("Third- Party Services").
+                        websites or services (&quot;Third- Party
+                        Services&quot;).
                       </p>
                       <p>
                         You acknowledge and agree that Wordnox shall not be
@@ -601,7 +602,7 @@ const PrivacyPolicy = () => {
                         Third-Party Services and links thereto are provided
                         solely as a convenience to you and you access and use
                         them entirely at your own risk and subject to such third
-                        parties' terms and conditions.
+                        parties&apos; terms and conditions.
                       </p>
                       <h1>Facebook Pixel</h1>
                       <p>
@@ -631,7 +632,7 @@ const PrivacyPolicy = () => {
                       <h1>What is GDPR?</h1>
                       <p>
                         GDPR is an EU-wide privacy and data protection law that
-                        regulates how EU residents' data is protected by
+                        regulates how EU residents&apos; data is protected by
                         companies and enhances the control the EU residents
                         have, over their personal data.
                       </p>
@@ -687,18 +688,19 @@ const PrivacyPolicy = () => {
                       <h1>Why is GDPR important?</h1>
                       <p>
                         GDPR adds some new requirements regarding how companies
-                        should protect individuals' personal data that they
+                        should protect individuals&apos; personal data that they
                         collect and process. It also raises the stakes for
                         compliance by increasing enforcement and imposing
-                        greater fines for breach. Beyond these facts it's simply
-                        the right thing to do. At Wordnox we strongly believe
-                        that your data privacy is very important and we already
-                        have solid security and privacy practices in place that
-                        go beyond the requirements of this new regulation.
+                        greater fines for breach. Beyond these facts it&apos;s
+                        simply the right thing to do. At Wordnox we strongly
+                        believe that your data privacy is very important and we
+                        already have solid security and privacy practices in
+                        place that go beyond the requirements of this new
+                        regulation.
                       </p>
 
                       <h1>
-                        Individual Data Subject's Rights - Data Access,
+                        Individual Data Subject&apos;s Rights - Data Access,
                         Portability and Deletion
                       </h1>
                       <p>
@@ -715,7 +717,7 @@ const PrivacyPolicy = () => {
                         We are aware that if you are working with EU customers,
                         you need to be able to provide them with the ability to
                         access, update, retrieve and remove personal data. We
-                        got you! We've been set up as self service from the
+                        got you! We&apos;ve been set up as self service from the
                         start and have always given you access to your data and
                         your customers data. Our customer support team is here
                         for you to answer any questions you might have about
@@ -756,8 +758,9 @@ const PrivacyPolicy = () => {
                           Information about you that we have collected.
                         </li>
                         <li>
-                          Request that a business that sells a consumer's
-                          personal data, not sell the consumer's personal data.
+                          Request that a business that sells a consumer&apos;s
+                          personal data, not sell the consumer&apos;s personal
+                          data.
                         </li>
                       </ul>
                       <p>
@@ -805,8 +808,8 @@ const PrivacyPolicy = () => {
                         </li>
                         <li>
                           Right to request that a business that sells a
-                          consumer's personal data, not sell the consumer's
-                          personal data.
+                          consumer&apos;s personal data, not sell the
+                          consumer&apos;s personal data.
                         </li>
                       </ul>
                       <p>
@@ -823,7 +826,8 @@ const PrivacyPolicy = () => {
                       </p>
                       <h1>Contact Us</h1>
                       <p>
-                        Don't hesitate to contact us if you have any questions.
+                        Don&apos;t hesitate to contact us if you have any
+                        questions.
                       </p>
                       <ul>
                         <li>
