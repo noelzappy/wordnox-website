@@ -4,7 +4,6 @@ import { useInView } from "react-intersection-observer";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
-import SliderTwoData from "../../data/SliderTwo.json";
 import CaseStudyData from "../../data/CaseStudies.json";
 import Link from "next/link";
 import { slugify } from "../../helpers/utilities";
@@ -30,9 +29,9 @@ const SliderOne = () => {
         className="container axil-featured-activation axil-carousel"
         ref={ref}
       >
-        {SliderTwoData.length > 0 && (
+        {CaseStudyData.length > 0 && (
           <Slider {...settings}>
-            {SliderTwoData.map((item, index) => {
+            {CaseStudyData.map((item, index) => {
               return (
                 <div
                   className="row d-flex flex-wrap axil-featured row--0"
@@ -56,19 +55,13 @@ const SliderOne = () => {
                           {item.subtitle}
                         </span>
                         <h2 className="title">
-                          <Link
-                            href={`/case-studies/${slugify(
-                              CaseStudyData[0].title
-                            )}`}
-                          >
+                          <Link href={`/case-studies/${slugify(item.title)}`}>
                             {item.title}
                           </Link>
                         </h2>
                         <p className="subtitle-2">{item.description}</p>
                         <Link
-                          href={`/case-studies/${slugify(
-                            CaseStudyData[0].title
-                          )}`}
+                          href={`/case-studies/${slugify(item.title)}`}
                           className="axil-button btn-large btn-transparent"
                         >
                           <span className="button-text">{item.buttonText}</span>

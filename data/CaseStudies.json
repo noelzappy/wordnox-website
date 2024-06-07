@@ -15,6 +15,7 @@
         "amount": 60
       }
     ],
+    "buttonText": "Read Case Study",
     "videoUrl": "https://www.youtube.com/watch?v=Pj_geat9hvI",
     "projectBreif1": {
       "image": "/images/featured/featured-brief-01.jpg",
@@ -82,6 +83,7 @@
     "subtitle": "featured case study",
     "description": "Donec metus lorem, vulputate at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. Aliquam tristique libero at dui sodales, et placerat orci lobortis. Maecenas ipsum neque, elementum id dignissim et, imperdiet vitae mauris.",
     "image": "/images/featured/featured-image-03.jpg",
+    "buttonText": "Read Case Study",
     "counter": [
       {
         "title": "ROI increase",
