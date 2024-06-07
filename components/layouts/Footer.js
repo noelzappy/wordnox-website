@@ -233,9 +233,6 @@ const Footer = ({ footerSetting = {} }) => {
                         Privacy Policy
                       </Link>
                     </li>
-                    <li>
-                      <Link href="#">Terms of Use</Link>
-                    </li>
                   </ul>
                 </div>
               </div>

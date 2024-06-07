@@ -90,6 +90,7 @@ const About = () => {
         </div>
 
         <CounterTwo />
+        <BrandOne />
 
         <TeamOne />
 
@@ -169,8 +170,6 @@ const About = () => {
         </div>
 
         <TestimonialOne />
-
-        <BrandOne />
       </main>
     </Layout>
   );

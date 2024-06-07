@@ -4,8 +4,7 @@ import Image from "next/image";
 const BannerSeven = ({
   title = "Empowering Businesses Through Digital Transformation",
   subtitle = "We provide software development solutions, web design, and strategic digital marketing campaigns that drive tangible results. Unlock your business's full potential with Wordnox.",
-  thumbnailImageOne = "/images/slider/white-shape.png",
-  thumbnailImageTwo = "/images/slider/banner-about.svg",
+  thumbnailImageOne = "/images/others/similing-lady.jpg",
 }) => {
   return (
     <div className="axil-breadcrumb-area breadcrumb-style-2 single-service pt--170 pb--70 theme-gradient">
@@ -22,23 +21,10 @@ const BannerSeven = ({
               <div className="image-group text-end">
                 <Tilt tiltMaxAngleX={5} tiltMaxAngleY={5}>
                   <Image
-                    width={370}
-                    height={466}
+                    width={400}
+                    height={530}
                     className="image-1 paralax-image"
                     src={thumbnailImageOne}
-                    alt="Slider images"
-                  />
-                </Tilt>
-                <Tilt
-                  tiltMaxAngleX={5}
-                  tiltMaxAngleY={5}
-                  className="banner-paralax-image-2"
-                >
-                  <Image
-                    width={519}
-                    height={395}
-                    className="image-2 paralax-image"
-                    src={thumbnailImageTwo}
                     alt="Slider images"
                   />
                 </Tilt>

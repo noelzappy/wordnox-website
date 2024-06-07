@@ -1,9 +1,7 @@
-import Head from "next/head";
+import BrandOne from "../components/brands/BrandOne";
 import Breadcrumb from "../components/breadcrumb/Breadcrumb";
-import SectionTitle from "../components/common/SectionTitle";
 import ContactFormThree from "../components/forms/ContactFormThree";
 import Layout from "../components/layouts/Layout";
-import Image from "next/image";
 
 const Contact = () => {
   return (
@@ -86,6 +84,8 @@ const Contact = () => {
               <i className="icon icon-contact-03" />
             </div>
           </div>
+
+          <BrandOne />
         </div>
       </main>
     </Layout>

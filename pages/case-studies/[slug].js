@@ -4,6 +4,7 @@ import CallToActionOne from "../../components/call-to-actions/CallToActionOne";
 import Layout from "../../components/layouts/Layout";
 import CaseStudiesData from "../../data/CaseStudies.json";
 import BannerSix from "../../components/banners/BannerSix";
+import Link from "next/link";
 
 export async function getStaticPaths() {
   return {
@@ -94,6 +95,14 @@ const CaseStudyDetails = ({ caseStudy }) => {
                         {brief}
                       </p>
                     ))}
+                    <Link
+                      href={caseStudy.projectUrl}
+                      className="axil-button btn-large btn-transparent mt--20"
+                      target="_blank"
+                    >
+                      <span className="button-text">Launch Project</span>
+                      <span className="button-icon" />
+                    </Link>
                   </div>
                 </div>
               </div>

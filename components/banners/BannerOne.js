@@ -47,7 +47,7 @@ const BannerOne = () => {
                       <Image
                         width={500}
                         height={630}
-                        src="https://images.pexels.com/photos/4350099/pexels-photo-4350099.jpeg?auto=compress&cs=tinysrgb&w=800"
+                        src="/images/others/woman-sitting.jpg"
                         alt="Wordnox Images"
                       />
                     </div>
@@ -55,7 +55,7 @@ const BannerOne = () => {
                       <Image
                         width={500}
                         height={630}
-                        src="https://images.pexels.com/photos/4350099/pexels-photo-4350099.jpeg?auto=compress&cs=tinysrgb&w=800"
+                        src="/images/others/woman-sitting.jpg"
                         alt="Wordnox Images"
                       />
                     </div>

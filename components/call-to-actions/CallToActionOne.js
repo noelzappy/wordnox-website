@@ -19,7 +19,7 @@ const CallToActionOne = () => {
                   className="axil-button btn-large btn-transparent"
                   href="/contact"
                 >
-                  <span className="button-text">Get a Free Quote</span>
+                  <span className="button-text">Book a Call</span>
                   <span className="button-icon" />
                 </Link>
                 <div className="callto-action">

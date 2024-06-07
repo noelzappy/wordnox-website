@@ -8,7 +8,7 @@ const BannerSix = ({
   bannerTitleClass = "page-title mb--20",
   leftColumn = "col-lg-5 order-2 order-lg-1 mt_md--30 mt_sm--30",
   rightColumn = "col-lg-7 order-1 order-lg-2",
-  bannerImageOne = "/images/others/smiling-lady.jpg",
+  bannerImageOne = "/images/others/similing-lady.jpg",
   shapeImage = "/images/slider/single-service-02.png",
   isServiceDetails = false,
   showPersonImage = true,
@@ -31,8 +31,8 @@ const BannerSix = ({
                 <div className="thumbnail">
                   <Tilt tiltMaxAngleX={9} tiltMaxAngleY={9}>
                     <Image
-                      width={370}
-                      height={466}
+                      width={400}
+                      height={530}
                       className="paralax-image"
                       src={bannerImageOne}
                       alt="Wordnox Images"
@@ -57,8 +57,8 @@ const BannerSix = ({
                 <div className="image-group">
                   <Tilt tiltMaxAngleX={9} tiltMaxAngleY={9}>
                     <Image
-                      width={370}
-                      height={466}
+                      width={400}
+                      height={530}
                       className="image-1 paralax-image"
                       src={shapeImage}
                       alt="Slider images"
