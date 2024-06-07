@@ -8,7 +8,7 @@ const menuItem = [
     title: "SEO",
     url: "/services/seo",
   },
-  { title: "Web Design", url: "/services/web-design" },
+  { title: "Web Design", url: "/services/website-design" },
   {
     title: "Software Dev.",
     url: "/services/custom-software-development",
