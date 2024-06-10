@@ -20,6 +20,7 @@ export const getPostBySlug = async (slug) => {
   return api.posts.read({
     slug,
     include: "authors,tags",
+    filter: "tag:[-portfolio, -case-studies]",
   });
 };
 
@@ -36,9 +37,9 @@ export const getTags = async () => {
   return await api.tags.browse();
 };
 
-export const getPostsByTag = async (tag) => {
+export const getPostsByTag = async (tag, limit) => {
   return await api.posts.browse({
-    limit: "all",
+    limit: limit || "all",
     filter: `tag:${tag}`,
     include: "tags,authors",
   });
@@ -47,5 +48,12 @@ export const getPostsByTag = async (tag) => {
 export const getTag = async (tag) => {
   return await api.tags.read({
     slug: tag,
+  });
+};
+
+export const getCaseStudies = async () => {
+  return await api.posts.browse({
+    limit: "all",
+    filter: "tag:case-studies",
   });
 };

@@ -41,7 +41,7 @@
     }
   ],
   "resources": [
-    { "title": "Blog", "url": "/blog" },
+    { "title": "Blog", "url": "https://blog.wordnox.com", "target": "_blank" },
     { "title": "Case Studies", "url": "/case-studies" },
     { "title": "Portfolio", "url": "/portfolio" }
   ],

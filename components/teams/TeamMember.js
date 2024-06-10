@@ -10,7 +10,7 @@ const TeamMember = ({ team }) => {
             <Image
               width={400}
               height={400}
-              className="w-100"
+              className="w-100 img-fluid"
               src={team.image}
               alt="Team Images"
             />

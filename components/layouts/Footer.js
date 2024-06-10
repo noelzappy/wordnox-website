@@ -158,7 +158,12 @@ const Footer = ({ footerSetting = {} }) => {
                         >
                           {FooterMenu.resources?.map((menuItem, index) => (
                             <li key={`footer-resource-${index}`}>
-                              <Link href={menuItem.url}>{menuItem.title}</Link>
+                              <Link
+                                href={menuItem.url}
+                                target={menuItem.target}
+                              >
+                                {menuItem.title}
+                              </Link>
                             </li>
                           ))}
                         </ul>
@@ -205,15 +210,9 @@ const Footer = ({ footerSetting = {} }) => {
         <div className="copyright copyright-default">
           <div className="container">
             <div className="row row--0 ptb--20 axil-basic-thine-line">
-              <div className="col-lg-6 col-md-6 col-sm-12 col-12">
+              <div className="col-lg-4 col-md-4 col-sm-12 col-12">
                 <div className="inner text-center text-md-start">
                   <p>
-                    <Image
-                      src="/images/logo.png"
-                      alt="Wordnox Software Solutions"
-                      width={27}
-                      height={27}
-                    />{" "}
                     © {new Date().getFullYear()}. Wordnox by{" "}
                     <Link target="_blank" href="https://edromart.com">
                       Edromart Tech. LTD.
@@ -221,7 +220,19 @@ const Footer = ({ footerSetting = {} }) => {
                   </p>
                 </div>
               </div>
-              <div className="col-lg-6 col-md-6 col-sm-12 col-12">
+
+              <div className="col-lg-4 col-md-4 col-sm-12 col-12 py-2">
+                <div className="inner text-center">
+                  <Image
+                    src="/images/logo.png"
+                    alt="Wordnox Software Solutions"
+                    width={27}
+                    height={27}
+                  />
+                </div>
+              </div>
+
+              <div className="col-lg-4 col-md-4 col-sm-12 col-12">
                 <div className="quick-contact">
                   <ul
                     className={`link-hover d-flex justify-content-center justify-content-md-end liststyle ${

@@ -15,6 +15,7 @@ const TeamOne = () => {
                   height={514}
                   src="https://images.pexels.com/photos/3869651/pexels-photo-3869651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                   alt="Team Images"
+                  className="img-fluid w-100"
                 />
               </div>
             </div>

@@ -9,7 +9,7 @@ const BlogPost = ({ post }) => {
     <div className="axil-blog-list">
       <div className="blog-top">
         <h3 className="title">
-          <Link href={`/blog/${post.slug}`}>{post.title}</Link>
+          <Link href={post.url}>{post.title}</Link>
         </h3>
         <div className="author">
           <div className="author-thumb">
@@ -35,11 +35,11 @@ const BlogPost = ({ post }) => {
         </div>
       </div>
       <div className="thumbnail">
-        <Link href={`/blog/${post.slug}`}>
+        <Link href={post.url}>
           <Image
             width={850}
             height={450}
-            className="w-100"
+            className="w-100 img-fluid"
             src={post.feature_image}
             alt={post.title}
             priority={true}
@@ -48,10 +48,7 @@ const BlogPost = ({ post }) => {
       </div>
       <div className="content">
         <p>{post.excerpt}</p>
-        <Link
-          href={`/blog/${post.slug}`}
-          className="axil-button btn-large btn-transparent"
-        >
+        <Link href={post.url} className="axil-button btn-large btn-transparent">
           <span className="button-text">Read More</span>
           <span className="button-icon" />
         </Link>

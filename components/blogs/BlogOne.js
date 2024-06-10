@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import SectionTitle from "../common/SectionTitle";
 import { useState } from "react";
+import { formatDate } from "../../helpers/formatDate";
 
 const BlogOne = ({ posts }) => {
   const [activeBlog, setActiveBlog] = useState(0);
@@ -18,7 +19,7 @@ const BlogOne = ({ posts }) => {
             <SectionTitle
               title="Latest stories"
               subtitle="what's going on"
-              description="In vel varius turpis, non dictum sem. Aenean in efficitur ipsum, in egestas ipsum. Mauris in mi ac tellus."
+              description="Stay up to date with the latest news and stories from Wordnox."
               color="extra04-color"
               alignment="center"
             />
@@ -41,13 +42,15 @@ const BlogOne = ({ posts }) => {
                     <div className="inner">
                       <span className="category">{post.primary_tag?.name}</span>
                       <h5 className="title">
-                        <Link
-                          href={`/blog/${post.slug}`}
-                          className="text-ellipsis"
-                        >
+                        <Link href={post.url} className="text-ellipsis">
                           {post.title.substring(0, 50)}
                         </Link>
                       </h5>
+                      <div className="meta d-flex flex-wrap align-items-center">
+                        <div className="small py-2">
+                          <span>{formatDate(post.published_at)}</span>
+                        </div>
+                      </div>
                       <p>{post.excerpt.substring(0, 70)}</p>
                     </div>
                   </div>

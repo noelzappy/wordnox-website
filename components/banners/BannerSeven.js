@@ -23,7 +23,7 @@ const BannerSeven = ({
                   <Image
                     width={400}
                     height={530}
-                    className="image-1 paralax-image"
+                    className="image-1 paralax-image img-fluid"
                     src={thumbnailImageOne}
                     alt="Slider images"
                   />

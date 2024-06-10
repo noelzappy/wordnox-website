@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick.css";
 import CaseStudyData from "../../data/CaseStudies.json";
 import Link from "next/link";
 
-const SliderOne = () => {
+const SliderOne = ({ caseStudies }) => {
   const [ref, inView] = useInView({
     threshold: 0.3,
     triggerOnce: true,
@@ -22,48 +22,50 @@ const SliderOne = () => {
     slidesToScroll: 1,
   };
 
+  if (!caseStudies) return null;
+
   return (
     <div className="axil-featured-area ax-section-gap bg-color-lightest">
       <div
         className="container axil-featured-activation axil-carousel"
         ref={ref}
       >
-        {CaseStudyData.length > 0 && (
+        {caseStudies.length > 0 && (
           <Slider {...settings}>
-            {CaseStudyData.map((item, index) => {
+            {caseStudies.map((item, index) => {
               return (
                 <div
                   className="row d-flex flex-wrap axil-featured row--0"
-                  key={`slider-item-${index}`}
+                  key={`slider-item-${item.id}`}
                 >
                   <div className="col-lg-6 col-xl-6 col-md-12 col-12">
                     <div className="thumbnail">
                       <Image
                         width={760}
                         height={650}
-                        className="image w-100"
-                        src={item.image}
-                        alt="Featured Images"
+                        className="image w-100 img-fluid"
+                        src={item.feature_image}
+                        alt={item.title}
                       />
                     </div>
                   </div>
                   <div className="col-lg-6 col-xl-5 col-md-12 col-12 offset-xl-1 mt_md--40 mt_sm--40">
                     <div className="inner">
                       <div className="section-title text-start">
-                        <span className="sub-title extra04-color">
-                          {item.subtitle}
-                        </span>
                         <h2 className="title">
-                          <Link href={`/case-studies/${item.slug}`}>
-                            {item.title}
-                          </Link>
+                          <Link href={item.url}>{item.title}</Link>
                         </h2>
-                        <p className="subtitle-2">{item.description}</p>
+                        <p className="subtitle-2">
+                          {" "}
+                          {item.excerpt?.length > 100
+                            ? item.excerpt?.substring(0, 100) + "..."
+                            : item.excerpt?.substring(0, 100)}
+                        </p>
                         <Link
-                          href={`/case-studies/${item.slug}`}
+                          href={item.url}
                           className="axil-button btn-large btn-transparent"
                         >
-                          <span className="button-text">{item.buttonText}</span>
+                          <span className="button-text">View Case Study</span>
                           <span className="button-icon" />
                         </Link>
                       </div>
@@ -102,5 +104,20 @@ const SliderOne = () => {
     </div>
   );
 };
+
+export async function getStaticProps() {
+  let posts = [];
+  try {
+    posts = await getPosts();
+  } catch (error) {
+    // console.log(error)
+  }
+
+  return {
+    props: {
+      posts,
+    },
+  };
+}
 
 export default SliderOne;

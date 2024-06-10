@@ -33,7 +33,7 @@ const BannerSix = ({
                     <Image
                       width={400}
                       height={530}
-                      className="paralax-image"
+                      className="paralax-image img-fluid"
                       src={bannerImageOne}
                       alt="Wordnox Images"
                     />

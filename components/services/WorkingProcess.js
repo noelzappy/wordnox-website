@@ -43,6 +43,7 @@ const WorkingProcess = ({ process }) => {
                         height={414}
                         src={strategy.image}
                         alt="Process Images"
+                        className="img-fluid"
                       />
                     </Tilt>
                   </div>

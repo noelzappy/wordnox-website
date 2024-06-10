@@ -57,6 +57,7 @@ const BannerOne = () => {
                         height={630}
                         src="/images/others/woman-sitting.jpg"
                         alt="Wordnox Images"
+                        className="img-fluid w-100"
                       />
                     </div>
                   </div>
