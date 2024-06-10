@@ -23,12 +23,13 @@ const PortfolioCard = ({ data, index, activeIndex, changeActive }) => {
       <div className="inner">
         <Tilt tiltMaxAngleX={9} tiltMaxAngleY={9}>
           <div className="thumb">
-            <Link href={`/portfolio/${data.slug}`}>
+            <Link href={data.url}>
               <Image
                 width={400}
                 height={380}
-                src={data.image}
+                src={data.feature_image}
                 alt={`${data.title} portfolio image`}
+                className="img-fluid w-100"
               />
             </Link>
           </div>
@@ -37,7 +38,7 @@ const PortfolioCard = ({ data, index, activeIndex, changeActive }) => {
         <div className="port-overlay-info text-center">
           <div className="hover-action">
             <h4 className="title">
-              <Link href={`/portfolio/${data.slug}`}>{data.title}</Link>
+              <Link href={data.url}>{data.title}</Link>
             </h4>
           </div>
         </div>

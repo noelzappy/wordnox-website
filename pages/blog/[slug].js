@@ -3,7 +3,11 @@ import BlogSidebar from "../../components/blogs/BlogSidebar";
 import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
 import CallToActionOne from "../../components/call-to-actions/CallToActionOne";
 import Layout from "../../components/layouts/Layout";
-import { getPostBySlug, getPosts } from "../../helpers/contentAPI";
+import {
+  getPostBySlug,
+  getPosts,
+  getPostsByTag,
+} from "../../helpers/contentAPI";
 import { formatDate } from "../../helpers/formatDate";
 import Skeleton from "react-loading-skeleton";
 import MarkdownSyntaxHighlighter from "../../components/blogs/MarkdownSyntaxHighlighter";
@@ -147,7 +151,7 @@ export const getStaticPaths = async () => {
 
 export async function getStaticProps({ params: { slug } }) {
   const post = await getPostBySlug(slug);
-  const posts = await getPosts();
+  const posts = await getPostsByTag(post?.primary_tag?.slug, 3);
 
   if (!post) {
     return {

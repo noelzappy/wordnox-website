@@ -26,9 +26,9 @@ export const getPostBySlug = async (slug) => {
 
 // fetch post that have the tag portfolio
 
-export const getPortfolioPosts = async () => {
+export const getPortfolioPosts = async (limit) => {
   return await api.posts.browse({
-    limit: "all",
+    limit: limit || "all",
     filter: "tag:portfolio",
   });
 };

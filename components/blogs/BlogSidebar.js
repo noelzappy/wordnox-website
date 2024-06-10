@@ -47,7 +47,7 @@ const BlogSidebar = ({ tags, recentPost }) => {
           {recentPost?.map((post, index) => (
             <div className="small-post" key={`recent-post-${index}`}>
               <div className="thumbnail flex-shrink-0">
-                <Link href={`/blog/${post.slug}`}>
+                <Link href={post.url}>
                   <Image
                     width={100}
                     height={80}
@@ -58,7 +58,7 @@ const BlogSidebar = ({ tags, recentPost }) => {
               </div>
               <div className="content">
                 <h6>
-                  <Link href={`/blog/${post.slug}`}>{post.title}</Link>
+                  <Link href={post.url}>{post.title}</Link>
                 </h6>
                 <ul className="blog-meta">
                   <li>{formatDate(post.published_at)}</li>
@@ -79,7 +79,7 @@ const BlogSidebar = ({ tags, recentPost }) => {
           <ul className="tags-list">
             {tags?.map((tag, tagIndex) => (
               <li key={`tag-${tagIndex}`}>
-                <Link href={`/blog/tag/${tag.slug}`}>{tag.name}</Link>
+                <Link href={tag.url}>{tag.name}</Link>
               </li>
             ))}
           </ul>

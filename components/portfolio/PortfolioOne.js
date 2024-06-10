@@ -10,10 +10,9 @@ const PortfolioOne = ({
   bgColor = "bg-color-lightest",
   showMoreLink,
   count,
+  portfolioPosts,
 }) => {
   const [activePortfolio, setActivePortfolio] = useState(0);
-  const [filterdPortfolioData, setFilterdPortfolioData] = useState([]);
-  const [activeGenre, setActiveGenre] = useState(0);
 
   const container = {
     hidden: { opacity: 1, scale: 0 },
@@ -31,33 +30,17 @@ const PortfolioOne = ({
     setActivePortfolio(index);
   };
 
-  useEffect(() => {
-    setFilterdPortfolioData(
-      PortfolioData.slice(0, count ? count : PortfolioData.length)
-    );
-  }, []);
-
   return (
     <div className={`axil-portfolio-area ax-section-gap ${bgColor}`}>
       <div className="container axil-masonary-wrapper">
         <div className="row align-items-end">
-          <div className="col-lg-5 col-md-12">
-            <SectionTitle
-              title="Some of our finest work."
-              subtitle="Our Projects"
-              titleClass="mb-0"
-              color="extra07-color"
-              alignment="left"
-            />
-          </div>
-          <div className="col-lg-7 col-md-12 mt_md--20 mt_sm--20">
-            <PortfolioFilter
-              portfolio={PortfolioData}
-              setFilterdPortfolioData={setFilterdPortfolioData}
-              activeGenre={activeGenre}
-              setActiveGenre={setActiveGenre}
-            />
-          </div>
+          <SectionTitle
+            title="Some of our finest work."
+            subtitle="Our Projects"
+            titleClass="mb-0"
+            color="extra07-color"
+            alignment="left"
+          />
         </div>
         <div className="row">
           <div className="col-lg-12">
@@ -67,7 +50,7 @@ const PortfolioOne = ({
               animate="visible"
               className="mesonry-list grid-metro3 mt--20"
             >
-              {filterdPortfolioData?.map((portfolio, index) => (
+              {portfolioPosts?.map((portfolio, index) => (
                 <PortfolioCard
                   key={`portfolio-${index}`}
                   data={portfolio}

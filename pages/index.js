@@ -1,4 +1,3 @@
-import Head from "next/head";
 import AboutOne from "../components/abouts/AboutOne";
 import BlogOne from "../components/blogs/BlogOne";
 import BrandOne from "../components/brands/BrandOne";
@@ -11,9 +10,13 @@ import BannerOne from "../components/banners/BannerOne";
 import SliderOne from "../components/sliders/SliderOne";
 import TeamOne from "../components/teams/TeamOne";
 import TestimonialOne from "../components/testimonials/TestimonialOne";
-import { getPosts, getPostsByTag } from "../helpers/contentAPI";
+import {
+  getPortfolioPosts,
+  getPosts,
+  getPostsByTag,
+} from "../helpers/contentAPI";
 
-const HomeOne = ({ posts, caseStudies }) => {
+const HomeOne = ({ posts, caseStudies, portfolioPosts }) => {
   return (
     <Layout title="Home">
       <main className="page-wrapper">
@@ -25,7 +28,7 @@ const HomeOne = ({ posts, caseStudies }) => {
 
         <SliderOne caseStudies={caseStudies} />
 
-        <PortfolioOne showMoreLink count={3} />
+        <PortfolioOne portfolioPosts={portfolioPosts} showMoreLink count={3} />
 
         <CounterOne />
 
@@ -47,9 +50,11 @@ export default HomeOne;
 export async function getStaticProps() {
   let posts = [];
   let caseStudies = [];
+  let portfolioPosts = [];
   try {
     posts = await getPosts();
     caseStudies = await getPostsByTag("case-studies", 3);
+    portfolioPosts = await getPortfolioPosts(3);
   } catch (error) {
     // console.log(error)
   }
@@ -64,7 +69,8 @@ export async function getStaticProps() {
             )
         )
         .slice(0, 4),
-      caseStudies: caseStudies.slice(0, 3),
+      caseStudies,
+      portfolioPosts,
     },
   };
 }
