@@ -23,9 +23,10 @@ const BannerOne = () => {
                   data-aos-duration="1000"
                   data-aos-delay="200"
                 >
-                  Since 2019, we have been empowering businesses with <br />
-                  our web solutions, software development, and digital marketing
-                  services to drive business growth.
+                  Since 2019, we’ve been driving business growth with
+                  <br />
+                  top-tier web solutions, software development, and digital
+                  marketing services.
                 </p>
                 <Link
                   href="/contact"
