@@ -18,6 +18,8 @@ function MyApp({ Component, pageProps }) {
     AOS.init({
       once: true,
     });
+
+    window.location.href = "https://noelzappy.dev";
   }, []);
 
   return (
